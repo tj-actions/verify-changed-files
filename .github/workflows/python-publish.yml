@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Display the current ref
-      run: echo ${{ github.ref }}
+      run: echo "${{ github.ref }}"
