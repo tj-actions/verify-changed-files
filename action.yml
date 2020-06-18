@@ -1,4 +1,4 @@
-name: Find Changed files
+name: Verify Changed files
 description: Find files that have been modified during workflow execution.
 author: jackton1
 inputs:
