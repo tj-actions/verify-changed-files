@@ -1,5 +1,5 @@
 # verify-changed-files
-A github action to return a list of changed files using grep
+A github action to verify changed files.
 
 ```yaml
 ...:
