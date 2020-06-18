@@ -2,7 +2,13 @@
 A github action to verify changed files.
 
 ```yaml
-...:
+on:
+  pull_request:
+    branches:
+      - master
+  
+jobs:
+  node-test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
