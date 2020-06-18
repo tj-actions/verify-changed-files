@@ -11,7 +11,7 @@ A github action to verify changed files.
       # .....................
       - name: Run Find changed files.
         id: changed_files
-        uses: jackton1/verify-changed-files@v2
+        uses: tj-actions/verify-changed-files@v2
         with:
           files: "test.png, new.txt, test_directory"
       - name: Perform action when files change.
