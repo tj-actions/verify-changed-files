@@ -17,5 +17,5 @@ runs:
     - ${{ inputs.token }}
     - ${{ inputs.files }}
 branding: 
-  icon: search
+  icon: check-square
   color: white
