@@ -33,4 +33,4 @@ jobs:
 |   Input       |    type     |  required      |  default                      |  description               |
 |:-------------:|:-----------:|:--------------:|:-----------------------------:|:--------------------------:|
 | token         |  `string`   |    `false`     | `${{ github.token }}`         | github action or PAT token |
-| files         |  `string`   |    `false`     |                               | Comma separated list of file/directory names to check for changes during workflow execution |
+| files         |  `string`   |    `false`     |                               | Comma separated list of <br/> file/directory names to check for changes <br/> during workflow execution |
