@@ -1,5 +1,5 @@
 # verify-changed-files
-A github action to verify changed files.
+A github action to verify that certian files changed during the pipeline execution.
 
 ```yaml
 on:
