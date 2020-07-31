@@ -11,7 +11,7 @@ jobs:
       - run: git fetch --depth=1 origin +refs/heads/master:refs/remotes/origin/master
       - run: git fetch origin +refs/tags/*:refs/tags/*
       - name: Bumpversion release version.
-        uses: tj-actions/bumpversion@v1
+        uses: tj-actions/bumpversion@v2
         id: bumpversion
         with:
           paths: |
