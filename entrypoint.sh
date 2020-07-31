@@ -2,7 +2,6 @@
 
 set -e
 
-GITHUB_TOKEN=$1
 FILES=$2
 
 CHANGED_FILES=() 
@@ -11,7 +10,7 @@ for path in ${FILES}
 do
    echo "Checking for file changes: \"${path}\"..."
    MODIFIED_FILE=$(git diff --diff-filter=ACM --name-only | grep -E "(${path})" || true)
-   if [[ ! -z ${MODIFIED_FILE} ]]; then
+   if [[ -n ${MODIFIED_FILE} ]]; then
      CHANGED_FILES+=("${path}")
    fi
 done
