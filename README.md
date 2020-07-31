@@ -19,7 +19,7 @@ jobs:
       # Make changes to files
       # .....................
       - name: Verify Changed files
-        uses: tj-actions/verify-changed-files@v2.0a
+        uses: tj-actions/verify-changed-files@v3.0.beta
         id: changed_files
         with:
           files: |
