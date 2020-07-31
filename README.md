@@ -15,7 +15,7 @@ jobs:
       # .....................
       # Make changes to files
       # .....................
-      - name: Run Find changed files.
+      - name: Find changed files.
         id: changed_files
         uses: tj-actions/verify-changed-files@v2
         with:
