@@ -8,20 +8,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - run: git fetch --depth=1 origin +refs/heads/master:refs/remotes/origin/master
+      - run: git fetch origin +refs/tags/*:refs/tags/*
       - name: Bumpversion release version.
         uses: tj-actions/bumpversion@v1
         id: bumpversion
         with:
           paths: |
             README.md
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: Updraded from ${{ steps.bumpversion.outputs.old_version }} -> ${{ steps.bumpversion.outputs.new_version }}
-          branch: master
-          repository: .
-          # Optional commit user and author settings
-          commit_user_name: GitHub Actions Bot
-          commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
-          commit_author: Author <actions@github.com>
-          # Optional: Disable dirty check and always try to create a commit and push
-          skip_dirty_check: true
+      - run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add README.md
+          git commit -m "Updraded from ${{ steps.bumpversion.outputs.old_version }} -> ${{ steps.bumpversion.outputs.new_version }}"
+          git checkout master
+          git merge ${{ github.ref }}
+          git push
