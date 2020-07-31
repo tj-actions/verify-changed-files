@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Bumpversion release version.
-        uses: tj-actions/bumpversion@v0.1b
+        uses: tj-actions/bumpversion@v1
         id: bumpversion
         with:
           paths: |
