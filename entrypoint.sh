@@ -2,14 +2,18 @@
 
 set -e
 
-GITHUB_TOKEN=$1
 FILES=$2
 
-echo "Formatting filenames..."
-EXPECTED_FILES="$(printf $(echo ${FILES} | sed 's| ||g' | sed 's/,/|/g'))"
+CHANGED_FILES=() 
 
-echo "Checking changes for \"${EXPECTED_FILES}\"... "
-CHANGED_FILES=$(git diff --diff-filter=ACM --name-only | grep -E "(${EXPECTED_FILES})" || true)
+for path in ${FILES}
+do
+   echo "Checking for file changes: \"${path}\"..."
+   MODIFIED_FILE=$(git diff --diff-filter=ACM --name-only | grep -E "(${path})" || true)
+   if [[ -n ${MODIFIED_FILE} ]]; then
+     CHANGED_FILES+=("${path}")
+   fi
+done
 
 if [[ -z ${CHANGED_FILES} ]]; then
   echo "::set-output name=files_changed::false"
