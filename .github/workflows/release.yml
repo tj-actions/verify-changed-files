@@ -11,9 +11,10 @@ jobs:
       - run: git fetch --depth=1 origin +refs/heads/master:refs/remotes/origin/master
       - run: git fetch origin +refs/tags/*:refs/tags/*
       - name: Bumpversion release version.
-        uses: tj-actions/bumpversion@v2
+        uses: tj-actions/bumpversion@v4
         id: bumpversion
         with:
+          prefix: 'tj-actions/verify-changed-files@'
           paths: |
             README.md
       - run: |
