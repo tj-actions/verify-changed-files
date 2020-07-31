@@ -7,9 +7,8 @@ inputs:
     required: true
     default: ${{ github.token }}
   files:
-    description: Comma separated list of files to check for changes.
-    required: false
-    default: ''
+    description: List of files to check for changes.
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
