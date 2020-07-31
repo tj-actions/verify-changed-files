@@ -1,3 +1,5 @@
+![CI](https://github.com/tj-actions/verify-changed-files/workflows/CI/badge.svg)
+
 # verify-changed-files
 A github action to verify that certian files changed during the pipeline execution.
 
