@@ -1,4 +1,5 @@
 ![CI](https://github.com/tj-actions/verify-changed-files/workflows/CI/badge.svg)
+![Update release version.](https://github.com/tj-actions/verify-changed-files/workflows/Update%20release%20version./badge.svg)
 
 # verify-changed-files
 A github action to verify that certian files changed during the workflow execution.
