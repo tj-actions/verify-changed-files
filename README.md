@@ -21,7 +21,10 @@ jobs:
         id: changed_files
         uses: tj-actions/verify-changed-files@v2
         with:
-          files: "test.png, new.txt, test_directory"
+          files: |
+             test.png
+             new.txt
+             test_directory
       - name: Perform action when files change.
         if: steps.changed_files.outputs.files_changed == 'true'
         run: |
@@ -35,4 +38,4 @@ jobs:
 |   Input       |    type     |  required      |  default                      |  description               |
 |:-------------:|:-----------:|:--------------:|:-----------------------------:|:--------------------------:|
 | token         |  `string`   |    `false`     | `${{ github.token }}`         | github action or PAT token |
-| files         |  `string`   |    `false`     |                               | Comma separated list of <br/> file/directory names to check for changes <br/> during workflow execution |
+| files         |  `string`   |    `false`     |                               | List of <br/> file(s)/directory names to check for changes <br/> during workflow execution |
