@@ -15,15 +15,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      # .....................
-      # Make changes to files
-      # .....................
+      - name: Change text file
+        run: |
+          echo "Modified" > new.txt
+      - name: Change file in directory
+        run: |
+          echo "Changed" > test_directory/new.txt
       - name: Verify Changed files
         uses: tj-actions/verify-changed-files@v5
         id: changed_files
         with:
           files: |
-             test.png
              new.txt
              test_directory
       - name: Perform action when files change.
