@@ -28,9 +28,9 @@ jobs:
           files: |
              new.txt
              test_directory
-             .py$
-             .sql$
-             ^mynewfile
+             .(py|jpeg)$
+             .(sql)$
+             ^(mynewfile|custom)
       - name: Perform action when files change.
         if: steps.changed_files.outputs.files_changed == 'true'
         run: |
