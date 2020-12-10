@@ -45,3 +45,5 @@ jobs:
 |:-------------:|:-----------:|:--------------:|:-----------------------------:|:--------------------------:|
 | token         |  `string`   |    `true`     | `${{ github.token }}`  <br/>  | github action default token or PAT token |
 | files         |  `array`   |    `true`     |                               | List of <br/> file(s)/directory names (regex optional) to check for changes <br/> during workflow. execution |
+
+
