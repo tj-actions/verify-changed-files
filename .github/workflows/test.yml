@@ -20,4 +20,4 @@ jobs:
       - run: |
           export BASE_REF=${{ github.base_ref }}
           echo "${BASE_REF/refs\/heads\//}"
-        
+
