@@ -18,5 +18,6 @@ jobs:
       - name: shellcheck
         uses: reviewdog/action-shellcheck@v1
       - run: |
-          echo "${{ github.base_ref/refs\/heads\// }}"
+          export BASE_REF=${{ github.base_ref }}
+          echo "${BASE_REF/refs\/heads\//}"
         
