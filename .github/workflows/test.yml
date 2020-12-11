@@ -43,7 +43,7 @@ jobs:
             test/new.sql
             test/new/.(sql|txt)
       - name: Verify Changes to test/new.txt
+        if: steps.changed_files_expected.outputs.files_changed != 'true'
         run: |
-          if: steps.changed_files_expected.outputs.files_changed != 'true'
           echo "No Changes found: (Not expected)"
           exit 1
