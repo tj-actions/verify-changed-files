@@ -23,8 +23,9 @@ jobs:
         id: changed_files_non_expected
         with:
           files: |
-             test/new.sql
-             test/new/.(sql|txt)
+            test/new.txt
+            test/new.sql
+            test/new/.(sql|txt)
       - name: Verify Changes
         if: steps.changed_files_non_expected.outputs.files_changed == 'true'
         run: |
