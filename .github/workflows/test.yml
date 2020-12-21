@@ -34,7 +34,7 @@ jobs:
       - name: Make changes
         run: |
           echo "323442424" >> test/new.txt
-      - name: Test sql file has no changes
+      - name: Test test/new.txt file has changes
         uses: ./
         id: changed_files_expected
         with:
