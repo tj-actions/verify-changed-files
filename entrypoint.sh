@@ -15,9 +15,9 @@ do
 done
 
 if [[ -z ${CHANGED_FILES} ]]; then
-  echo "::set-output name=files_changed::0"
+  echo "::set-output name=files_changed::false"
 else
-  echo "::set-output name=files_changed::1"
+  echo "::set-output name=files_changed::true"
 fi
 
 exit 0;
