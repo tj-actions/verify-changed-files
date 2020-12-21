@@ -22,12 +22,15 @@ jobs:
         run: |
           echo "Changed" > test_directory/new.txt
       - name: Verify Changed files
-        uses: tj-actions/verify-changed-files@v5
+        uses: tj-actions/verify-changed-files@v5.1
         id: changed_files
         with:
           files: |
              new.txt
              test_directory
+             .(py|jpeg)$
+             .(sql)$
+             ^(mynewfile|custom)
       - name: Perform action when files change.
         if: steps.changed_files.outputs.files_changed == 'true'
         run: |
@@ -41,4 +44,4 @@ jobs:
 |   Input       |    type     |  required      |  default                      |  description               |
 |:-------------:|:-----------:|:--------------:|:-----------------------------:|:--------------------------:|
 | token         |  `string`   |    `true`     | `${{ github.token }}`  <br/>  | github action default token or PAT token |
-| files         |  `array`   |    `true`     |                               | List of <br/> file(s)/directory names to check for changes <br/> during workflow execution |
+| files         |  `array`   |    `true`     |                               | List of <br/> file(s)/directory names (regex optional) to check for changes <br/> during workflow. execution |
