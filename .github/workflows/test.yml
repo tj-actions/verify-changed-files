@@ -27,7 +27,7 @@ jobs:
             test/new.sql
             test/new/.(sql|txt)
       - name: Verify Changes
-        if: steps.changed_files_non_expected.outputs.files_changed
+        if: ${{ steps.changed_files_non_expected.outputs.files_changed }}
         run: |
           echo "Changes found: (Not expected)"
           exit 1
