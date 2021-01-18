@@ -1,4 +1,4 @@
-name: Update release version.
+name: Update release version
 on:
   release:
     types: [published]
