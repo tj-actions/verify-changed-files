@@ -22,7 +22,7 @@ jobs:
         run: |
           echo "Changed" > test_directory/new.txt
       - name: Verify Changed files
-        uses: tj-actions/verify-changed-files@v5.1
+        uses: tj-actions/verify-changed-files@v5.4
         id: changed_files
         with:
           files: |
