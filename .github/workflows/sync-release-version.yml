@@ -18,8 +18,8 @@ jobs:
             README.md
       - name: Update CHANGELOG.md
         run: |
-           gem install github_changelog_generator
-	   github_changelog_generator -u ${{ github.repository_owner }} -p verify-changed-files
+          gem install github_changelog_generator 
+          github_changelog_generator -u ${{ github.repository_owner }} -p verify-changed-files
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
