@@ -1,5 +1,15 @@
 # Changelog
 
+## [v5.5](https://github.com/tj-actions/verify-changed-files/tree/v5.5) (2021-02-12)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v5.4...v5.5)
+
+**Merged pull requests:**
+
+- Added changed\_files output [\#20](https://github.com/tj-actions/verify-changed-files/pull/20) ([jackton1](https://github.com/jackton1))
+- Bump alpine from 3.13.0 to 3.13.1 [\#19](https://github.com/tj-actions/verify-changed-files/pull/19) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Upgraded to v5.4 [\#18](https://github.com/tj-actions/verify-changed-files/pull/18) ([jackton1](https://github.com/jackton1))
+
 ## [v5.4](https://github.com/tj-actions/verify-changed-files/tree/v5.4) (2021-01-24)
 
 [Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v5.3...v5.4)
