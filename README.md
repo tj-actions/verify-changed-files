@@ -53,7 +53,7 @@ jobs:
 
 ## Outputs
 
-|   Input       |    type     |  description               |
-|:-------------:|:-----------:|:--------------------------:|
-| files_changed |  `boolean`  | Indicates that there are outstanding changes |
-| changed_files |  `array`    | List of file(s)/directory names <br/> that changed <br/> during the workflow execution |
+|   Input       |    type     |  example      |  description               |
+|:-------------:|:-----------:|:-------------:|:--------------------------:|
+| files_changed |  `boolean`  |  `true`       | Indicates that there are outstanding changes |
+| changed_files |  `array`    |  `[example.txt, ...]`      | List of file(s)/directory names <br/> that changed <br/> during the workflow execution |
