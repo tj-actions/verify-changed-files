@@ -31,6 +31,10 @@ jobs:
              .(py|jpeg)$
              .(sql)$
              ^(mynewfile|custom)
+      - name: Display changed files
+        if: steps.changed_files.outputs.files_changed == 'true'
+        run: |
+          echo "Changed files: ${{ steps.changed_files.outputs.changed_files }}"  # Outputs: test_directory/new.txt
       - name: Perform action when files change.
         if: steps.changed_files.outputs.files_changed == 'true'
         run: |
@@ -45,3 +49,11 @@ jobs:
 |:-------------:|:-----------:|:--------------:|:-----------------------------:|:--------------------------:|
 | token         |  `string`   |    `true`     | `${{ github.token }}`  <br/>  | github action default token or PAT token |
 | files         |  `array`   |    `true`     |                               | List of file(s)/directory names <br/> (regex optional) to check for changes <br/> during workflow execution |
+
+
+## Outputs
+
+|   Input       |    type     |  example      |  description               |
+|:-------------:|:-----------:|:-------------:|:--------------------------:|
+| files_changed |  `boolean`  |  `true`       | Indicates that there are outstanding changes |
+| changed_files |  `array`    |  `[example.txt, ...]`      | List of file(s)/directory names <br/> that changed <br/> during the workflow execution |
