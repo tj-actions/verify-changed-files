@@ -20,14 +20,18 @@ jobs:
         uses: reviewdog/action-shellcheck@v1
       - name: Test sql file has no changes
         uses: ./
-        id: changed_files_non_expected
+        id: changed_files_not_expected
         with:
           files: |
             test/new.txt
             test/new.sql
             test/new/.(sql|txt)
+      - name: Display changed files
+        if: steps.changed_files_not_expected.outputs.files_changed == 'true'
+        run: |
+          echo "Changed files: ${{ steps.changed_files_not_expected.outputs.changed_files }}"
       - name: Verify Changes
-        if: steps.changed_files_non_expected.outputs.files_changed == 'true'
+        if: steps.changed_files_not_expected.outputs.files_changed == 'true'
         run: |
           echo "Changes found: (Not expected)"
           exit 1
@@ -42,6 +46,10 @@ jobs:
             test/new.txt
             test/new.sql
             test/new/.(sql|txt)
+      - name: Display changed files
+        if: steps.changed_files_expected.outputs.files_changed == 'true'
+        run: |
+          echo "Changed files: ${{ steps.changed_files_expected.outputs.changed_files }}"
       - name: Verify Changes to test/new.txt
         if: steps.changed_files_expected.outputs.files_changed != 'true'
         run: |
