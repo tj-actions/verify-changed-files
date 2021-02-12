@@ -49,7 +49,7 @@ jobs:
       - name: Display changed files
         if: steps.changed_files_expected.outputs.files_changed == 'true'
         run: |
-          echo "Changed files: ${{ steps.changed_files.outputs.changed_files }}"
+          echo "Changed files: ${{ steps.changed_files_expected.outputs.changed_files }}"
       - name: Verify Changes to test/new.txt
         if: steps.changed_files_expected.outputs.files_changed != 'true'
         run: |
