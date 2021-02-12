@@ -49,3 +49,11 @@ jobs:
 |:-------------:|:-----------:|:--------------:|:-----------------------------:|:--------------------------:|
 | token         |  `string`   |    `true`     | `${{ github.token }}`  <br/>  | github action default token or PAT token |
 | files         |  `array`   |    `true`     |                               | List of file(s)/directory names <br/> (regex optional) to check for changes <br/> during workflow execution |
+
+
+## Outputs
+
+|   Input       |    type     |  description               |
+|:-------------:|:-----------:|:--------------------------:|
+| files_changed |  `boolean`  | Indicates that there are outstanding changes |
+| changed_files |  `array`    | List of file(s)/directory names <br/> that changed <br/> during the workflow execution |
