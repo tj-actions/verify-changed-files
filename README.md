@@ -2,7 +2,7 @@
 [![Update release version.](https://github.com/tj-actions/verify-changed-files/workflows/Update%20release%20version./badge.svg)](https://github.com/tj-actions/verify-changed-files/actions?query=workflow%3A%22Update+release+version.%22)
 
 # verify-changed-files
-A github action to verify that certian files changed during the workflow execution.
+A github action to verify that certian files did or didn't change during the workflow execution.
 
 ```yaml
 on:
