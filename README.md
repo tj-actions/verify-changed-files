@@ -4,12 +4,10 @@
 # verify-changed-files
 A github action to verify that certian files did or didn't change during the workflow execution.
 
+
 ```yaml
-on:
-  pull_request:
-    branches:
-      - master
-  
+...
+
 jobs:
   node-test:
     runs-on: ubuntu-latest
