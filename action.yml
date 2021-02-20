@@ -3,12 +3,19 @@ description: Find files that have been modified during workflow execution.
 author: jackton1
 inputs:
   token:
-    description: 'GITHUB_TOKEN or a repo scoped PAT'
+    description: GITHUB_TOKEN or a repo scoped PAT
     required: true
     default: ${{ github.token }}
   files:
     description: List of files to check for changes.
     required: true
+
+outputs:
+  files_changed:
+    description: Boolean indicating that files have changed.
+  changed_files:
+    description: List of changed files
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
