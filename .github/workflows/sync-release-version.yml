@@ -16,10 +16,8 @@ jobs:
           pattern: 'tj-actions/verify-changed-files@'
           paths: |
             README.md
-      - name: Update CHANGELOG.md
-        run: |
-          sudo gem install github_changelog_generator 
-          github_changelog_generator -u ${{ github.repository_owner }} -p verify-changed-files
+      - name: Generate CHANGELOG
+        uses: tj-actions/github-changelog-generator@v1.3
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
