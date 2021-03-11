@@ -37,8 +37,26 @@ jobs:
         if: steps.changed_files.outputs.files_changed == 'true'
         run: |
           echo "Do something when files have changed."
-
 ```
+
+
+#### Act based on changes to a single file.
+
+```yaml
+...
+      - name: Verify Changed files
+        uses: tj-actions/verify-changed-files@v5.5
+        id: changed_files
+        with:
+          files: |
+             new.txt
+             test_directory
+      - name: Perform action when test_directory changes
+        if: contains(steps.changed_files.outputs.changed_files, 'test_directory')
+        run: |
+          echo "test_directory has changed."
+```
+
 
 
 ## Inputs
