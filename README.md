@@ -40,7 +40,7 @@ jobs:
 ```
 
 
-#### Act based on changes to a single file.
+#### Using [`contains`](https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#contains) function. 
 
 ```yaml
 ...
