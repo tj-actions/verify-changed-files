@@ -40,7 +40,7 @@ jobs:
 ```
 
 
-#### Using [`contains`](https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#contains) function. 
+#### Using the [`contains`](https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#contains) function. 
 
 ```yaml
 ...
