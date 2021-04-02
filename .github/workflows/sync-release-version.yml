@@ -13,15 +13,17 @@ jobs:
         uses: tj-actions/sync-release-version@v8
         id: sync-release-version
         with:
-          pattern: 'tj-actions/verify-changed-files@'
+          pattern: '${{ github.repository }}@'
           paths: |
             README.md
       - name: Generate CHANGELOG
         uses: tj-actions/github-changelog-generator@v1.3
+        with:
+          output: 'HISTORY.md'
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
-          base: "master"
+          base: "main"
           title: "Upgraded to ${{ steps.sync-release-version.outputs.new_version }}"
           branch: "upgrade-to-${{ steps.sync-release-version.outputs.new_version }}"
           commit-message: "Upgraded from ${{ steps.sync-release-version.outputs.old_version }} -> ${{ steps.sync-release-version.outputs.new_version }}"
