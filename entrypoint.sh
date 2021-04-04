@@ -8,6 +8,12 @@ for path in ${INPUT_FILES}
 do
    echo "Checking for file changes: \"${path}\"..."
    MODIFIED_FILE=$(git diff --diff-filter=ACMUXTR --name-only | grep -E "(${path})" || true)
+   
+   if [[ -z $MODIFIED_FILE ]]; then
+     # Find unstaged changes
+     MODIFIED_FILE=$(git status --porcelain | awk '{ print $2 }' | grep -E "(${path})" || true)
+   fi
+   
    if [[ -n ${MODIFIED_FILE} ]]; then
      echo "Found uncommited changes at: ${path}"
      CHANGED_FILES+=("${path}")
