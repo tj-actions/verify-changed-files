@@ -1,5 +1,14 @@
 # Changelog
 
+## [v6](https://github.com/tj-actions/verify-changed-files/tree/v6) (2021-04-04)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v5.7...v6)
+
+**Merged pull requests:**
+
+- Added support for detecting unstaged files. [\#32](https://github.com/tj-actions/verify-changed-files/pull/32) ([jackton1](https://github.com/jackton1))
+- Upgraded to v5.7 [\#31](https://github.com/tj-actions/verify-changed-files/pull/31) ([jackton1](https://github.com/jackton1))
+
 ## [v5.7](https://github.com/tj-actions/verify-changed-files/tree/v5.7) (2021-04-04)
 
 [Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v5.6...v5.7)
