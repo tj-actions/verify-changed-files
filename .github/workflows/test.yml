@@ -68,8 +68,8 @@ jobs:
         if: steps.changed_unstaged_files_expected.outputs.files_changed == 'true'
         run: |
           echo "Changed files: ${{ steps.changed_unstaged_files_expected.outputs.changed_files }}"
-      - name: Verify Changes to test/new.txt
-        if: steps.changed_files_expected.outputs.files_changed != 'true'
+      - name: Verify Changes to unstaged.txt
+        if: steps.changed_unstaged_files_expected.outputs.files_changed != 'true'
         run: |
           echo "No Changes found: (Not expected)"
           exit 1
