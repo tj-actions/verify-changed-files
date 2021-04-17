@@ -9,7 +9,7 @@ A github action to verify that certian files did or did not change during a work
 > NOTE: :warning:
 > * This action only detects files that have pending uncommited changes generated during the workflow execution, for running a specific step when a file changes relative to the default branch 
 > 
-> See: https://github.com/tj-actions/changed-files
+>      See: https://github.com/tj-actions/changed-files
 > * Detects files that were `Added`, `Copied`, `Modified`, `Unmerged`, `Unknown`, `Type changed`, `Unstaged` and `Renamed`.
 
 
