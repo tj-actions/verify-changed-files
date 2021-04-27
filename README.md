@@ -60,7 +60,7 @@ jobs:
              new.txt
              test_directory
       - name: Perform action when test_directory changes
-        if: contains(steps.verify_changed_files.outputs.verify_changed_files, 'test_directory')
+        if: contains(steps.verify_changed_files.outputs.changed_files, 'test_directory')
         run: |
           echo "test_directory has changed."
 ```
