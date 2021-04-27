@@ -38,11 +38,11 @@ jobs:
              .(sql)$
              ^(mynewfile|custom)
       - name: Display changed files
-        if: steps.changed_files.outputs.files_changed == 'true'
+        if: steps.verify_changed_files.outputs.files_changed == 'true'
         run: |
           echo "Changed files: ${{ steps.verify_changed_files.outputs.changed_files }}"  # Outputs: test_directory/new.txt
       - name: Perform action when files change.
-        if: steps.changed_files.outputs.files_changed == 'true'
+        if: steps.verify_changed_files.outputs.files_changed == 'true'
         run: |
           echo "Do something when files have changed."
 ```
@@ -60,7 +60,7 @@ jobs:
              new.txt
              test_directory
       - name: Perform action when test_directory changes
-        if: contains(steps.changed_files.outputs.verify_changed_files, 'test_directory')
+        if: contains(steps.verify_changed_files.outputs.verify_changed_files, 'test_directory')
         run: |
           echo "test_directory has changed."
 ```
