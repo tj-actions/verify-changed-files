@@ -17,7 +17,7 @@ A github action to verify that certain files did or did not change during a work
 ...
 
 jobs:
-  node-test:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
