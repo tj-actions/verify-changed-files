@@ -39,8 +39,8 @@ jobs:
              ^(mynewfile|custom)
       - name: Display changed files
         if: steps.verify_changed_files.outputs.files_changed == 'true'
-        run: |
-          echo "Changed files: ${{ steps.verify_changed_files.outputs.changed_files }}"  # Outputs: test_directory/new.txt
+        run: |  # Outputs: test_directory/new.txt
+          echo "Changed files: ${{ steps.verify_changed_files.outputs.changed_files }}"
       - name: Perform action when files change.
         if: steps.verify_changed_files.outputs.files_changed == 'true'
         run: |
