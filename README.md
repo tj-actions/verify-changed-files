@@ -39,7 +39,7 @@ jobs:
              ^(mynewfile|custom)
       - name: Display changed files
         if: steps.verify_changed_files.outputs.files_changed == 'true'
-        run: |  # Outputs: test_directory/new.txt
+        run: |  # Outputs: "Changed files: new.txt test_directory/new.txt"
           echo "Changed files: ${{ steps.verify_changed_files.outputs.changed_files }}"
       - name: Perform action when files change.
         if: steps.verify_changed_files.outputs.files_changed == 'true'
@@ -80,4 +80,4 @@ jobs:
 |   Input       |    type     |  example      |  description               |
 |:-------------:|:-----------:|:-------------:|:--------------------------:|
 | files_changed |  `boolean`  |  `true`       | Indicates that there are outstanding changes |
-| changed_files |  `array`    |  `[example.txt, ...]`      | List of file(s)/directory names <br/> that changed <br/> during the workflow execution |
+| changed_files |  `string`    |  `example.txt ...`      | List of file(s)/directory names <br/> that changed <br/> during the workflow execution |
