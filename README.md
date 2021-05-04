@@ -79,5 +79,5 @@ jobs:
 
 |   Input       |    type     |  example      |  description               |
 |:-------------:|:-----------:|:-------------:|:--------------------------:|
-| files_changed |  `boolean`  |  `true`       | Indicates that there are outstanding changes |
+| files_changed |  `string`  |  `true` OR `false`       | Indicates that there are outstanding changes |
 | changed_files |  `string`    |  `example.txt ...`      | List of file(s)/directory names <br/> that changed <br/> during the workflow execution |
