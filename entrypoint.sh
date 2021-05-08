@@ -2,6 +2,8 @@
 
 set -e
 
+git remote set-url origin "https://${INPUT_TOKEN}@github.com/${GITHUB_REPOSITORY}"
+
 CHANGED_FILES=() 
 
 for path in ${INPUT_FILES}
