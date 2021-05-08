@@ -1,5 +1,23 @@
 # Changelog
 
+## [v6.1](https://github.com/tj-actions/verify-changed-files/tree/v6.1) (2021-05-08)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v6...v6.1)
+
+**Closed issues:**
+
+- Dependency Dashboard [\#36](https://github.com/tj-actions/verify-changed-files/issues/36)
+
+**Merged pull requests:**
+
+- Update tj-actions/sync-release-version action to v8.6 [\#41](https://github.com/tj-actions/verify-changed-files/pull/41) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/github-changelog-generator action to v1.8 [\#40](https://github.com/tj-actions/verify-changed-files/pull/40) ([renovate[bot]](https://github.com/apps/renovate))
+- Bump tj-actions/sync-release-version from v8 to v8.5 [\#39](https://github.com/tj-actions/verify-changed-files/pull/39) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Upgrade to GitHub-native Dependabot [\#38](https://github.com/tj-actions/verify-changed-files/pull/38) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Update tj-actions/github-changelog-generator action to v1.6 [\#37](https://github.com/tj-actions/verify-changed-files/pull/37) ([renovate[bot]](https://github.com/apps/renovate))
+- Update alpine Docker tag to v3.13.5 [\#34](https://github.com/tj-actions/verify-changed-files/pull/34) ([renovate[bot]](https://github.com/apps/renovate))
+- Upgraded to v6 [\#33](https://github.com/tj-actions/verify-changed-files/pull/33) ([jackton1](https://github.com/jackton1))
+
 ## [v6](https://github.com/tj-actions/verify-changed-files/tree/v6) (2021-04-04)
 
 [Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v5.7...v6)

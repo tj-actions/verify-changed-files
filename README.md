@@ -28,7 +28,7 @@ jobs:
         run: |
           echo "Changed" > test_directory/new.txt
       - name: Verify Changed files
-        uses: tj-actions/verify-changed-files@v6
+        uses: tj-actions/verify-changed-files@v6.1
         id: verify_changed_files
         with:
           files: |
@@ -53,7 +53,7 @@ jobs:
 ```yaml
 ...
       - name: Verify Changed files
-        uses: tj-actions/verify-changed-files@v6
+        uses: tj-actions/verify-changed-files@v6.1
         id: verify_changed_files
         with:
           files: |
