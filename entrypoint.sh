@@ -19,6 +19,8 @@ do
    if [[ -n ${MODIFIED_FILE} ]]; then
      echo "Found uncommited changes at: ${path}"
      CHANGED_FILES+=("${path}")
+   else
+     echo "No changes found at: ${path}"
    fi
 done
 
