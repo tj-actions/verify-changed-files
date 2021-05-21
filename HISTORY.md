@@ -1,5 +1,18 @@
 # Changelog
 
+## [v6.2](https://github.com/tj-actions/verify-changed-files/tree/v6.2) (2021-05-21)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v6.1...v6.2)
+
+**Merged pull requests:**
+
+- Log when no changes are found. [\#47](https://github.com/tj-actions/verify-changed-files/pull/47) ([jackton1](https://github.com/jackton1))
+- Bump peter-evans/create-pull-request from 3.9.1 to 3.9.2 [\#46](https://github.com/tj-actions/verify-changed-files/pull/46) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump actions/checkout from 2 to 2.3.4 [\#45](https://github.com/tj-actions/verify-changed-files/pull/45) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump peter-evans/create-pull-request from 3 to 3.9.1 [\#44](https://github.com/tj-actions/verify-changed-files/pull/44) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump reviewdog/action-shellcheck from 1 to 1.5 [\#43](https://github.com/tj-actions/verify-changed-files/pull/43) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Upgraded to v6.1 [\#42](https://github.com/tj-actions/verify-changed-files/pull/42) ([jackton1](https://github.com/jackton1))
+
 ## [v6.1](https://github.com/tj-actions/verify-changed-files/tree/v6.1) (2021-05-08)
 
 [Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v6...v6.1)
