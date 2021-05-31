@@ -15,18 +15,17 @@ A github action to verify that certain files did or did not change during the wo
 
 ```yaml
 ...
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
       - name: Change text file
         run: |
           echo "Modified" > new.txt
+
       - name: Change file in directory
         run: |
           echo "Changed" > test_directory/new.txt
+
       - name: Verify Changed files
         uses: tj-actions/verify-changed-files@v6.2
         id: verify-changed-files
@@ -37,10 +36,12 @@ jobs:
              .(py|jpeg)$
              .(sql)$
              ^(mynewfile|custom)
+
       - name: Display changed files
         if: steps.verify-changed-files.outputs.files_changed == 'true'
         run: |  # Outputs: "Changed files: new.txt test_directory/new.txt"
           echo "Changed files: ${{ steps.verify_changed_files.outputs.changed_files }}"
+
       - name: Perform action when files change.
         if: steps.verify-changed-files.outputs.files_changed == 'true'
         run: |
@@ -59,6 +60,7 @@ jobs:
           files: |
              new.txt
              test_directory
+
       - name: Perform action when test_directory changes
         if: contains(steps.verify-changed-files.outputs.changed_files, 'test_directory')
         run: |
