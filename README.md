@@ -39,8 +39,9 @@ A github action to verify that certain files did or did not change during the wo
 
       - name: Display changed files
         if: steps.verify-changed-files.outputs.files_changed == 'true'
-        run: |  # Outputs: "Changed files: new.txt test_directory/new.txt"
+        run: |
           echo "Changed files: ${{ steps.verify_changed_files.outputs.changed_files }}"
+        # Outputs: "Changed files: new.txt test_directory/new.txt"
 
       - name: Perform action when files change.
         if: steps.verify-changed-files.outputs.files_changed == 'true'
