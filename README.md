@@ -84,3 +84,16 @@ A github action to verify that certain files did or did not change during the wo
 |:-------------:|:-----------:|:-------------:|:--------------------------:|
 | files_changed |  `string`  |  `true` OR `false`       | Indicates that there are outstanding changes |
 | changed_files |  `string`    |  `example.txt ...`      | List of file(s)/directory names <br/> that changed <br/> during the workflow execution |
+
+
+* Free software: [MIT license](LICENSE)
+
+
+If you feel generous and want to show some extra appreciation:
+
+[![Buy me a coffee][buymeacoffee-shield]][buymeacoffee]
+
+[buymeacoffee]: https://www.buymeacoffee.com/jackton1
+[buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png
+
+
