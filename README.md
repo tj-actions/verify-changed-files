@@ -1,17 +1,17 @@
 [![CI](https://github.com/tj-actions/verify-changed-files/workflows/CI/badge.svg)](https://github.com/tj-actions/verify-changed-files/actions?query=workflow%3ACI)
-[![Update release version.](https://github.com/tj-actions/verify-changed-files/workflows/Update%20release%20version./badge.svg)](https://github.com/tj-actions/verify-changed-files/actions?query=workflow%3A%22Update+release+version.%22) 
-[![Public workflows that use this action.](https://img.shields.io/endpoint?url=https%3A%2F%2Fapi-tj-actions1.vercel.app%2Fapi%2Fgithub-actions%2Fused-by%3Faction%3Dtj-actions%2Fverify-changed-files%26badge%3Dtrue)](https://github.com/search?o=desc&q=tj-actions+verify-changed-files+path%3A.github%2Fworkflows+language%3AYAML&s=&type=Code)
+[![Update release version.](https://github.com/tj-actions/verify-changed-files/workflows/Update%20release%20version./badge.svg)](https://github.com/tj-actions/verify-changed-files/actions?query=workflow%3A%22Update+release+version.%22)
+[![Public workflows that use this action.](https://img.shields.io/endpoint?url=https%3A%2F%2Fapi-tj-actions1.vercel.app%2Fapi%2Fgithub-actions%2Fused-by%3Faction%3Dtj-actions%2Fverify-changed-files%26badge%3Dtrue)](https://github.com/search?o=desc\&q=tj-actions+verify-changed-files+path%3A.github%2Fworkflows+language%3AYAML\&s=\&type=Code)
 
 # verify-changed-files
+
 A github action to verify that certain files did or did not change during the workflow execution.
 
-
 > NOTE: :warning:
-> * This action only detects files that have pending uncommited changes generated during the workflow execution, for running a specific step when a file changes relative to the default branch or previous commit
-> 
->      See: https://github.com/tj-actions/changed-files
-> * Detects files that were `Added`, `Copied`, `Modified`, `Unmerged`, `Unknown`, `Type changed`, `Unstaged` and `Renamed`.
-
+>
+> *   This action only detects files that have pending uncommited changes generated during the workflow execution, for running a specific step when a file changes relative to the default branch or previous commit
+>
+>     See: https://github.com/tj-actions/changed-files
+> *   Detects files that were `Added`, `Copied`, `Modified`, `Unmerged`, `Unknown`, `Type changed`, `Unstaged` and `Renamed`.
 
 ```yaml
 ...
@@ -49,8 +49,7 @@ A github action to verify that certain files did or did not change during the wo
           echo "Do something when files have changed."
 ```
 
-
-#### Using the [`contains`](https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#contains) function. 
+#### Using the [`contains`](https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#contains) function.
 
 ```yaml
 ...
@@ -68,15 +67,12 @@ A github action to verify that certain files did or did not change during the wo
           echo "test_directory has changed."
 ```
 
-
-
 ## Inputs
 
 |   Input       |    type     |  required      |  default                      |  description               |
 |:-------------:|:-----------:|:--------------:|:-----------------------------:|:--------------------------:|
 | token         |  `string`   |    `true`     | `${{ github.token }}`  <br/>  | github action default token or PAT token |
 | files         |  `array`   |    `true`     |                               | List of file(s)/directory names <br/> (regex optional) to check for changes <br/> during workflow execution |
-
 
 ## Outputs
 
@@ -85,15 +81,12 @@ A github action to verify that certain files did or did not change during the wo
 | files_changed |  `string`  |  `true` OR `false`       | Indicates that there are outstanding changes |
 | changed_files |  `string`    |  `example.txt ...`      | List of file(s)/directory names <br/> that changed <br/> during the workflow execution |
 
-
-* Free software: [MIT license](LICENSE)
-
+*   Free software: [MIT license](LICENSE)
 
 If you feel generous and want to show some extra appreciation:
 
 [![Buy me a coffee][buymeacoffee-shield]][buymeacoffee]
 
 [buymeacoffee]: https://www.buymeacoffee.com/jackton1
+
 [buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png
-
-
