@@ -1,5 +1,32 @@
 # Changelog
 
+## [Unreleased](https://github.com/tj-actions/verify-changed-files/tree/HEAD)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v7...HEAD)
+
+**Merged pull requests:**
+
+- Updated README.md [\#57](https://github.com/tj-actions/verify-changed-files/pull/57) ([jackton1](https://github.com/jackton1))
+
+## [v7](https://github.com/tj-actions/verify-changed-files/tree/v7) (2021-06-23)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v6.2...v7)
+
+**Closed issues:**
+
+- Add support for all platforms [\#55](https://github.com/tj-actions/verify-changed-files/issues/55)
+- Dependency Dashboard [\#36](https://github.com/tj-actions/verify-changed-files/issues/36)
+
+**Merged pull requests:**
+
+- Switch to composite action [\#56](https://github.com/tj-actions/verify-changed-files/pull/56) ([jackton1](https://github.com/jackton1))
+- Bump alpine from 3.13.5 to 3.14.0 [\#54](https://github.com/tj-actions/verify-changed-files/pull/54) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Updated README.md [\#52](https://github.com/tj-actions/verify-changed-files/pull/52) ([jackton1](https://github.com/jackton1))
+- Update tj-actions/sync-release-version action to v8.7 [\#51](https://github.com/tj-actions/verify-changed-files/pull/51) ([renovate[bot]](https://github.com/apps/renovate))
+- Update pascalgn/automerge-action action to v0.14.2 [\#50](https://github.com/tj-actions/verify-changed-files/pull/50) ([renovate[bot]](https://github.com/apps/renovate))
+- Bump peter-evans/create-pull-request from 3.9.2 to 3.10.0 [\#49](https://github.com/tj-actions/verify-changed-files/pull/49) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Upgraded to v6.2 [\#48](https://github.com/tj-actions/verify-changed-files/pull/48) ([jackton1](https://github.com/jackton1))
+
 ## [v6.2](https://github.com/tj-actions/verify-changed-files/tree/v6.2) (2021-05-21)
 
 [Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v6.1...v6.2)
@@ -16,10 +43,6 @@
 ## [v6.1](https://github.com/tj-actions/verify-changed-files/tree/v6.1) (2021-05-08)
 
 [Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v6...v6.1)
-
-**Closed issues:**
-
-- Dependency Dashboard [\#36](https://github.com/tj-actions/verify-changed-files/issues/36)
 
 **Merged pull requests:**
 

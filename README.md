@@ -42,7 +42,7 @@ Verify that certain files did or did not change during the workflow execution.
           echo "Changed" > test_directory/new.txt
 
       - name: Verify Changed files
-        uses: tj-actions/verify-changed-files@v6.2
+        uses: tj-actions/verify-changed-files@v7
         id: verify-changed-files
         with:
           files: |
@@ -69,7 +69,7 @@ Verify that certain files did or did not change during the workflow execution.
 ```yaml
 ...
       - name: Verify Changed files
-        uses: tj-actions/verify-changed-files@v6.2
+        uses: tj-actions/verify-changed-files@v7
         id: verify-changed-files
         with:
           files: |
