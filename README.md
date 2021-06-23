@@ -4,7 +4,21 @@
 
 # verify-changed-files
 
-A github action to verify that certain files did or did not change during the workflow execution.
+Verify that certain files did or did not change during the workflow execution.
+
+## Features
+*   Boolean output indicating that a file has uncommited changes.
+*   List all files that changed during the workflow execution.
+*   Restrict change detection to a subset of files.
+    *   [Regex pattern](https://www.gnu.org/software/grep/manual/grep.html#Regular-Expressions) matching on a subset of files.
+
+## Supported Platforms
+
+*   [`ubuntu-*`](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on)
+*   [`macos-*`](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on)
+*   [`windows-*`](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on)
+
+## Usage
 
 > NOTE: :warning:
 >
