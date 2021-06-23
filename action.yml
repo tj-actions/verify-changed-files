@@ -13,12 +13,25 @@ inputs:
 outputs:
   files_changed:
     description: Boolean indicating that files have changed.
+    value: ${{ steps.verify-changed-files.outputs.files_changed }}
   changed_files:
     description: List of changed files
+    value: ${{ steps.verify-changed-files.outputs.changed_files }}
 
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
-branding: 
-  icon: check-square
+  using: 'composite'
+  steps:
+    - run: |
+        bash $GITHUB_ACTION_PATH/entrypoint.sh
+      id: verify-changed-files
+      shell: bash
+      env:
+        GITHUB_REPOSITORY: ${{ github.repository }}
+        # INPUT_<VARIABLE_NAME> is not available in Composite run steps
+        # https://github.community/t/input-variable-name-is-not-available-in-composite-run-steps/127611
+        INPUT_TOKEN: ${{ inputs.token }}
+        INPUT_FILES: ${{ inputs.files }}
+
+branding:
+  icon: file-text
   color: white
