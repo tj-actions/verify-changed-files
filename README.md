@@ -8,7 +8,7 @@ Verify that certain files did or did not change during the workflow execution.
 
 ## Features
 
-*   Boolean output indicating that a file has uncommited changes.
+*   Boolean output indicating that there are uncommited changes.
 *   List all files that changed during the workflow execution.
 *   Restrict change detection to a subset of files.
     *   [Regex pattern](https://www.gnu.org/software/grep/manual/grep.html#Regular-Expressions) matching on a subset of files.
