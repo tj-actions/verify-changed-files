@@ -1,5 +1,5 @@
 name: Verify Changed files
-description: Find files that have been modified during workflow execution.
+description: Find files that were modified during workflow execution.
 author: jackton1
 inputs:
   token:
@@ -33,5 +33,5 @@ runs:
         INPUT_FILES: ${{ inputs.files }}
 
 branding:
-  icon: file-text
+  icon: file-plus
   color: white
