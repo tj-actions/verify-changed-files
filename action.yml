@@ -33,5 +33,5 @@ runs:
         INPUT_FILES: ${{ inputs.files }}
 
 branding:
-  icon: file-plus
+  icon: file-text
   color: white
