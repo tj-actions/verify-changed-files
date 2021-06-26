@@ -1,11 +1,13 @@
 # Changelog
 
-## [Unreleased](https://github.com/tj-actions/verify-changed-files/tree/HEAD)
+## [v7.1](https://github.com/tj-actions/verify-changed-files/tree/v7.1) (2021-06-25)
 
-[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v7...HEAD)
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v7...v7.1)
 
 **Merged pull requests:**
 
+- Bump tj-actions/verify-changed-files from 6 to 7 [\#59](https://github.com/tj-actions/verify-changed-files/pull/59) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Upgraded to v7 [\#58](https://github.com/tj-actions/verify-changed-files/pull/58) ([jackton1](https://github.com/jackton1))
 - Updated README.md [\#57](https://github.com/tj-actions/verify-changed-files/pull/57) ([jackton1](https://github.com/jackton1))
 
 ## [v7](https://github.com/tj-actions/verify-changed-files/tree/v7) (2021-06-23)
