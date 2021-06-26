@@ -17,7 +17,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2.3.4
       - name: shellcheck
-        uses: reviewdog/action-shellcheck@v1.5
+        uses: reviewdog/action-shellcheck@v1.6
       - name: Test sql file has no changes
         uses: ./
         id: changed_files_not_expected
