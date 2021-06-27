@@ -88,7 +88,7 @@ Verify that a list of files did or didn't change during the workflow execution.
 
 |   Input       |    type     |  example      |  description               |
 |:-------------:|:-----------:|:-------------:|:--------------------------:|
-| files_changed |  `boolean`  |  `true` OR `false`       | Indicates that there are outstanding changes |
+| files_changed |  `string`  |  `true` OR `false`       | Indicates that there are outstanding changes |
 | changed_files |  `string`    |  `example.txt ...`      | List of file(s)/directory names <br/> that changed <br/> during the workflow execution |
 
 *   Free software: [MIT license](LICENSE)
