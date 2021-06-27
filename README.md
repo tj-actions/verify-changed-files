@@ -4,7 +4,7 @@
 
 # verify-changed-files
 
-Verify that certain files did or did not change during the workflow execution.
+Verify that a list of files did or didn't change during the workflow execution.
 
 ## Features
 
@@ -26,7 +26,7 @@ Verify that certain files did or did not change during the workflow execution.
 > *   This action only detects files that have pending uncommited changes generated during the workflow execution, for running a specific step when a file changes relative to the default branch or previous commit
 >
 >     See: https://github.com/tj-actions/changed-files
-> *   Detects files that were `Added`, `Copied`, `Modified`, `Unmerged`, `Unknown`, `Type changed`, `Unstaged` and `Renamed`.
+> *   Detects files that were `Added`, `Copied`, `Modified`, `Unmerged`, `Unknown`, had their `Type changed`, `Unstaged` and `Renamed`.
 
 ```yaml
 ...
@@ -52,16 +52,11 @@ Verify that certain files did or did not change during the workflow execution.
              .(sql)$
              ^(mynewfile|custom)
 
-      - name: Display changed files
+      - name: Run step only when files change.
         if: steps.verify-changed-files.outputs.files_changed == 'true'
         run: |
           echo "Changed files: ${{ steps.verify_changed_files.outputs.changed_files }}"
         # Outputs: "Changed files: new.txt test_directory/new.txt"
-
-      - name: Perform action when files change.
-        if: steps.verify-changed-files.outputs.files_changed == 'true'
-        run: |
-          echo "Do something when files have changed."
 ```
 
 #### Using the [`contains`](https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#contains) function.
@@ -86,14 +81,14 @@ Verify that certain files did or did not change during the workflow execution.
 
 |   Input       |    type     |  required      |  default                      |  description               |
 |:-------------:|:-----------:|:--------------:|:-----------------------------:|:--------------------------:|
-| token         |  `string`   |    `true`     | `${{ github.token }}`  <br/>  | github action default token or PAT token |
-| files         |  `array`   |    `true`     |                               | List of file(s)/directory names <br/> (regex optional) to check for changes <br/> during workflow execution |
+| token         |  `string`   |    `true`     | `${{ github.token }}`  <br/>  | [GITHUB_TOKEN](https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#using-the-github_token-in-a-workflow) <br /> or a repo scoped <br /> [Personal Access Token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) |
+| files         |  `string[]` OR `string`  |    `true`     |                               |  Check for uncommited changes <br> using only these list of file(s)  |
 
 ## Outputs
 
 |   Input       |    type     |  example      |  description               |
 |:-------------:|:-----------:|:-------------:|:--------------------------:|
-| files_changed |  `string`  |  `true` OR `false`       | Indicates that there are outstanding changes |
+| files_changed |  `boolean`  |  `true` OR `false`       | Indicates that there are outstanding changes |
 | changed_files |  `string`    |  `example.txt ...`      | List of file(s)/directory names <br/> that changed <br/> during the workflow execution |
 
 *   Free software: [MIT license](LICENSE)
