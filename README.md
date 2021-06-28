@@ -95,6 +95,8 @@ Verify that a list of files did or didn't change during the workflow execution.
 
 If you feel generous and want to show some extra appreciation:
 
+Support me with a :star:
+
 [![Buy me a coffee][buymeacoffee-shield]][buymeacoffee]
 
 [buymeacoffee]: https://www.buymeacoffee.com/jackton1
