@@ -4,7 +4,7 @@
 
 # verify-changed-files
 
-Verify that a list of files did or didn't change during the workflow execution.
+Verify that certain files or directories did or did not change during the workflow execution.
 
 ## Features
 
