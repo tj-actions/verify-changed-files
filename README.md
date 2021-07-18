@@ -83,7 +83,7 @@ Verify that certain files or directories did or did not change during the workfl
 |   Input       |    type     |  required      |  default                      |  description               |
 |:-------------:|:-----------:|:--------------:|:-----------------------------:|:--------------------------:|
 | token         |  `string`   |    `true`     | `${{ github.token }}`  <br/>  | [GITHUB_TOKEN](https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#using-the-github_token-in-a-workflow) <br /> or a repo scoped <br /> [Personal Access Token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) |
-| files         |  `string[]` OR `string`  |    `true`     |                               |  Check for uncommited changes <br> using only these list of file(s)  |
+| files         |  `string[]` OR `string`  |    `true`     |                               |  Check for uncommited changes <br> using only <br> these list of file(s)  |
 
 ## Outputs
 
