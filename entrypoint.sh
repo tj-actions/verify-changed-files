@@ -2,7 +2,7 @@
 
 set -e
 
-git remote set-url origin "https://${INPUT_TOKEN}@github.com/${GITHUB_REPOSITORY}"
+git remote add temp_verify_changed_files "https://${INPUT_TOKEN}@github.com/${GITHUB_REPOSITORY}"
 
 CHANGED_FILES=() 
 
@@ -30,5 +30,7 @@ else
   echo "::set-output name=files_changed::true"
   echo "::set-output name=changed_files::${CHANGED_FILES}"
 fi
+
+git remote remove temp_verify_changed_files
 
 exit 0;
