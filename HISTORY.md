@@ -1,5 +1,32 @@
 # Changelog
 
+## [v7.2](https://github.com/tj-actions/verify-changed-files/tree/v7.2) (2021-09-06)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v7.1...v7.2)
+
+**Fixed bugs:**
+
+- \[BUG\] Not detecting the change on a file [\#69](https://github.com/tj-actions/verify-changed-files/issues/69)
+
+**Closed issues:**
+
+- Dependency Dashboard [\#36](https://github.com/tj-actions/verify-changed-files/issues/36)
+
+**Merged pull requests:**
+
+- Update pascalgn/automerge-action action to v0.14.3 [\#74](https://github.com/tj-actions/verify-changed-files/pull/74) ([renovate[bot]](https://github.com/apps/renovate))
+- Updated README.md [\#73](https://github.com/tj-actions/verify-changed-files/pull/73) ([jackton1](https://github.com/jackton1))
+- Update README.md [\#72](https://github.com/tj-actions/verify-changed-files/pull/72) ([jackton1](https://github.com/jackton1))
+- Update peter-evans/create-pull-request action to v3.10.1 [\#71](https://github.com/tj-actions/verify-changed-files/pull/71) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/remark action to v1.7 [\#70](https://github.com/tj-actions/verify-changed-files/pull/70) ([renovate[bot]](https://github.com/apps/renovate))
+- Update reviewdog/action-shellcheck action to v1.7 [\#68](https://github.com/tj-actions/verify-changed-files/pull/68) ([renovate[bot]](https://github.com/apps/renovate))
+- Update codacy/codacy-analysis-cli-action action to v4 [\#67](https://github.com/tj-actions/verify-changed-files/pull/67) ([renovate[bot]](https://github.com/apps/renovate))
+- Update codacy/codacy-analysis-cli-action action to v3 [\#66](https://github.com/tj-actions/verify-changed-files/pull/66) ([renovate[bot]](https://github.com/apps/renovate))
+- Updated README.md [\#64](https://github.com/tj-actions/verify-changed-files/pull/64) ([jackton1](https://github.com/jackton1))
+- Updated README.md [\#63](https://github.com/tj-actions/verify-changed-files/pull/63) ([jackton1](https://github.com/jackton1))
+- Update reviewdog/action-shellcheck action to v1.6 [\#61](https://github.com/tj-actions/verify-changed-files/pull/61) ([renovate[bot]](https://github.com/apps/renovate))
+- Upgraded to v7.1 [\#60](https://github.com/tj-actions/verify-changed-files/pull/60) ([jackton1](https://github.com/jackton1))
+
 ## [v7.1](https://github.com/tj-actions/verify-changed-files/tree/v7.1) (2021-06-25)
 
 [Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v7...v7.1)
@@ -17,7 +44,6 @@
 **Closed issues:**
 
 - Add support for all platforms [\#55](https://github.com/tj-actions/verify-changed-files/issues/55)
-- Dependency Dashboard [\#36](https://github.com/tj-actions/verify-changed-files/issues/36)
 
 **Merged pull requests:**
 
