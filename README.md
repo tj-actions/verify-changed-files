@@ -3,6 +3,10 @@
 [![Public workflows that use this action.](https://img.shields.io/endpoint?url=https%3A%2F%2Fapi-tj-actions1.vercel.app%2Fapi%2Fgithub-actions%2Fused-by%3Faction%3Dtj-actions%2Fverify-changed-files%26badge%3Dtrue)](https://github.com/search?o=desc\&q=tj-actions+verify-changed-files+language%3AYAML\&s=\&type=Code)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/c1072f71723849ef96605d69e90be07a)](https://www.codacy.com/gh/tj-actions/verify-changed-files/dashboard?utm_source=github.com\&utm_medium=referral\&utm_content=tj-actions/verify-changed-files\&utm_campaign=Badge_Grade)
 
+[![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?logo=ubuntu\&logoColor=white)](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob\_idruns-on)
+[![Mac OS](https://img.shields.io/badge/mac%20os-000000?logo=macos\&logoColor=F0F0F0)](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob\_idruns-on)
+[![Windows](https://img.shields.io/badge/Windows-0078D6?logo=windows\&logoColor=white)](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob\_idruns-on)
+
 # verify-changed-files
 
 Verify that certain files or directories did or did not change during the workflow execution.
@@ -13,12 +17,6 @@ Verify that certain files or directories did or did not change during the workfl
 *   List all files that changed during the workflow execution.
 *   Restrict change detection to a subset of files.
     *   [Regex pattern](https://www.gnu.org/software/grep/manual/grep.html#Regular-Expressions) matching on a subset of files.
-
-## Supported Platforms
-
-*   [`ubuntu-*`](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on)
-*   [`macos-*`](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on)
-*   [`windows-*`](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on)
 
 ## Usage
 
