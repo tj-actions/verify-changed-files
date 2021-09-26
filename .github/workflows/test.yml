@@ -10,6 +10,15 @@ on:
       - '**'
 
 jobs:
+  shellcheck:
+    name: Run shellcheck
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout to branch
+        uses: actions/checkout@v2
+      - name: shellcheck
+        uses: reviewdog/action-shellcheck@v1.9
   test:
     name: Test verify-changed-files
     runs-on: ${{ matrix.platform }}
@@ -19,9 +28,7 @@ jobs:
         platform: [ubuntu-latest, windows-latest, macos-latest, macos-11, ubuntu-18.04, windows-2022, windows-2016]
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.3.4
-      - name: shellcheck
-        uses: reviewdog/action-shellcheck@v1.9
+        uses: actions/checkout@v2
       - name: Test sql file has no changes
         uses: ./
         id: changed_files_not_expected
