@@ -2,7 +2,9 @@
 
 set -e
 
-git remote add temp_verify_changed_files "https://${INPUT_TOKEN}@github.com/${GITHUB_REPOSITORY}"
+SERVER_URL=$(echo "$GITHUB_SERVER_URL" | awk -F/ '{print $3}')
+
+git remote add temp_verify_changed_files "https://${INPUT_TOKEN}@${SERVER_URL}/${GITHUB_REPOSITORY}"
 
 CHANGED_FILES=() 
 
