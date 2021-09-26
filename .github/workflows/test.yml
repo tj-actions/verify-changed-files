@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout to branch
+      - name: Checkout
         uses: actions/checkout@v2
       - name: shellcheck
         uses: reviewdog/action-shellcheck@v1.9
