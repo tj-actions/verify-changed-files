@@ -1,5 +1,21 @@
 # Changelog
 
+## [v8](https://github.com/tj-actions/verify-changed-files/tree/v8) (2021-10-04)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v7.2...v8)
+
+**Closed issues:**
+
+- Dependency Dashboard [\#36](https://github.com/tj-actions/verify-changed-files/issues/36)
+
+**Merged pull requests:**
+
+- Updated list of changed\_files to include output from git [\#79](https://github.com/tj-actions/verify-changed-files/pull/79) ([jackton1](https://github.com/jackton1))
+- Fixed bug setting the server URL for github enterprise server [\#78](https://github.com/tj-actions/verify-changed-files/pull/78) ([jackton1](https://github.com/jackton1))
+- Update reviewdog/action-shellcheck action to v1.9 [\#77](https://github.com/tj-actions/verify-changed-files/pull/77) ([renovate[bot]](https://github.com/apps/renovate))
+- Updated README.md [\#76](https://github.com/tj-actions/verify-changed-files/pull/76) ([jackton1](https://github.com/jackton1))
+- Upgraded to v7.2 [\#75](https://github.com/tj-actions/verify-changed-files/pull/75) ([jackton1](https://github.com/jackton1))
+
 ## [v7.2](https://github.com/tj-actions/verify-changed-files/tree/v7.2) (2021-09-06)
 
 [Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v7.1...v7.2)
@@ -7,10 +23,6 @@
 **Fixed bugs:**
 
 - \[BUG\] Not detecting the change on a file [\#69](https://github.com/tj-actions/verify-changed-files/issues/69)
-
-**Closed issues:**
-
-- Dependency Dashboard [\#36](https://github.com/tj-actions/verify-changed-files/issues/36)
 
 **Merged pull requests:**
 
