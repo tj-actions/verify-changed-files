@@ -11,26 +11,28 @@ CHANGED_FILES=()
 for path in ${INPUT_FILES}
 do
    echo "Checking for file changes: \"${path}\"..."
-   MODIFIED_FILE=$(git diff --diff-filter=ACMUXTR --name-only | grep -E "(${path})" || true)
-   
-   if [[ -z $MODIFIED_FILE ]]; then
-     # Find unstaged changes
-     MODIFIED_FILE=$(git status --porcelain | awk '{ print $2 }' | grep -E "(${path})" || true)
-   fi
-   
-   if [[ -n ${MODIFIED_FILE} ]]; then
-     echo "Found uncommited changes at: ${path}"
-     CHANGED_FILES+=("${path}")
-   else
-     echo "No changes found at: ${path}"
-   fi
+   IFS=" " read -r -a ALL_CHANGED_FILES <<< "$(git diff --diff-filter=ACMUXTR --name-only | grep -E "(${path})" || true)"
+   # Find unstaged changes
+   IFS=" " read -r -a UNSTAGED_FILES <<< "$(git status --porcelain | awk '{ print $2 }' | grep -E "(${path})" || true)"
+   CHANGED_FILES+=("${ALL_CHANGED_FILES[@]}" "${UNSTAGED_FILES[@]}")
 done
 
-if [[ -z ${CHANGED_FILES} ]]; then
+IFS=" " read -r -a UNIQUE_CHANGED_FILES <<< "$(echo "${CHANGED_FILES[@]}" | tr " " "\n" | sort -u | tr "\n" " ")"
+
+if [[ -n "${UNIQUE_CHANGED_FILES[*]}" ]]; then
+  echo "Found uncommited changes"
+  echo "---------------"
+  printf '%s\n' "${UNIQUE_CHANGED_FILES[@]}"
+  echo "---------------"
+else
+  echo "No changes found."
+fi
+
+if [[ -z "${UNIQUE_CHANGED_FILES[*]}" ]]; then
   echo "::set-output name=files_changed::false"
 else
   echo "::set-output name=files_changed::true"
-  echo "::set-output name=changed_files::${CHANGED_FILES}"
+  echo "::set-output name=changed_files::${UNIQUE_CHANGED_FILES[*]}"
 fi
 
 git remote remove temp_verify_changed_files
