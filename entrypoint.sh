@@ -17,20 +17,22 @@ do
    CHANGED_FILES+=("${ALL_CHANGED_FILES[@]}" "${UNSTAGED_FILES[@]}")
 done
 
-if [[ -n "${CHANGED_FILES[*]}" ]]; then
+IFS=" " read -r -a UNIQUE_CHANGED_FILES <<< "$(echo "${CHANGED_FILES[@]}" | tr " " "\n" | sort -u | tr "\n" " ")"
+
+if [[ -n "${UNIQUE_CHANGED_FILES[*]}" ]]; then
   echo "Found uncommited changes"
   echo "---------------"
-  printf '%s\n' "${CHANGED_FILES[@]}"
+  printf '%s\n' "${UNIQUE_CHANGED_FILES[@]}"
   echo "---------------"
 else
   echo "No changes found."
 fi
 
-if [[ -z "${CHANGED_FILES[*]}" ]]; then
+if [[ -z "${UNIQUE_CHANGED_FILES[*]}" ]]; then
   echo "::set-output name=files_changed::false"
 else
   echo "::set-output name=files_changed::true"
-  echo "::set-output name=changed_files::${CHANGED_FILES}"
+  echo "::set-output name=changed_files::${UNIQUE_CHANGED_FILES[*]}"
 fi
 
 git remote remove temp_verify_changed_files
