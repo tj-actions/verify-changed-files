@@ -11,10 +11,11 @@ CHANGED_FILES=()
 for path in ${INPUT_FILES}
 do
    echo "Checking for file changes: \"${path}\"..."
-   IFS=" " read -r -a ALL_CHANGED_FILES <<< "$(git diff --diff-filter=ACMUXTR --name-only | grep -E "(${path})" || true)"
+   # shellcheck disable=SC2207
+   CHANGED_FILES+=($(git diff --diff-filter=ACMUXTR --name-only | grep -E "(${path})" || true))
    # Find unstaged changes
-   IFS=" " read -r -a UNSTAGED_FILES <<< "$(git status --porcelain | awk '{ print $2 }' | grep -E "(${path})" || true)"
-   CHANGED_FILES+=("${ALL_CHANGED_FILES[@]}" "${UNSTAGED_FILES[@]}")
+   # shellcheck disable=SC2207
+   CHANGED_FILES+=($(git status --porcelain | awk '{ print $2 }' | grep -E "(${path})" || true))
 done
 
 IFS=" " read -r -a UNIQUE_CHANGED_FILES <<< "$(echo "${CHANGED_FILES[@]}" | tr " " "\n" | sort -u | tr "\n" " ")"
