@@ -1,12 +1,22 @@
 # Changelog
 
-## [v8](https://github.com/tj-actions/verify-changed-files/tree/v8) (2021-10-04)
+## [v8.1](https://github.com/tj-actions/verify-changed-files/tree/v8.1) (2021-10-14)
 
-[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v7.2...v8)
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v8...v8.1)
 
 **Closed issues:**
 
 - Dependency Dashboard [\#36](https://github.com/tj-actions/verify-changed-files/issues/36)
+
+**Merged pull requests:**
+
+- Resolve bug with listing changed\_files [\#82](https://github.com/tj-actions/verify-changed-files/pull/82) ([jackton1](https://github.com/jackton1))
+- Update tj-actions/verify-changed-files action to v8 [\#81](https://github.com/tj-actions/verify-changed-files/pull/81) ([renovate[bot]](https://github.com/apps/renovate))
+- Upgraded to v8 [\#80](https://github.com/tj-actions/verify-changed-files/pull/80) ([jackton1](https://github.com/jackton1))
+
+## [v8](https://github.com/tj-actions/verify-changed-files/tree/v8) (2021-10-04)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v7.2...v8)
 
 **Merged pull requests:**
 
