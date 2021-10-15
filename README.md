@@ -48,7 +48,7 @@ Verify that certain files or directories did or did not change during the workfl
              new.txt
              test_directory
              .(py|jpeg)$
-             .(sql)$
+             \.sql$
              ^(mynewfile|custom)
 
       - name: Run step only when files change.
