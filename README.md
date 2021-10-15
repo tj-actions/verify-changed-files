@@ -58,7 +58,7 @@ Verify that certain files or directories did or did not change during the workfl
         # Outputs: "Changed files: new.txt test_directory/new.txt"
 ```
 
-#### Using the [`contains`](https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#contains) function.
+#### Using the [`contains`](https://docs.github.com/en/actions/learn-github-actions/expressions#contains) function.
 
 ```yaml
 ...
