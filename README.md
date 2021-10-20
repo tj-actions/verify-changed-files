@@ -54,7 +54,7 @@ Verify that certain files or directories did or did not change during the workfl
       - name: Run step only when files change.
         if: steps.verify-changed-files.outputs.files_changed == 'true'
         run: |
-          echo "Changed files: ${{ steps.verify_changed_files.outputs.changed_files }}"
+          echo "Changed files: ${{ steps.verify-changed-files.outputs.changed_files }}"
         # Outputs: "Changed files: new.txt test_directory/new.txt"
 ```
 
