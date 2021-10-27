@@ -32,6 +32,4 @@ else
   echo "::set-output name=changed_files::${UNIQUE_CHANGED_FILES[*]}"
 fi
 
-git remote remove temp_verify_changed_files
-
 exit 0;
