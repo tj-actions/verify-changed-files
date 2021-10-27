@@ -1,12 +1,26 @@
 # Changelog
 
-## [v8.1](https://github.com/tj-actions/verify-changed-files/tree/v8.1) (2021-10-14)
+## [v8.2](https://github.com/tj-actions/verify-changed-files/tree/v8.2) (2021-10-27)
 
-[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v8...v8.1)
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v8.1...v8.2)
 
 **Closed issues:**
 
 - Dependency Dashboard [\#36](https://github.com/tj-actions/verify-changed-files/issues/36)
+
+**Merged pull requests:**
+
+- Updated README.md [\#89](https://github.com/tj-actions/verify-changed-files/pull/89) ([jackton1](https://github.com/jackton1))
+- docs: add max-kahnt-keylight as a contributor for doc [\#88](https://github.com/tj-actions/verify-changed-files/pull/88) ([allcontributors[bot]](https://github.com/apps/allcontributors))
+- Typo in documentation. [\#87](https://github.com/tj-actions/verify-changed-files/pull/87) ([max-kahnt-keylight](https://github.com/max-kahnt-keylight))
+- Bump tj-actions/sync-release-version from 8.7 to 9 [\#86](https://github.com/tj-actions/verify-changed-files/pull/86) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Update README.md [\#85](https://github.com/tj-actions/verify-changed-files/pull/85) ([jackton1](https://github.com/jackton1))
+- Update actions/checkout action to v2.3.5 [\#84](https://github.com/tj-actions/verify-changed-files/pull/84) ([renovate[bot]](https://github.com/apps/renovate))
+- Upgraded to v8.1 [\#83](https://github.com/tj-actions/verify-changed-files/pull/83) ([jackton1](https://github.com/jackton1))
+
+## [v8.1](https://github.com/tj-actions/verify-changed-files/tree/v8.1) (2021-10-14)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v8...v8.1)
 
 **Merged pull requests:**
 
