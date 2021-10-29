@@ -11,7 +11,7 @@ do
    CHANGED_FILES+=($(git diff --diff-filter=ACMUXTR --name-only | grep -E "(${path})" || true))
    # Find unstaged changes
    # shellcheck disable=SC2207
-   CHANGED_FILES+=($(git status --porcelain | awk '{ print $2 }' | grep -E "(${path})" || true))
+   CHANGED_FILES+=($(git status --porcelain | awk '{$1=""; print $0 }' | grep -E "(${path})" || true))
 done
 
 IFS=" " read -r -a UNIQUE_CHANGED_FILES <<< "$(echo "${CHANGED_FILES[@]}" | tr " " "\n" | sort -u | tr "\n" " ")"
