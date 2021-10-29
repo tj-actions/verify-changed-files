@@ -13,6 +13,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "wkillerud",
+      "name": "William Killerud",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1223410?v=4",
+      "profile": "https://wllm.no",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
