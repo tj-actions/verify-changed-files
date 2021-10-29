@@ -1,5 +1,19 @@
 # Changelog
 
+## [v8.3](https://github.com/tj-actions/verify-changed-files/tree/v8.3) (2021-10-29)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v8.2...v8.3)
+
+**Fixed bugs:**
+
+- \[BUG\] Files with names containing space might not be detected [\#92](https://github.com/tj-actions/verify-changed-files/issues/92)
+
+**Merged pull requests:**
+
+- docs: add wkillerud as a contributor for code [\#94](https://github.com/tj-actions/verify-changed-files/pull/94) ([allcontributors[bot]](https://github.com/apps/allcontributors))
+- Handle spaces in filenames [\#93](https://github.com/tj-actions/verify-changed-files/pull/93) ([jackton1](https://github.com/jackton1))
+- Upgraded to v8.2 [\#91](https://github.com/tj-actions/verify-changed-files/pull/91) ([jackton1](https://github.com/jackton1))
+
 ## [v8.2](https://github.com/tj-actions/verify-changed-files/tree/v8.2) (2021-10-27)
 
 [Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v8.1...v8.2)
