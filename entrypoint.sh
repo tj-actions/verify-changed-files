@@ -2,7 +2,7 @@
 
 set -e
 
-git config core.autocrlf false
+git config core.autocrlf true
 
 CHANGED_FILES=() 
 
