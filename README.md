@@ -31,10 +31,11 @@ Verify that certain files or directories did or did not change during the workfl
 > *   This action only detects files that have pending uncommited changes generated during the workflow execution, for running a specific step when a file changes relative to the default branch or previous commit
 >
 >     See: https://github.com/tj-actions/changed-files
+>
 > *   Detects files that were `Added`, `Copied`, `Modified`, `Unmerged`, `Unknown`, had their `Type changed`, `Unstaged` and `Renamed`.
 >
 > *   For configuring git to handle line endings
->  
+>
 >     See: https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings#per-repository-settings
 
 ```yaml
