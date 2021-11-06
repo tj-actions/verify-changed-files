@@ -26,6 +26,7 @@ runs:
       id: verify-changed-files
       shell: bash
       env:
+        PLATFORM: ${{ runner.os }}
         GITHUB_SERVER_URL: ${{ github.server_url }}
         GITHUB_REPOSITORY: ${{ github.repository }}
         # INPUT_<VARIABLE_NAME> is not available in Composite run steps
