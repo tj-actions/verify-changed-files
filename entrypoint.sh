@@ -3,9 +3,9 @@
 set -e
 
 if [[ "$PLATFORM" == 'Windows' ]]; then
-   git config core.autocrlf input
-else
    git config core.autocrlf true
+else
+   git config core.autocrlf input
 fi
 
 CHANGED_FILES=() 
