@@ -2,6 +2,8 @@
 
 set -e
 
+git config core.autocrlf false
+
 CHANGED_FILES=() 
 
 for path in ${INPUT_FILES}
