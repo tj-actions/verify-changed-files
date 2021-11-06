@@ -38,10 +38,4 @@ else
   echo "::set-output name=changed_files::${UNIQUE_CHANGED_FILES[*]}"
 fi
 
-if [[ "$PLATFORM" == 'Windows' ]]; then
-   git config core.autocrlf true
-else
-   git config core.autocrlf input
-fi
-
 exit 0;
