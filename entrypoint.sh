@@ -2,7 +2,11 @@
 
 set -e
 
-git config --local core.autocrlf input
+if [[ "$PLATFORM" == 'Windows' ]]; then
+   git config --local core.autocrlf true
+else
+   git config --local core.autocrlf input
+fi
 
 CHANGED_FILES=() 
 
