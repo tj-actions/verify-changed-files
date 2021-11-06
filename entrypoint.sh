@@ -3,7 +3,7 @@
 set -e
 
 if [[ "$PLATFORM" == 'Windows' ]]; then
-   git config core.autocrlf true
+   git config core.autocrlf false
 else
    git config core.autocrlf input
 fi
