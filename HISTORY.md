@@ -1,5 +1,14 @@
 # Changelog
 
+## [v8.6](https://github.com/tj-actions/verify-changed-files/tree/v8.6) (2021-11-06)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v8.5...v8.6)
+
+**Merged pull requests:**
+
+- Removed unused code [\#107](https://github.com/tj-actions/verify-changed-files/pull/107) ([jackton1](https://github.com/jackton1))
+- Upgraded to v8.5 [\#106](https://github.com/tj-actions/verify-changed-files/pull/106) ([jackton1](https://github.com/jackton1))
+
 ## [v8.5](https://github.com/tj-actions/verify-changed-files/tree/v8.5) (2021-11-06)
 
 [Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v8.4...v8.5)
