@@ -1,5 +1,27 @@
 # Changelog
 
+## [v8.4](https://github.com/tj-actions/verify-changed-files/tree/v8.4) (2021-11-06)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v8.3...v8.4)
+
+**Implemented enhancements:**
+
+- \[Feature\] Ignore LF/CRLF differences [\#101](https://github.com/tj-actions/verify-changed-files/issues/101)
+
+**Closed issues:**
+
+- Dependency Dashboard [\#36](https://github.com/tj-actions/verify-changed-files/issues/36)
+
+**Merged pull requests:**
+
+- CRLF/LF support for all platforms [\#103](https://github.com/tj-actions/verify-changed-files/pull/103) ([jackton1](https://github.com/jackton1))
+- Disable Automatic CRLF for windows [\#102](https://github.com/tj-actions/verify-changed-files/pull/102) ([jackton1](https://github.com/jackton1))
+- Update peter-evans/create-pull-request action to v3.11.0 [\#100](https://github.com/tj-actions/verify-changed-files/pull/100) ([renovate[bot]](https://github.com/apps/renovate))
+- Updated README.md [\#99](https://github.com/tj-actions/verify-changed-files/pull/99) ([jackton1](https://github.com/jackton1))
+- Update actions/checkout action to v2.4.0 [\#98](https://github.com/tj-actions/verify-changed-files/pull/98) ([renovate[bot]](https://github.com/apps/renovate))
+- Updated README.md [\#96](https://github.com/tj-actions/verify-changed-files/pull/96) ([jackton1](https://github.com/jackton1))
+- Upgraded to v8.3 [\#95](https://github.com/tj-actions/verify-changed-files/pull/95) ([jackton1](https://github.com/jackton1))
+
 ## [v8.3](https://github.com/tj-actions/verify-changed-files/tree/v8.3) (2021-10-29)
 
 [Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v8.2...v8.3)
@@ -17,10 +39,6 @@
 ## [v8.2](https://github.com/tj-actions/verify-changed-files/tree/v8.2) (2021-10-27)
 
 [Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v8.1...v8.2)
-
-**Closed issues:**
-
-- Dependency Dashboard [\#36](https://github.com/tj-actions/verify-changed-files/issues/36)
 
 **Merged pull requests:**
 
