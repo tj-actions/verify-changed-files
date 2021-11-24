@@ -19,12 +19,14 @@ CHANGED_FILES=""
 
 
 if [[ -n "$STAGED_FILES" && -n "$UNSTAGED_FILES" ]]; then
-  CHANGED_FILES=$(echo "$STAGED_FILES|$UNSTAGED_FILES"  | awk '{gsub(/\|/,"\n"); print $0;}' | sort -u | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
+  CHANGED_FILES="$STAGED_FILES|$UNSTAGED_FILES"
 elif [[ -n "$STAGED_FILES" && -z "$UNSTAGED_FILES" ]]; then
   CHANGED_FILES="$STAGED_FILES"
 elif [[ -n "$UNSTAGED_FILES" && -z "$STAGED_FILES" ]]; then
   CHANGED_FILES="$UNSTAGED_FILES"
 fi
+
+CHANGED_FILES=$(echo "$CHANGED_FILES"  | awk '{gsub(/\|/,"\n"); print $0;}' | sort -u | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
 
 if [[ -n "$CHANGED_FILES" ]]; then
   echo "Found uncommited changes"
