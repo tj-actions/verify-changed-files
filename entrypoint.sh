@@ -13,7 +13,7 @@ echo "Checking for file changes: \"${FILES}\"..."
 STAGED_FILES=$(git diff --diff-filter=ACMUXTR --name-only | grep -E "(${FILES})" | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
 
 # Find unstaged changes
-UNSTAGED_FILES=$(git status --porcelain | grep -E "(${FILES})" | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
+UNSTAGED_FILES=$(git status --porcelain | grep -E "(${FILES})" | awk '{$1=""; print $0 }' | xargs -0 | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
 
 CHANGED_FILES=""
 
