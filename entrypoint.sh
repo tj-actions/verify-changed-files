@@ -19,7 +19,7 @@ CHANGED_FILES=""
 
 
 if [[ -n "$STAGED_FILES" && -n "$UNSTAGED_FILES" ]]; then
-  CHANGED_FILES="$STAGED_FILES|$UNSTAGED_FILES"
+  CHANGED_FILES=$(echo "$STAGED_FILES|$UNSTAGED_FILES"  | awk '{gsub(/\|/,"\n"); print $0;}' | sort | uniq -u | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
 elif [[ -n "$STAGED_FILES" && -z "$UNSTAGED_FILES" ]]; then
   CHANGED_FILES="$STAGED_FILES"
 elif [[ -n "$UNSTAGED_FILES" && -z "$STAGED_FILES" ]]; then
