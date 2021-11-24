@@ -9,6 +9,10 @@ inputs:
   files:
     description: List of files to check for changes.
     required: true
+  autocrlf:
+    description: Modify the core.autocrlf setting possible values (true, false, input)
+    default: 'true'
+    required: true
 
 outputs:
   files_changed:
