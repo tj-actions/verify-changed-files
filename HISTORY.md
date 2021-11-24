@@ -1,5 +1,28 @@
 # Changelog
 
+## [v8.7](https://github.com/tj-actions/verify-changed-files/tree/v8.7) (2021-11-24)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v8.6...v8.7)
+
+**Implemented enhancements:**
+
+- \[Feature\] Ignore LF/CRLF differences [\#101](https://github.com/tj-actions/verify-changed-files/issues/101)
+
+**Closed issues:**
+
+- Dependency Dashboard [\#36](https://github.com/tj-actions/verify-changed-files/issues/36)
+
+**Merged pull requests:**
+
+- Add input setting for core.autocrlf [\#116](https://github.com/tj-actions/verify-changed-files/pull/116) ([jackton1](https://github.com/jackton1))
+- Update reviewdog/action-shellcheck action to v1.12 [\#115](https://github.com/tj-actions/verify-changed-files/pull/115) ([renovate[bot]](https://github.com/apps/renovate))
+- Update reviewdog/action-shellcheck action to v1.11 [\#114](https://github.com/tj-actions/verify-changed-files/pull/114) ([renovate[bot]](https://github.com/apps/renovate))
+- Update reviewdog/action-shellcheck action to v1.10 [\#113](https://github.com/tj-actions/verify-changed-files/pull/113) ([renovate[bot]](https://github.com/apps/renovate))
+- Revert change to entrypoint.sh [\#112](https://github.com/tj-actions/verify-changed-files/pull/112) ([jackton1](https://github.com/jackton1))
+- Updated README.md [\#111](https://github.com/tj-actions/verify-changed-files/pull/111) ([jackton1](https://github.com/jackton1))
+- Remove redundant config [\#109](https://github.com/tj-actions/verify-changed-files/pull/109) ([jackton1](https://github.com/jackton1))
+- Upgraded to v8.6 [\#108](https://github.com/tj-actions/verify-changed-files/pull/108) ([jackton1](https://github.com/jackton1))
+
 ## [v8.6](https://github.com/tj-actions/verify-changed-files/tree/v8.6) (2021-11-06)
 
 [Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v8.5...v8.6)
@@ -21,14 +44,6 @@
 ## [v8.4](https://github.com/tj-actions/verify-changed-files/tree/v8.4) (2021-11-06)
 
 [Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v8.3...v8.4)
-
-**Implemented enhancements:**
-
-- \[Feature\] Ignore LF/CRLF differences [\#101](https://github.com/tj-actions/verify-changed-files/issues/101)
-
-**Closed issues:**
-
-- Dependency Dashboard [\#36](https://github.com/tj-actions/verify-changed-files/issues/36)
 
 **Merged pull requests:**
 
