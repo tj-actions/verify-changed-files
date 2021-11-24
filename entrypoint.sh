@@ -19,7 +19,7 @@ CHANGED_FILES=""
 
 
 if [[ -n "$STAGED_FILES" && -n "$UNSTAGED_FILES" ]]; then
-  echo "Found staged and unstaged file(s)..."
+  echo "Found staged "$STAGED_FILES" and unstaged "$UNSTAGED_FILES" file(s)..."
   CHANGED_FILES="$STAGED_FILES|$UNSTAGED_FILES"
 elif [[ -n "$STAGED_FILES" && -z "$UNSTAGED_FILES" ]]; then
   echo "Found staged file(s)..."
