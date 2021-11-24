@@ -17,6 +17,7 @@ UNSTAGED_FILES+=$(git status --porcelain | awk '{$1=""; print $0 }' | grep -E "(
 
 CHANGED_FILES=""
 
+
 if [[ -n "$STAGED_FILES" && -n "$UNSTAGED_FILES" ]]; then
   CHANGED_FILES="$STAGED_FILES|$UNSTAGED_FILES"
 elif [[ -n "$STAGED_FILES" && -z "$UNSTAGED_FILES" ]]; then
