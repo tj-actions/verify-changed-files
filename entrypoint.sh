@@ -26,7 +26,11 @@ elif [[ -n "$UNSTAGED_FILES" && -z "$STAGED_FILES" ]]; then
   CHANGED_FILES="$UNSTAGED_FILES"
 fi
 
+echo "$CHANGED_FILES"
+
 CHANGED_FILES=$(echo "$CHANGED_FILES"  | awk '{gsub(/\|/,"\n"); print $0;}' | sort -u | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
+
+echo "$CHANGED_FILES"
 
 if [[ -n "$CHANGED_FILES" ]]; then
   echo "Found uncommited changes"
