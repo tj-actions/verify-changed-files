@@ -97,7 +97,6 @@ Support this project with a :star:
 
 [buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png
 
-
 ## Inputs
 
 |   Input       |    type     |  required      |  default                      |  description               |
