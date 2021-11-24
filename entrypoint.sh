@@ -29,7 +29,7 @@ fi
 if [[ -n "$CHANGED_FILES" ]]; then
   echo "Found uncommited changes"
   echo "---------------"
-  printf '%s\n' "$(echo $CHANGED_FILES | awk '{gsub(/\|/," "); print $0;}')"
+  printf '%s\n' "$(echo "$CHANGED_FILES" | awk '{gsub(/\|/," "); print $0;}')"
   echo "---------------"
   echo "::set-output name=files_changed::true"
   echo "::set-output name=changed_files::$CHANGED_FILES"
