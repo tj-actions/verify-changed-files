@@ -11,7 +11,7 @@ inputs:
     required: true
   autocrlf:
     description: Modify the core.autocrlf setting possible values (true, false, input)
-    default: 'true'
+    default: 'input'
     required: true
 
 outputs:
