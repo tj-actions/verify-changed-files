@@ -17,7 +17,6 @@ UNSTAGED_FILES=$(git status --porcelain | grep -E "(${FILES})" | awk '{$1=""; pr
 
 CHANGED_FILES=""
 
-
 if [[ -n "$STAGED_FILES" && -n "$UNSTAGED_FILES" ]]; then
   echo "Found staged $STAGED_FILES and unstaged $UNSTAGED_FILES file(s)..."
   CHANGED_FILES="$STAGED_FILES|$UNSTAGED_FILES"
