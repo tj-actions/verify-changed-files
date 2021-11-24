@@ -4,34 +4,37 @@ set -e
 
 git config --local core.autocrlf "$INPUT_AUTO_CRLF"
 
-CHANGED_FILES=() 
+IFS=" " read -r -a ALL_FILES <<< "$(echo "${INPUT_FILES[@]}" | sort -u | tr "\n" " ")"
 
-for path in ${INPUT_FILES}
-do
-   echo "Checking for file changes: \"${path}\"..."
-   # shellcheck disable=SC2207
-   CHANGED_FILES+=($(git diff --diff-filter=ACMUXTR --name-only | grep -E "(${path})" || true))
-   # Find unstaged changes
-   # shellcheck disable=SC2207
-   CHANGED_FILES+=($(git status --porcelain | awk '{$1=""; print $0 }' | grep -E "(${path})" || true))
-done
+FILES=$(echo "${ALL_FILES[*]}" | awk '{gsub(/ /,"\n"); print $0;}' | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
 
-IFS=" " read -r -a UNIQUE_CHANGED_FILES <<< "$(echo "${CHANGED_FILES[@]}" | tr " " "\n" | sort -u | tr "\n" " ")"
+echo "Checking for file changes: \"${FILES}\"..."
 
-if [[ -n "${UNIQUE_CHANGED_FILES[*]}" ]]; then
-  echo "Found uncommited changes"
-  echo "---------------"
-  printf '%s\n' "${UNIQUE_CHANGED_FILES[@]}"
-  echo "---------------"
-else
-  echo "No changes found."
+STAGED_FILES+=$(git diff --diff-filter=ACMUXTR --name-only | grep -E "(${FILES})" | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
+
+# Find unstaged changes
+UNSTAGED_FILES+=$(git status --porcelain | awk '{$1=""; print $0 }' | grep -E "(${FILES})" | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}'
+
+CHANGED_FILES=""
+
+if [[ -n "$STAGED_FILES" && -n "$UNSTAGED_FILES" ]]; then
+  CHANGED_FILES="$STAGED_FILES|$UNSTAGED_FILES"
+elif [[ -n "$STAGED_FILES" && -z "$UNSTAGED_FILES" ]]; then
+  CHANGED_FILES="$STAGED_FILES"
+elif [[ -n "$UNSTAGED_FILES" && -z "$STAGED_FILES" ]]; then
+  CHANGED_FILES="$UNSTAGED_FILES"
 fi
 
-if [[ -z "${UNIQUE_CHANGED_FILES[*]}" ]]; then
-  echo "::set-output name=files_changed::false"
-else
+if [[ -n "$CHANGED_FILES" ]]; then
+  echo "Found uncommited changes"
+  echo "---------------"
+  printf '%s\n' "$(echo $CHANGED_FILES | awk '{gsub(/\|/," "); print $0;}')"
+  echo "---------------"
   echo "::set-output name=files_changed::true"
-  echo "::set-output name=changed_files::${UNIQUE_CHANGED_FILES[*]}"
+  echo "::set-output name=changed_files::$CHANGED_FILES"
+else
+  echo "No changes found."
+  echo "::set-output name=files_changed::false"
 fi
 
 exit 0;
