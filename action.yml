@@ -13,6 +13,10 @@ inputs:
     description: Modify the core.autocrlf setting possible values (true, false, input)
     default: 'input'
     required: true
+  separator:
+    description: 'Split character for array output'
+    required: true
+    default: " "
 
 outputs:
   files_changed:
@@ -38,6 +42,7 @@ runs:
         INPUT_TOKEN: ${{ inputs.token }}
         INPUT_FILES: ${{ inputs.files }}
         INPUT_AUTO_CRLF: ${{ inputs.autocrlf }}
+        INPUT_SEPARATOR: ${{ inputs.separator }}
 
 branding:
   icon: file-text
