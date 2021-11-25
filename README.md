@@ -104,6 +104,7 @@ Support this project with a :star:
 | token         |  `string`   |    `true`     | `${{ github.token }}`  <br/>  | [GITHUB\_TOKEN](https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#using-the-github_token-in-a-workflow) <br /> or a repo scoped <br /> [Personal Access Token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) |
 | files         |  `string[]` OR `string`     |    `true`     |                               |  Check for uncommited changes <br> using only <br> these list of file(s)  |
 | autocrlf      |  `string`   |    `true`   |    `input`    |  Modify the [core.autocrlf](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_autocrlf) <br> setting possible values <br> (true, false, input).  |
+| separator	    |  `string`   |	  `true`   |	`' '`	 |  Output string separator  |
 
 ## Outputs
 
