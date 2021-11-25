@@ -10,29 +10,22 @@ FILES=$(echo "${ALL_FILES[*]}" | awk '{gsub(/ /,"\n"); print $0;}' | awk -v d="|
 
 echo "Checking for file changes: \"${FILES}\"..."
 
-STAGED_FILES=$(git diff --diff-filter=ACMUXTR --name-only | grep -E "(${FILES})" | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
+TRACKED_FILES=$(git diff --diff-filter=ACMUXTR --name-only | grep -E "(${FILES})" | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
 
-# Find unstaged changes
-UNSTAGED_FILES=$(git ls-files --others --exclude-standard | grep -E "(${FILES})" | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
+# Find untracked changes
+UNTRACKED_FILES=$(git ls-files --others --exclude-standard | grep -E "(${FILES})" | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
 
 CHANGED_FILES=""
 
-if [[ -n "$STAGED_FILES" && -n "$UNSTAGED_FILES" ]]; then
-  echo "Found staged $STAGED_FILES and unstaged $UNSTAGED_FILES file(s)..."
-  CHANGED_FILES="$STAGED_FILES|$UNSTAGED_FILES"
-elif [[ -n "$STAGED_FILES" && -z "$UNSTAGED_FILES" ]]; then
-  echo "Found staged file(s)..."
-  CHANGED_FILES="$STAGED_FILES"
-elif [[ -n "$UNSTAGED_FILES" && -z "$STAGED_FILES" ]]; then
-  echo "Found unstaged file(s)..."
-  CHANGED_FILES="$UNSTAGED_FILES"
+if [[ -n "$TRACKED_FILES" && -n "$UNTRACKED_FILES" ]]; then
+  CHANGED_FILES="$TRACKED_FILES|$UNTRACKED_FILES"
+elif [[ -n "$TRACKED_FILES" && -z "$UNTRACKED_FILES" ]]; then
+  CHANGED_FILES="$TRACKED_FILES"
+elif [[ -n "$UNTRACKED_FILES" && -z "$TRACKED_FILES" ]]; then
+  CHANGED_FILES="$UNTRACKED_FILES"
 fi
 
-echo "$CHANGED_FILES"
-
 CHANGED_FILES=$(echo "$CHANGED_FILES"  | awk '{gsub(/\|/,"\n"); print $0;}' | sort -u | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
-
-echo "$CHANGED_FILES"
 
 if [[ -n "$CHANGED_FILES" ]]; then
   echo "Found uncommited changes"
