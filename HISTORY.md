@@ -1,5 +1,21 @@
 # Changelog
 
+## [v8.8](https://github.com/tj-actions/verify-changed-files/tree/v8.8) (2021-11-25)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v8.7...v8.8)
+
+**Fixed bugs:**
+
+- \[BUG\] Support filenames with spaces [\#97](https://github.com/tj-actions/verify-changed-files/issues/97)
+
+**Merged pull requests:**
+
+- Handle spaces in filenames [\#121](https://github.com/tj-actions/verify-changed-files/pull/121) ([jackton1](https://github.com/jackton1))
+- Updated README.md [\#120](https://github.com/tj-actions/verify-changed-files/pull/120) ([jackton1](https://github.com/jackton1))
+- Add a Codacy badge to README.md [\#119](https://github.com/tj-actions/verify-changed-files/pull/119) ([codacy-badger](https://github.com/codacy-badger))
+- Updated README.md [\#118](https://github.com/tj-actions/verify-changed-files/pull/118) ([jackton1](https://github.com/jackton1))
+- Upgraded to v8.7 [\#117](https://github.com/tj-actions/verify-changed-files/pull/117) ([jackton1](https://github.com/jackton1))
+
 ## [v8.7](https://github.com/tj-actions/verify-changed-files/tree/v8.7) (2021-11-24)
 
 [Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v8.6...v8.7)
