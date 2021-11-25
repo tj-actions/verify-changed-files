@@ -30,10 +30,10 @@ CHANGED_FILES=$(echo "$CHANGED_FILES"  | awk '{gsub(/\|/,"\n"); print $0;}' | so
 if [[ -n "$CHANGED_FILES" ]]; then
   echo "Found uncommited changes"
   echo "---------------"
-  printf '%s\n' "$(echo "$CHANGED_FILES" | awk '{gsub(/\|/," "); print $0;}')"
+  echo "$CHANGED_FILES" | awk '{gsub(/\|/,"\n"); print $0;}'
   echo "---------------"
   echo "::set-output name=files_changed::true"
-  echo "::set-output name=changed_files::$CHANGED_FILES"
+  echo "::set-output name=changed_files::$(echo "$CHANGED_FILES" | awk '{gsub(/\|/," "); print $0;}')"
 else
   echo "No changes found."
   echo "::set-output name=files_changed::false"
