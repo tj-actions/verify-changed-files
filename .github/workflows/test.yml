@@ -59,10 +59,11 @@ jobs:
       - name: Make changes
         run: |
           printf '%s\n' "323442" "424" >> test/new.txt
-      - name: Test test/new.txt file has changes
+      - name: Test test/new.txt file has changes without autocrlf
         uses: ./
         id: changed_files_expected
         with:
+          autocrlf: false
           files: |
             test/new.txt
             test/new.sql
