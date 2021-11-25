@@ -32,8 +32,11 @@ if [[ -n "$CHANGED_FILES" ]]; then
   echo "---------------"
   echo "$CHANGED_FILES" | awk '{gsub(/\|/,"\n"); print $0;}'
   echo "---------------"
+
+  CHANGED_FILES=$(echo "$CHANGED_FILES" | awk '{gsub(/\|/,"\n"); print $0;}' | awk -v d="$INPUT_SEPARATOR" '{s=(NR==1?s:s d)$0}END{print s}')
+
   echo "::set-output name=files_changed::true"
-  echo "::set-output name=changed_files::$(echo "$CHANGED_FILES" | awk '{gsub(/\|/," "); print $0;}')"
+  echo "::set-output name=changed_files::$CHANGED_FILES"
 else
   echo "No changes found."
   echo "::set-output name=files_changed::false"
