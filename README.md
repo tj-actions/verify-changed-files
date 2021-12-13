@@ -32,11 +32,6 @@ Verify that certain files or directories did or did not change during the workfl
 >
 >     See: https://github.com/tj-actions/changed-files
 >
-> *   Detects files that were `Added`, `Copied`, `Modified`, `Unmerged`, `Unknown`, had their `Type changed`, `Unstaged` and `Renamed`.
->
-> *   For configuring git to handle line endings
->
->     See: https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings#per-repository-settings
 
 ```yaml
 ...
