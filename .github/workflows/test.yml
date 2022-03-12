@@ -29,28 +29,30 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Test sql file has no changes an no warning with autocrlf
+      - name: Test files has no changes an no warning with autocrlf
         uses: ./
         id: changed_files_not_expected_autocrlf
         with:
           autocrlf: true
           files: |
-            test/new.txt
-            test/new.sql
-            test/new/.(sql|txt)
+            test/*.txt
+            test/*.sql
+            test/**/*.txt
+            test/**/*.sql
       - name: Display changed files
         if: steps.changed_files_not_expected_autocrlf.outputs.files_changed == 'true'
         run: |
           echo "Changed files (Not expected): ${{ steps.changed_files_not_expected_autocrlf.outputs.changed_files }}"
           exit 1
-      - name: Test sql file has no changes
+      - name: Test files has no changes
         uses: ./
         id: changed_files_not_expected
         with:
           files: |
-            test/new.txt
-            test/new.sql
-            test/new/.(sql|txt)
+            test/*.txt
+            test/*.sql
+            test/**/*.txt
+            test/**/*.sql
       - name: Display changed files
         if: steps.changed_files_not_expected.outputs.files_changed == 'true'
         run: |
@@ -64,9 +66,10 @@ jobs:
         id: changed_files_expected
         with:
           files: |
-            test/new.txt
-            test/new.sql
-            test/new/.(sql|txt)
+            test/*.txt
+            test/*.sql
+            test/**/*.txt
+            test/**/*.sql
       - name: Display changed files
         if: steps.changed_files_expected.outputs.files_changed == 'true'
         run: |
