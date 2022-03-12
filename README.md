@@ -22,7 +22,7 @@ Verify that certain files or directories did or did not change during the workfl
 *   Boolean output for detecting uncommited changes.
 *   List all files that changed during the workflow execution.
 *   Restrict change detection to a subset of files.
-    *   [Regex pattern](https://www.gnu.org/software/grep/manual/grep.html#Regular-Expressions) matching on a subset of files.
+    *   Using [Glob pattern](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet) matching.
 
 ## Usage
 
@@ -50,11 +50,12 @@ Verify that certain files or directories did or did not change during the workfl
         id: verify-changed-files
         with:
           files: |
-             new.txt
+             *.txt
              test_directory
-             .(py|jpeg)$
-             \.sql$
-             ^(mynewfile|custom)
+             action.yml
+             **/*.py
+             **/*.jpeg
+             *.sql
 
       - name: Run step only when files change.
         if: steps.verify-changed-files.outputs.files_changed == 'true'
