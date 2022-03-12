@@ -4,16 +4,12 @@ set -e
 
 git config --local core.autocrlf "$INPUT_AUTO_CRLF"
 
-IFS=" " read -r -a ALL_FILES <<< "$(echo "${INPUT_FILES[@]}" | sort -u | tr "\n" " ")"
+echo "Checking for file changes: \"${INPUT_FILES}\"..."
 
-FILES=$(echo "${ALL_FILES[*]}" | awk '{gsub(/ /,"\n"); print $0;}' | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
-
-echo "Checking for file changes: \"${FILES}\"..."
-
-TRACKED_FILES=$(git diff --diff-filter=ACMUXTR --name-only | grep -E "(${FILES})" | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
+TRACKED_FILES=$(git diff --diff-filter=ACMUXTR --name-only | grep -E "(${INPUT_FILES})" | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
 
 # Find untracked changes
-UNTRACKED_FILES=$(git ls-files --others --exclude-standard | grep -E "(${FILES})" | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
+UNTRACKED_FILES=$(git ls-files --others --exclude-standard | grep -E "(${INPUT_FILES})" | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
 
 CHANGED_FILES=""
 
