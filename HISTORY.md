@@ -1,5 +1,35 @@
 # Changelog
 
+## [v9](https://github.com/tj-actions/verify-changed-files/tree/v9) (2022-03-12)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v8.8...v9)
+
+**Closed issues:**
+
+- Dependency Dashboard [\#36](https://github.com/tj-actions/verify-changed-files/issues/36)
+
+**Merged pull requests:**
+
+- feat: Add support for glob pattern matching [\#141](https://github.com/tj-actions/verify-changed-files/pull/141) ([jackton1](https://github.com/jackton1))
+- Update codacy/codacy-analysis-cli-action action to v4.0.2 [\#140](https://github.com/tj-actions/verify-changed-files/pull/140) ([renovate[bot]](https://github.com/apps/renovate))
+- Update codacy/codacy-analysis-cli-action action to v4.0.1 [\#139](https://github.com/tj-actions/verify-changed-files/pull/139) ([renovate[bot]](https://github.com/apps/renovate))
+- Update actions/checkout action [\#138](https://github.com/tj-actions/verify-changed-files/pull/138) ([renovate[bot]](https://github.com/apps/renovate))
+- Update peter-evans/create-pull-request action to v3.14.0 [\#137](https://github.com/tj-actions/verify-changed-files/pull/137) ([renovate[bot]](https://github.com/apps/renovate))
+- Update peter-evans/create-pull-request action to v3.13.0 [\#136](https://github.com/tj-actions/verify-changed-files/pull/136) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/github-changelog-generator action to v1.12 [\#135](https://github.com/tj-actions/verify-changed-files/pull/135) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/sync-release-version action to v11 [\#134](https://github.com/tj-actions/verify-changed-files/pull/134) ([renovate[bot]](https://github.com/apps/renovate))
+- Update reviewdog/action-shellcheck action to v1.14 [\#133](https://github.com/tj-actions/verify-changed-files/pull/133) ([renovate[bot]](https://github.com/apps/renovate))
+- Update peter-evans/create-pull-request action to v3.12.1 [\#132](https://github.com/tj-actions/verify-changed-files/pull/132) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/remark action to v2.3 [\#131](https://github.com/tj-actions/verify-changed-files/pull/131) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/remark action to v2.2 [\#130](https://github.com/tj-actions/verify-changed-files/pull/130) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/remark action to v2 [\#129](https://github.com/tj-actions/verify-changed-files/pull/129) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/github-changelog-generator action to v1.11 [\#128](https://github.com/tj-actions/verify-changed-files/pull/128) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/github-changelog-generator action to v1.10 [\#127](https://github.com/tj-actions/verify-changed-files/pull/127) ([renovate[bot]](https://github.com/apps/renovate))
+- Update reviewdog/action-shellcheck action to v1.13 [\#126](https://github.com/tj-actions/verify-changed-files/pull/126) ([renovate[bot]](https://github.com/apps/renovate))
+- Update peter-evans/create-pull-request action to v3.12.0 [\#125](https://github.com/tj-actions/verify-changed-files/pull/125) ([renovate[bot]](https://github.com/apps/renovate))
+- Updated README.md [\#124](https://github.com/tj-actions/verify-changed-files/pull/124) ([jackton1](https://github.com/jackton1))
+- Upgraded to v8.8 [\#123](https://github.com/tj-actions/verify-changed-files/pull/123) ([jackton1](https://github.com/jackton1))
+
 ## [v8.8](https://github.com/tj-actions/verify-changed-files/tree/v8.8) (2021-11-25)
 
 [Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v8.7...v8.8)
@@ -23,10 +53,6 @@
 **Implemented enhancements:**
 
 - \[Feature\] Ignore LF/CRLF differences [\#101](https://github.com/tj-actions/verify-changed-files/issues/101)
-
-**Closed issues:**
-
-- Dependency Dashboard [\#36](https://github.com/tj-actions/verify-changed-files/issues/36)
 
 **Merged pull requests:**
 
