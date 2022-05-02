@@ -30,7 +30,7 @@ runs:
   using: 'composite'
   steps:
     - name: Glob match
-      uses: tj-actions/glob@v7.16
+      uses: tj-actions/glob@v7.17
       id: glob
       with:
         files: ${{ inputs.files }}
