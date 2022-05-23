@@ -1,12 +1,54 @@
 # Changelog
 
-## [v9](https://github.com/tj-actions/verify-changed-files/tree/v9) (2022-03-12)
+## [v9.1](https://github.com/tj-actions/verify-changed-files/tree/v9.1) (2022-05-23)
 
-[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v8.8...v9)
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v9...v9.1)
+
+**Fixed bugs:**
+
+- \[BUG\] \<title\>Errors in action.yml [\#167](https://github.com/tj-actions/verify-changed-files/issues/167)
 
 **Closed issues:**
 
 - Dependency Dashboard [\#36](https://github.com/tj-actions/verify-changed-files/issues/36)
+
+**Merged pull requests:**
+
+- fix: invalid message when no file pattern is used [\#173](https://github.com/tj-actions/verify-changed-files/pull/173) ([jackton1](https://github.com/jackton1))
+- chore\(deps\): update tj-actions/glob action to v7.20 [\#172](https://github.com/tj-actions/verify-changed-files/pull/172) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/glob action to v7.18 [\#171](https://github.com/tj-actions/verify-changed-files/pull/171) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update pascalgn/automerge-action action to v0.15.3 [\#170](https://github.com/tj-actions/verify-changed-files/pull/170) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update peter-evans/create-pull-request action to v4.0.3 [\#169](https://github.com/tj-actions/verify-changed-files/pull/169) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/glob action to v7.17 [\#168](https://github.com/tj-actions/verify-changed-files/pull/168) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update github/codeql-action action to v2 [\#166](https://github.com/tj-actions/verify-changed-files/pull/166) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update actions/checkout action to v3.0.2 [\#165](https://github.com/tj-actions/verify-changed-files/pull/165) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update reviewdog/action-shellcheck action to v1.15 [\#164](https://github.com/tj-actions/verify-changed-files/pull/164) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update actions/checkout action to v3.0.1 [\#163](https://github.com/tj-actions/verify-changed-files/pull/163) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/glob action to v7.16 [\#162](https://github.com/tj-actions/verify-changed-files/pull/162) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update peter-evans/create-pull-request action to v4.0.2 [\#161](https://github.com/tj-actions/verify-changed-files/pull/161) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update peter-evans/create-pull-request action to v4.0.1 [\#160](https://github.com/tj-actions/verify-changed-files/pull/160) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/glob action to v7.15 [\#159](https://github.com/tj-actions/verify-changed-files/pull/159) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/glob action to v7.14 [\#158](https://github.com/tj-actions/verify-changed-files/pull/158) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/glob action to v7.13 [\#157](https://github.com/tj-actions/verify-changed-files/pull/157) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/glob action to v7.12 [\#156](https://github.com/tj-actions/verify-changed-files/pull/156) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update pascalgn/automerge-action action to v0.15.2 [\#155](https://github.com/tj-actions/verify-changed-files/pull/155) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update pascalgn/automerge-action action to v0.15.0 [\#154](https://github.com/tj-actions/verify-changed-files/pull/154) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update peter-evans/create-pull-request action [\#153](https://github.com/tj-actions/verify-changed-files/pull/153) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/glob action to v7.11 [\#152](https://github.com/tj-actions/verify-changed-files/pull/152) ([renovate[bot]](https://github.com/apps/renovate))
+- Bump tj-actions/remark from 2.3 to 3 [\#151](https://github.com/tj-actions/verify-changed-files/pull/151) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): update tj-actions/glob action to v7.10 [\#150](https://github.com/tj-actions/verify-changed-files/pull/150) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/glob action to v7.9 [\#149](https://github.com/tj-actions/verify-changed-files/pull/149) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/glob action to v7.8 [\#148](https://github.com/tj-actions/verify-changed-files/pull/148) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/glob action to v7.7 [\#147](https://github.com/tj-actions/verify-changed-files/pull/147) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/glob action to v7.6 [\#146](https://github.com/tj-actions/verify-changed-files/pull/146) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/github-changelog-generator action to v1.13 [\#145](https://github.com/tj-actions/verify-changed-files/pull/145) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/glob action to v7.5 [\#144](https://github.com/tj-actions/verify-changed-files/pull/144) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/verify-changed-files action to v9 [\#143](https://github.com/tj-actions/verify-changed-files/pull/143) ([renovate[bot]](https://github.com/apps/renovate))
+- Upgraded to v9 [\#142](https://github.com/tj-actions/verify-changed-files/pull/142) ([jackton1](https://github.com/jackton1))
+
+## [v9](https://github.com/tj-actions/verify-changed-files/tree/v9) (2022-03-12)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v8.8...v9)
 
 **Merged pull requests:**
 
