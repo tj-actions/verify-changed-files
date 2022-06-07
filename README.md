@@ -21,7 +21,7 @@ Verify that certain files or directories did or did not change during the workfl
 
 *   Boolean output for detecting uncommited changes.
 *   List all files that changed during the workflow execution.
-*   Restrict change detection to a subset of files.
+*   Restrict change detection to a subset of files:
     *   Using [Glob pattern](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet) matching.
 
 ## Usage
