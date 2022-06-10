@@ -1,5 +1,20 @@
 # Changelog
 
+## [v9.2](https://github.com/tj-actions/verify-changed-files/tree/v9.2) (2022-06-07)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v9.1...v9.2)
+
+**Closed issues:**
+
+- Dependency Dashboard [\#36](https://github.com/tj-actions/verify-changed-files/issues/36)
+
+**Merged pull requests:**
+
+- chore\(deps\): update peter-evans/create-pull-request action to v4.0.4 [\#177](https://github.com/tj-actions/verify-changed-files/pull/177) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/glob action to v9 [\#176](https://github.com/tj-actions/verify-changed-files/pull/176) ([renovate[bot]](https://github.com/apps/renovate))
+- Bump tj-actions/glob from 7.20 to 8 [\#175](https://github.com/tj-actions/verify-changed-files/pull/175) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Upgraded to v9.1 [\#174](https://github.com/tj-actions/verify-changed-files/pull/174) ([jackton1](https://github.com/jackton1))
+
 ## [v9.1](https://github.com/tj-actions/verify-changed-files/tree/v9.1) (2022-05-23)
 
 [Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v9...v9.1)
@@ -7,10 +22,6 @@
 **Fixed bugs:**
 
 - \[BUG\] \<title\>Errors in action.yml [\#167](https://github.com/tj-actions/verify-changed-files/issues/167)
-
-**Closed issues:**
-
-- Dependency Dashboard [\#36](https://github.com/tj-actions/verify-changed-files/issues/36)
 
 **Merged pull requests:**
 
