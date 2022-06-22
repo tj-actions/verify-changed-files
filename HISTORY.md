@@ -1,12 +1,23 @@
 # Changelog
 
-## [v9.2](https://github.com/tj-actions/verify-changed-files/tree/v9.2) (2022-06-07)
+## [v10](https://github.com/tj-actions/verify-changed-files/tree/v10) (2022-06-22)
 
-[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v9.1...v9.2)
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v9.2...v10)
 
 **Closed issues:**
 
+- Possible to use this action to detect when files are deleted? [\#180](https://github.com/tj-actions/verify-changed-files/issues/180)
 - Dependency Dashboard [\#36](https://github.com/tj-actions/verify-changed-files/issues/36)
+
+**Merged pull requests:**
+
+- feat: add support for detecting deleted files [\#181](https://github.com/tj-actions/verify-changed-files/pull/181) ([jackton1](https://github.com/jackton1))
+- chore\(deps\): update codacy/codacy-analysis-cli-action action to v4.1.0 [\#179](https://github.com/tj-actions/verify-changed-files/pull/179) ([renovate[bot]](https://github.com/apps/renovate))
+- Upgraded to v9.2 [\#178](https://github.com/tj-actions/verify-changed-files/pull/178) ([jackton1](https://github.com/jackton1))
+
+## [v9.2](https://github.com/tj-actions/verify-changed-files/tree/v9.2) (2022-06-07)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v9.1...v9.2)
 
 **Merged pull requests:**
 
