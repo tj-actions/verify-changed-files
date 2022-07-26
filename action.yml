@@ -2,10 +2,6 @@ name: Verify Changed files
 description: Find files that were modified during workflow execution.
 author: jackton1
 inputs:
-  token:
-    description: GITHUB_TOKEN or a repo scoped PAT
-    required: true
-    default: ${{ github.token }}
   files:
     description: List of files to check for changes.
     required: true
@@ -44,7 +40,6 @@ runs:
         GITHUB_REPOSITORY: ${{ github.repository }}
         # INPUT_<VARIABLE_NAME> is not available in Composite run steps
         # https://github.community/t/input-variable-name-is-not-available-in-composite-run-steps/127611
-        INPUT_TOKEN: ${{ inputs.token }}
         INPUT_FILES: ${{ steps.glob.outputs.paths }}
         INPUT_AUTO_CRLF: ${{ inputs.autocrlf }}
         INPUT_SEPARATOR: ${{ inputs.separator }}
