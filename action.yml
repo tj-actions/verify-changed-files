@@ -6,7 +6,7 @@ inputs:
     description: 'File/Directory names to check for uncommited changes.'
     required: true
   autocrlf:
-    description: 'Modify the [core.autocrlf](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_autocrlf).'
+    description: 'Modify the git configuration [core.autocrlf](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_autocrlf) .'
     default: 'input'
     required: true
   separator:
