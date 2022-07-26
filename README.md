@@ -96,11 +96,11 @@ Support this project with a :star:
 
 <!-- AUTO-DOC-INPUT:START - Do not remove or modify this section -->
 
-|   INPUT   |  TYPE  | REQUIRED |  DEFAULT  |                               DESCRIPTION                                |
-|-----------|--------|----------|-----------|--------------------------------------------------------------------------|
-| autocrlf  | string | true     | `"input"` | Modify the core.autocrlf setting possible<br>values (true, false, input) |
-| files     | string | true     |           | List of files to check<br>for changes.                                   |
-| separator | string | true     | `" "`     | Split character for array output<br>                                     |
+|   INPUT   |  TYPE  | REQUIRED |  DEFAULT  |                                                 DESCRIPTION                                                  |
+|-----------|--------|----------|-----------|--------------------------------------------------------------------------------------------------------------|
+| autocrlf  | string | true     | `"input"` | Modify the [core.autocrlf](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_autocrlf). |
+| files     | string | true     |           | File/Directory names to check for<br>uncommited changes.                                                     |
+| separator | string | true     | `" "`     | Output string separator.                                                                                     |
 
 <!-- AUTO-DOC-INPUT:END -->
 
