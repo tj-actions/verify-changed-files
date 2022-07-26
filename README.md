@@ -104,13 +104,6 @@ Support this project with a :star:
 
 <!-- AUTO-DOC-INPUT:END -->
 
-|   Input       |    type     |  required      |  default                      |  description               |
-|:-------------:|:-----------:|:--------------:|:-----------------------------:|:--------------------------:|
-| token         |  `string`   |    `true`     | `${{ github.token }}`  <br/>  | [GITHUB\_TOKEN](https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#using-the-github_token-in-a-workflow) <br /> or a repo scoped <br /> [Personal Access Token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) |
-| files         |  `string[]` OR `string`     |    `true`     |                               |  Check for uncommited changes <br> using only <br> these list of file(s)  |
-| autocrlf      |  `string`   |    `true`   |    `input`    |  Modify the [core.autocrlf](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_autocrlf) <br> setting possible values <br> (true, false, input).  |
-| separator	    |  `string`   |	  `true`   |	`' '`	 |  Output string separator  |
-
 ## Outputs
 
 <!-- AUTO-DOC-OUTPUT:START - Do not remove or modify this section -->
@@ -121,11 +114,6 @@ Support this project with a :star:
 | files\_changed | string | Boolean indicating that files have<br>changed. |
 
 <!-- AUTO-DOC-OUTPUT:END -->
-
-|   Input       |    type     |  example      |  description               |
-|:-------------:|:-----------:|:-------------:|:--------------------------:|
-| files\_changed |  `string`  |  `true` OR `false`       | Indicates that there are outstanding changes |
-| changed\_files |  `string`    |  `example.txt ...`      | List of files <br/> that changed <br/> during the workflow execution |
 
 *   Free software: [MIT license](LICENSE)
 
