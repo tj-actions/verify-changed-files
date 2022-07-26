@@ -94,6 +94,16 @@ Support this project with a :star:
 
 ## Inputs
 
+<!-- AUTO-DOC-INPUT:START - Do not remove or modify this section -->
+
+|   INPUT   |  TYPE  | REQUIRED |  DEFAULT  |                               DESCRIPTION                                |
+|-----------|--------|----------|-----------|--------------------------------------------------------------------------|
+| autocrlf  | string | true     | `"input"` | Modify the core.autocrlf setting possible<br>values (true, false, input) |
+| files     | string | true     |           | List of files to check<br>for changes.                                   |
+| separator | string | true     | `" "`     | Split character for array output<br>                                     |
+
+<!-- AUTO-DOC-INPUT:END -->
+
 |   Input       |    type     |  required      |  default                      |  description               |
 |:-------------:|:-----------:|:--------------:|:-----------------------------:|:--------------------------:|
 | token         |  `string`   |    `true`     | `${{ github.token }}`  <br/>  | [GITHUB\_TOKEN](https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#using-the-github_token-in-a-workflow) <br /> or a repo scoped <br /> [Personal Access Token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) |
@@ -102,6 +112,15 @@ Support this project with a :star:
 | separator	    |  `string`   |	  `true`   |	`' '`	 |  Output string separator  |
 
 ## Outputs
+
+<!-- AUTO-DOC-OUTPUT:START - Do not remove or modify this section -->
+
+|    OUTPUT     |  TYPE  |                  DESCRIPTION                   |
+|---------------|--------|------------------------------------------------|
+| changed\_files | string | List of changed files                          |
+| files\_changed | string | Boolean indicating that files have<br>changed. |
+
+<!-- AUTO-DOC-OUTPUT:END -->
 
 |   Input       |    type     |  example      |  description               |
 |:-------------:|:-----------:|:-------------:|:--------------------------:|
