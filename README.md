@@ -98,7 +98,7 @@ Support this project with a :star:
 
 |   INPUT   |  TYPE  | REQUIRED |  DEFAULT  |                                                         DESCRIPTION                                                         |
 |-----------|--------|----------|-----------|-----------------------------------------------------------------------------------------------------------------------------|
-| autocrlf  | string | true     | `"input"` | Modify the git config [core.autocrlf](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_autocrlf)<br>. |
+| autocrlf  | string | true     | `"input"` | Modify the git config [core.autocrlf](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_autocrlf).<br> |
 | files     | string | true     |           | File/Directory names to check for<br>uncommited changes.                                                                    |
 | separator | string | true     | `" "`     | Output string separator.                                                                                                    |
 
