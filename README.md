@@ -106,7 +106,7 @@ Support this project with a :star:
 |   Input       |    type     |  example      |  description               |
 |:-------------:|:-----------:|:-------------:|:--------------------------:|
 | files\_changed |  `string`  |  `true` OR `false`       | Indicates that there are outstanding changes |
-| changed\_files |  `string`    |  `example.txt ...`      | List of file(s)/directory names <br/> that changed <br/> during the workflow execution |
+| changed\_files |  `string`    |  `example.txt ...`      | List of files <br/> that changed <br/> during the workflow execution |
 
 *   Free software: [MIT license](LICENSE)
 
