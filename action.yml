@@ -3,14 +3,14 @@ description: Find files that were modified during workflow execution.
 author: jackton1
 inputs:
   files:
-    description: List of files to check for changes.
+    description: 'File/Directory names to check for uncommited changes.'
     required: true
   autocrlf:
-    description: Modify the core.autocrlf setting possible values (true, false, input)
+    description: 'Modify the [core.autocrlf](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_autocrlf).'
     default: 'input'
     required: true
   separator:
-    description: 'Split character for array output'
+    description: 'Output string separator.'
     required: true
     default: " "
 
