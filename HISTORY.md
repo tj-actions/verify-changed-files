@@ -1,5 +1,27 @@
 # Changelog
 
+## [v10.1](https://github.com/tj-actions/verify-changed-files/tree/v10.1) (2022-07-26)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v10...v10.1)
+
+**Closed issues:**
+
+- Dependency Dashboard [\#36](https://github.com/tj-actions/verify-changed-files/issues/36)
+
+**Merged pull requests:**
+
+- Updated README.md [\#192](https://github.com/tj-actions/verify-changed-files/pull/192) ([jackton1](https://github.com/jackton1))
+- Updated README.md [\#191](https://github.com/tj-actions/verify-changed-files/pull/191) ([jackton1](https://github.com/jackton1))
+- Updated README.md [\#190](https://github.com/tj-actions/verify-changed-files/pull/190) ([jackton1](https://github.com/jackton1))
+- Updated README.md [\#189](https://github.com/tj-actions/verify-changed-files/pull/189) ([jackton1](https://github.com/jackton1))
+- Updated README.md [\#188](https://github.com/tj-actions/verify-changed-files/pull/188) ([jackton1](https://github.com/jackton1))
+- Updated README.md [\#187](https://github.com/tj-actions/verify-changed-files/pull/187) ([jackton1](https://github.com/jackton1))
+- chore: remove unused input [\#186](https://github.com/tj-actions/verify-changed-files/pull/186) ([jackton1](https://github.com/jackton1))
+- chore: update readme [\#185](https://github.com/tj-actions/verify-changed-files/pull/185) ([jackton1](https://github.com/jackton1))
+- chore\(deps\): update tj-actions/github-changelog-generator action to v1.14 [\#184](https://github.com/tj-actions/verify-changed-files/pull/184) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/verify-changed-files action to v10 [\#183](https://github.com/tj-actions/verify-changed-files/pull/183) ([renovate[bot]](https://github.com/apps/renovate))
+- Upgraded to v10 [\#182](https://github.com/tj-actions/verify-changed-files/pull/182) ([jackton1](https://github.com/jackton1))
+
 ## [v10](https://github.com/tj-actions/verify-changed-files/tree/v10) (2022-06-22)
 
 [Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v9.2...v10)
@@ -7,7 +29,6 @@
 **Closed issues:**
 
 - Possible to use this action to detect when files are deleted? [\#180](https://github.com/tj-actions/verify-changed-files/issues/180)
-- Dependency Dashboard [\#36](https://github.com/tj-actions/verify-changed-files/issues/36)
 
 **Merged pull requests:**
 
