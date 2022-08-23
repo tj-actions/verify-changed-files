@@ -26,7 +26,7 @@ runs:
   using: 'composite'
   steps:
     - name: Glob match
-      uses: tj-actions/glob@v11
+      uses: tj-actions/glob@v12
       id: glob
       with:
         files: ${{ inputs.files }}
@@ -40,7 +40,7 @@ runs:
         GITHUB_REPOSITORY: ${{ github.repository }}
         # INPUT_<VARIABLE_NAME> is not available in Composite run steps
         # https://github.community/t/input-variable-name-is-not-available-in-composite-run-steps/127611
-        INPUT_FILES: ${{ steps.glob.outputs.paths }}
+        INPUT_FILES_PATTERN_FILE: ${{ steps.glob.outputs.paths-output-file }}
         INPUT_AUTO_CRLF: ${{ inputs.autocrlf }}
         INPUT_SEPARATOR: ${{ inputs.separator }}
 
