@@ -102,6 +102,7 @@ jobs:
         id: changed_unstaged_files_not_expected
         with:
           files: |
+            !test/new.txt
             !unstaged.txt
       - name: Verify Changes to unstaged.txt are ignored
         if: steps.changed_unstaged_files_not_expected.outputs.files_changed != 'false'
