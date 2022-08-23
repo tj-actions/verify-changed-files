@@ -31,14 +31,14 @@ fi
 CHANGED_FILES=$(echo "$CHANGED_FILES"  | awk '{gsub(/\|/,"\n"); print $0;}' | sort -u | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
 
 if [[ -n "$CHANGED_FILES" ]]; then
-  echo "::debug::Found uncommited changes"
+  echo "Found uncommited changes"
 
   CHANGED_FILES=$(echo "$CHANGED_FILES" | awk '{gsub(/\|/,"\n"); print $0;}' | awk -v d="$INPUT_SEPARATOR" '{s=(NR==1?s:s d)$0}END{print s}')
 
   echo "::set-output name=files_changed::true"
   echo "::set-output name=changed_files::$CHANGED_FILES"
 else
-  echo "::debug::No changes found."
+  echo "No changes found."
   echo "::set-output name=files_changed::false"
 fi
 
