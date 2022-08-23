@@ -4,13 +4,13 @@ set -e
 
 git config --local core.autocrlf "$INPUT_AUTO_CRLF"
 
-if [[ -n "$INPUT_FILES" ]]; then
+if [[ -n "$INPUT_FILES_PATTERN_FILE" ]]; then
   echo "Checking for file changes: \"${INPUT_FILES}\"..."
   
-  TRACKED_FILES=$(git diff --diff-filter=ACMUXTRD --name-only | grep -E "(${INPUT_FILES})" | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
+  TRACKED_FILES=$(git diff --diff-filter=ACMUXTRD --name-only | grep -x -E -f "$INPUT_FILES_PATTERN_FILE" | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
 
   # Find untracked changes
-  UNTRACKED_FILES=$(git ls-files --others --exclude-standard | grep -E "(${INPUT_FILES})" | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
+  UNTRACKED_FILES=$(git ls-files --others --exclude-standard | grep -x -E -f "$INPUT_FILES_PATTERN_FILE" | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
 else
   TRACKED_FILES=$(git diff --diff-filter=ACMUXTRD --name-only | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
 
