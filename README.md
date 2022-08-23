@@ -55,7 +55,7 @@ Verify that certain files or directories did or did not change during the workfl
              action.yml
              **/*.py
              **/*.jpeg
-             *.sql
+             !*.sql
 
       - name: Run step only when files change.
         if: steps.verify-changed-files.outputs.files_changed == 'true'
