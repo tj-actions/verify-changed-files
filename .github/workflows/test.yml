@@ -109,3 +109,15 @@ jobs:
         run: |
           echo "Changes found: (Not expected)"
           exit 1
+      - name: Test unstaged file has changes
+        uses: ./
+        id: changed_unstaged2_files_expected
+        with:
+          files: |
+            !test/new.txt
+            unstaged.txt
+      - name: Verify Changes to unstaged.txt are ignored
+        if: steps.changed_unstaged2_files_expected.outputs.files_changed != 'true'
+        run: |
+          echo "No Changes found: (Not expected)"
+          exit 1
