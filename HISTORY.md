@@ -1,12 +1,37 @@
 # Changelog
 
-## [v10.1](https://github.com/tj-actions/verify-changed-files/tree/v10.1) (2022-07-26)
+## [Unreleased](https://github.com/tj-actions/verify-changed-files/tree/HEAD)
 
-[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v10...v10.1)
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v11...HEAD)
+
+**Fixed bugs:**
+
+- \[BUG\] Except pattern not working [\#201](https://github.com/tj-actions/verify-changed-files/issues/201)
+
+## [v11](https://github.com/tj-actions/verify-changed-files/tree/v11) (2022-08-23)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v10.1...v11)
 
 **Closed issues:**
 
 - Dependency Dashboard [\#36](https://github.com/tj-actions/verify-changed-files/issues/36)
+
+**Merged pull requests:**
+
+- chore\(deps\): update tj-actions/glob action to v11 [\#203](https://github.com/tj-actions/verify-changed-files/pull/203) ([renovate[bot]](https://github.com/apps/renovate))
+- feat: switch to use pattern file and fixed bug with excluded paths [\#202](https://github.com/tj-actions/verify-changed-files/pull/202) ([jackton1](https://github.com/jackton1))
+- chore\(deps\): update tj-actions/auto-doc action to v1.4.1 [\#200](https://github.com/tj-actions/verify-changed-files/pull/200) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update peter-evans/create-pull-request action to v4.1.1 [\#199](https://github.com/tj-actions/verify-changed-files/pull/199) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/auto-doc action to v1.4.0 [\#198](https://github.com/tj-actions/verify-changed-files/pull/198) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update peter-evans/create-pull-request action to v4.1.0 [\#197](https://github.com/tj-actions/verify-changed-files/pull/197) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/glob action to v10 [\#196](https://github.com/tj-actions/verify-changed-files/pull/196) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/auto-doc action to v1.3.1 [\#195](https://github.com/tj-actions/verify-changed-files/pull/195) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/auto-doc action to v1.3.0 [\#194](https://github.com/tj-actions/verify-changed-files/pull/194) ([renovate[bot]](https://github.com/apps/renovate))
+- Upgraded to v10.1 [\#193](https://github.com/tj-actions/verify-changed-files/pull/193) ([jackton1](https://github.com/jackton1))
+
+## [v10.1](https://github.com/tj-actions/verify-changed-files/tree/v10.1) (2022-07-26)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v10...v10.1)
 
 **Merged pull requests:**
 
