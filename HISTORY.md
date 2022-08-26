@@ -1,20 +1,26 @@
 # Changelog
 
-## [Unreleased](https://github.com/tj-actions/verify-changed-files/tree/HEAD)
+## [v11.1](https://github.com/tj-actions/verify-changed-files/tree/v11.1) (2022-08-26)
 
-[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v11...HEAD)
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v11...v11.1)
 
 **Fixed bugs:**
 
 - \[BUG\] Except pattern not working [\#201](https://github.com/tj-actions/verify-changed-files/issues/201)
 
-## [v11](https://github.com/tj-actions/verify-changed-files/tree/v11) (2022-08-23)
-
-[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v10.1...v11)
-
 **Closed issues:**
 
 - Dependency Dashboard [\#36](https://github.com/tj-actions/verify-changed-files/issues/36)
+
+**Merged pull requests:**
+
+- chore\(deps\): updated tj-actions/glob to v13 [\#206](https://github.com/tj-actions/verify-changed-files/pull/206) ([jackton1](https://github.com/jackton1))
+- chore\(deps\): update tj-actions/verify-changed-files action to v11 [\#205](https://github.com/tj-actions/verify-changed-files/pull/205) ([renovate[bot]](https://github.com/apps/renovate))
+- Upgraded to v11 [\#204](https://github.com/tj-actions/verify-changed-files/pull/204) ([jackton1](https://github.com/jackton1))
+
+## [v11](https://github.com/tj-actions/verify-changed-files/tree/v11) (2022-08-23)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v10.1...v11)
 
 **Merged pull requests:**
 
