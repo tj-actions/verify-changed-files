@@ -26,11 +26,12 @@ runs:
   using: 'composite'
   steps:
     - name: Glob match
-      uses: tj-actions/glob@v12
+      uses: tj-actions/glob@v13
       id: glob
       with:
         files: ${{ inputs.files }}
         separator: "|"
+        match-directories: false
     - run: |
         bash $GITHUB_ACTION_PATH/entrypoint.sh
       id: verify-changed-files
