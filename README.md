@@ -19,6 +19,13 @@ Verify that certain files or directories did or did not change during the workfl
 
 ## Features
 
+*   Fast execution (0-2 seconds on average).
+*   Easy to debug.
+*   Scales to large repositories.
+*   Supports all platforms (Linux, MacOS, Windows).
+*   [GitHub-hosted runners](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners) support
+*   [GitHub Enterprise Server](https://docs.github.com/en/enterprise-server@3.3/admin/github-actions/getting-started-with-github-actions-for-your-enterprise/getting-started-with-github-actions-for-github-enterprise-server) support.
+*   [self-hosted runners](https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners) support.
 *   Boolean output for detecting uncommited changes.
 *   List all files that changed during the workflow execution.
 *   Restrict change detection to a subset of files:
