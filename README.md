@@ -17,6 +17,12 @@
 
 Verify that certain files or directories did or did not change during the workflow execution.
 
+> NOTE: :warning:
+>
+> *   This action only detects files that have pending uncommited changes generated during the workflow execution, for running a specific step when a file changes in a pull request or based on a new commit
+>
+>     See: https://github.com/tj-actions/changed-files
+
 ## Features
 
 *   Fast execution (0-2 seconds on average).
@@ -32,12 +38,6 @@ Verify that certain files or directories did or did not change during the workfl
     *   Using [Glob pattern](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet) matching.
 
 ## Usage
-
-> NOTE: :warning:
->
-> *   This action only detects files that have pending uncommited changes generated during the workflow execution, for running a specific step when a file changes relative to the default branch or previous commit
->
->     See: https://github.com/tj-actions/changed-files
 
 ```yaml
 ...
