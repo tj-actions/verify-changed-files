@@ -26,7 +26,7 @@ runs:
   using: 'composite'
   steps:
     - name: Glob match
-      uses: tj-actions/glob@v13
+      uses: tj-actions/glob@v14
       id: glob
       with:
         files: ${{ inputs.files }}
