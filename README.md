@@ -126,7 +126,7 @@ Support this project with a :star:
 
 ## Report Bugs
 
-Report bugs at https://github.com/tj-actions/changed-files/issues.
+Report bugs at https://github.com/tj-actions/verify-changed-files/issues.
 
 If you are reporting a bug, please include:
 
