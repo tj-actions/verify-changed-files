@@ -124,6 +124,16 @@ Support this project with a :star:
 
 *   Free software: [MIT license](LICENSE)
 
+## Report Bugs
+
+Report bugs at https://github.com/tj-actions/changed-files/issues.
+
+If you are reporting a bug, please include:
+
+*   Your operating system name and version.
+*   Any details about your workflow that might be helpful in troubleshooting.
+*   Detailed steps to reproduce the bug.
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
