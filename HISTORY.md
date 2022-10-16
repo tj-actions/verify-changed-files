@@ -1,5 +1,32 @@
 # Changelog
 
+## [v12.0](https://github.com/tj-actions/verify-changed-files/tree/v12.0) (2022-10-16)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v12...v12.0)
+
+## [v12](https://github.com/tj-actions/verify-changed-files/tree/v12) (2022-10-16)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v11.1...v12)
+
+**Closed issues:**
+
+- Dependency Dashboard [\#36](https://github.com/tj-actions/verify-changed-files/issues/36)
+
+**Merged pull requests:**
+
+- feat: add support for writing to GITHUB\_OUTPUT file [\#219](https://github.com/tj-actions/verify-changed-files/pull/219) ([jackton1](https://github.com/jackton1))
+- chore\(deps\): update tj-actions/glob action to v15 [\#218](https://github.com/tj-actions/verify-changed-files/pull/218) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update actions/first-interaction action to v1.1.1 [\#217](https://github.com/tj-actions/verify-changed-files/pull/217) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/glob action to v14 [\#216](https://github.com/tj-actions/verify-changed-files/pull/216) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update actions/checkout action to v3.1.0 [\#215](https://github.com/tj-actions/verify-changed-files/pull/215) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update peter-evans/create-pull-request action to v4.1.3 [\#214](https://github.com/tj-actions/verify-changed-files/pull/214) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update peter-evans/create-pull-request action to v4.1.2 [\#213](https://github.com/tj-actions/verify-changed-files/pull/213) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): bump codacy/codacy-analysis-cli-action from 4.1.0 to 4.2.0 [\#212](https://github.com/tj-actions/verify-changed-files/pull/212) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): update tj-actions/sync-release-version action to v13 [\#210](https://github.com/tj-actions/verify-changed-files/pull/210) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/sync-release-version action to v12 [\#209](https://github.com/tj-actions/verify-changed-files/pull/209) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/github-changelog-generator action to v1.15 [\#208](https://github.com/tj-actions/verify-changed-files/pull/208) ([renovate[bot]](https://github.com/apps/renovate))
+- Upgraded to v11.1 [\#207](https://github.com/tj-actions/verify-changed-files/pull/207) ([jackton1](https://github.com/jackton1))
+
 ## [v11.1](https://github.com/tj-actions/verify-changed-files/tree/v11.1) (2022-08-26)
 
 [Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v11...v11.1)
@@ -7,10 +34,6 @@
 **Fixed bugs:**
 
 - \[BUG\] Except pattern not working [\#201](https://github.com/tj-actions/verify-changed-files/issues/201)
-
-**Closed issues:**
-
-- Dependency Dashboard [\#36](https://github.com/tj-actions/verify-changed-files/issues/36)
 
 **Merged pull requests:**
 
