@@ -105,9 +105,9 @@ Support this project with a :star:
 
 |   INPUT   |  TYPE  | REQUIRED |  DEFAULT  |                                                         DESCRIPTION                                                         |
 |-----------|--------|----------|-----------|-----------------------------------------------------------------------------------------------------------------------------|
-| autocrlf  | string | true     | `"input"` | Modify the git config [core.autocrlf](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_autocrlf).<br> |
-| files     | string | true     |           | File/Directory names to check for<br>uncommited changes.                                                                    |
-| separator | string | true     | `" "`     | Output string separator.                                                                                                    |
+| autocrlf  | string |   true   | `"input"` | Modify the git config [core.autocrlf](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_autocrlf).<br> |
+|   files   | string |   true   |           |                                  File/Directory names to check for<br>uncommited changes.                                   |
+| separator | string |   true   |   `" "`   |                                                  Output string separator.                                                   |
 
 <!-- AUTO-DOC-INPUT:END -->
 
@@ -117,7 +117,7 @@ Support this project with a :star:
 
 |    OUTPUT     |  TYPE  |                  DESCRIPTION                   |
 |---------------|--------|------------------------------------------------|
-| changed\_files | string | List of changed files                          |
+| changed\_files | string |             List of changed files              |
 | files\_changed | string | Boolean indicating that files have<br>changed. |
 
 <!-- AUTO-DOC-OUTPUT:END -->
