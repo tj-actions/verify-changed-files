@@ -34,6 +34,7 @@ Verify that certain files or directories did or did not change during the workfl
 *   [self-hosted runners](https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners) support.
 *   Boolean output for detecting uncommited changes.
 *   List all files that changed during the workflow execution.
+*   Detect changes to track and untracked files.
 *   Restrict change detection to a subset of files:
     *   Using [Glob pattern](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet) matching.
 
