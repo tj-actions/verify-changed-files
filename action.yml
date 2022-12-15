@@ -32,6 +32,7 @@ runs:
         files: ${{ inputs.files }}
         separator: "|"
         match-directories: false
+        match-gitignore-files: true
     - run: |
         bash $GITHUB_ACTION_PATH/entrypoint.sh
       id: verify-changed-files
