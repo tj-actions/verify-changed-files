@@ -1,16 +1,50 @@
 # Changelog
 
-## [v12.0](https://github.com/tj-actions/verify-changed-files/tree/v12.0) (2022-10-16)
+## [Unreleased](https://github.com/tj-actions/verify-changed-files/tree/HEAD)
 
-[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v12...v12.0)
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v13...HEAD)
 
-## [v12](https://github.com/tj-actions/verify-changed-files/tree/v12) (2022-10-16)
+**Merged pull requests:**
 
-[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v11.1...v12)
+- Updated README.md [\#239](https://github.com/tj-actions/verify-changed-files/pull/239) ([jackton1](https://github.com/jackton1))
+- Updated README.md [\#238](https://github.com/tj-actions/verify-changed-files/pull/238) ([jackton1](https://github.com/jackton1))
+
+## [v13](https://github.com/tj-actions/verify-changed-files/tree/v13) (2022-12-15)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v12...v13)
 
 **Closed issues:**
 
 - Dependency Dashboard [\#36](https://github.com/tj-actions/verify-changed-files/issues/36)
+
+**Merged pull requests:**
+
+- feat: add support for matching unstaged gitignore files [\#237](https://github.com/tj-actions/verify-changed-files/pull/237) ([jackton1](https://github.com/jackton1))
+- chore\(deps\): update tj-actions/auto-doc action to v1.6.0 [\#236](https://github.com/tj-actions/verify-changed-files/pull/236) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update reviewdog/action-shellcheck action to v1.16 [\#235](https://github.com/tj-actions/verify-changed-files/pull/235) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update actions/checkout action to v3.2.0 [\#234](https://github.com/tj-actions/verify-changed-files/pull/234) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/auto-doc action to v1.5.0 [\#233](https://github.com/tj-actions/verify-changed-files/pull/233) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update peter-evans/create-pull-request action to v4.2.3 [\#232](https://github.com/tj-actions/verify-changed-files/pull/232) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update peter-evans/create-pull-request action to v4.2.2 [\#231](https://github.com/tj-actions/verify-changed-files/pull/231) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): bump peter-evans/create-pull-request from 4.2.0 to 4.2.1 [\#230](https://github.com/tj-actions/verify-changed-files/pull/230) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump hmarr/auto-approve-action from 2 to 3 [\#229](https://github.com/tj-actions/verify-changed-files/pull/229) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): update tj-actions/glob action to v16 [\#228](https://github.com/tj-actions/verify-changed-files/pull/228) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/auto-doc action to v1.4.3 [\#227](https://github.com/tj-actions/verify-changed-files/pull/227) ([renovate[bot]](https://github.com/apps/renovate))
+- Updated README.md [\#226](https://github.com/tj-actions/verify-changed-files/pull/226) ([jackton1](https://github.com/jackton1))
+- chore\(deps\): update tj-actions/auto-doc action to v1.4.2 [\#225](https://github.com/tj-actions/verify-changed-files/pull/225) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update peter-evans/create-pull-request action to v4.2.0 [\#224](https://github.com/tj-actions/verify-changed-files/pull/224) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update pascalgn/automerge-action action to v0.15.5 [\#223](https://github.com/tj-actions/verify-changed-files/pull/223) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update peter-evans/create-pull-request action to v4.1.4 [\#222](https://github.com/tj-actions/verify-changed-files/pull/222) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/verify-changed-files action to v12 [\#221](https://github.com/tj-actions/verify-changed-files/pull/221) ([renovate[bot]](https://github.com/apps/renovate))
+- Upgraded to v12.0 [\#220](https://github.com/tj-actions/verify-changed-files/pull/220) ([jackton1](https://github.com/jackton1))
+
+## [v12](https://github.com/tj-actions/verify-changed-files/tree/v12) (2022-10-16)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v12.0...v12)
+
+## [v12.0](https://github.com/tj-actions/verify-changed-files/tree/v12.0) (2022-10-16)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v11.1...v12.0)
 
 **Merged pull requests:**
 
