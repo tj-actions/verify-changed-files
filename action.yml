@@ -8,10 +8,10 @@ inputs:
   autocrlf:
     description: 'Modify the git config [core.autocrlf](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_autocrlf).'
     default: 'input'
-    required: true
+    required: false
   separator:
     description: 'Output string separator.'
-    required: true
+    required: false
     default: " "
 
 outputs:
