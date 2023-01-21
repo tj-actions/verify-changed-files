@@ -15,7 +15,7 @@
 
 # verify-changed-files
 
-Verify that certain files or directories did or did not change during the workflow execution.
+![2023-01-21](https://user-images.githubusercontent.com/115489262/213878375-7c26aa17-e6ea-47bc-8acf-898f4f0de839.png) did or did not change during the workflow execution.
 
 > NOTE: :warning:
 >
