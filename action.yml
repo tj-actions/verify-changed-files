@@ -5,6 +5,10 @@ inputs:
   files:
     description: 'File/Directory names to check for uncommited changes.'
     required: true
+  files-separator:
+    description: 'Separator used to split the `files` input'
+    default: "\n"
+    required: false
   autocrlf:
     description: 'Modify the git config [core.autocrlf](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_autocrlf).'
     default: 'input'
@@ -30,6 +34,7 @@ runs:
       id: glob
       with:
         files: ${{ inputs.files }}
+        files-separator: ${{ inputs.files-separator }}
         separator: "|"
         match-directories: false
         match-gitignore-files: true
