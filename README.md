@@ -120,7 +120,7 @@ Support this project with a :star:
 |      INPUT      |  TYPE  | REQUIRED |  DEFAULT  |                                                       DESCRIPTION                                                       |
 |-----------------|--------|----------|-----------|-------------------------------------------------------------------------------------------------------------------------|
 |    autocrlf     | string |  false   | `"input"` | Modify the git config [core.autocrlf](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_autocrlf). |
-|      files      | string |   true   |           |                                File/Directory names to check for uncommited<br>changes.                                 |
+|      files      | string |  false   |           |                                File/Directory names to check for uncommited<br>changes.                                 |
 | files-separator | string |  false   |  `"\n"`   |                                      Separator used to split the `files`<br>input                                       |
 |    separator    | string |  false   |   `" "`   |                                                Output string separator.                                                 |
 
