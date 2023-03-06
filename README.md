@@ -72,7 +72,7 @@ Verify that certain files or directories did or did not change during the workfl
         # Outputs: "Changed files: new.txt test_directory/new.txt"
 ```
 
-#### Using the [`contains`](https://docs.github.com/en/actions/learn-github-actions/expressions#contains) function.
+### Using the [`contains`](https://docs.github.com/en/actions/learn-github-actions/expressions#contains) function.
 
 ```yaml
 ...
@@ -88,6 +88,19 @@ Verify that certain files or directories did or did not change during the workfl
         if: contains(steps.verify-changed-files.outputs.changed_files, 'test_directory')
         run: |
           echo "test_directory has changed."
+```
+
+### Get all unstaged (tracked/untracked) files
+
+```yaml
+...
+      - name: Verify Changed files
+        uses: tj-actions/verify-changed-files@v13
+        id: verify-changed-files
+      
+      - name: List all changed files tracked and untracked files
+        run: |
+          echo "Changed files: ${{ steps.verify-changed-files.outputs.changed_files }}"
 ```
 
 If you feel generous and want to show some extra appreciation:
