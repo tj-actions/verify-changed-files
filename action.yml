@@ -4,7 +4,7 @@ author: jackton1
 inputs:
   files:
     description: 'File/Directory names to check for uncommited changes.'
-    required: true
+    required: false
   files-separator:
     description: 'Separator used to split the `files` input'
     default: "\n"
