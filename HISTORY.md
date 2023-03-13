@@ -1,16 +1,34 @@
 # Changelog
 
-## [v13.1](https://github.com/tj-actions/verify-changed-files/tree/v13.1) (2023-01-27)
+## [v13](https://github.com/tj-actions/verify-changed-files/tree/v13) (2023-03-13)
 
-[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v13...v13.1)
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v13.2.0...v13)
 
-## [v13](https://github.com/tj-actions/verify-changed-files/tree/v13) (2023-01-27)
+## [v13.2.0](https://github.com/tj-actions/verify-changed-files/tree/v13.2.0) (2023-03-13)
 
-[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v12.0...v13)
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v13.1...v13.2.0)
 
 **Closed issues:**
 
 - Dependency Dashboard [\#36](https://github.com/tj-actions/verify-changed-files/issues/36)
+
+**Merged pull requests:**
+
+- chore\(deps\): update tj-actions/release-tagger action to v3 [\#264](https://github.com/tj-actions/verify-changed-files/pull/264) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/auto-doc action to v2.2.3 [\#263](https://github.com/tj-actions/verify-changed-files/pull/263) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/github-changelog-generator action to v1.18 [\#262](https://github.com/tj-actions/verify-changed-files/pull/262) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/auto-doc action to v2.2.0 [\#261](https://github.com/tj-actions/verify-changed-files/pull/261) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/auto-doc action to v2.0.3 [\#260](https://github.com/tj-actions/verify-changed-files/pull/260) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/auto-doc action to v2 [\#259](https://github.com/tj-actions/verify-changed-files/pull/259) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update codacy/codacy-analysis-cli-action action to v4.3.0 [\#258](https://github.com/tj-actions/verify-changed-files/pull/258) ([renovate[bot]](https://github.com/apps/renovate))
+- Updated README.md [\#257](https://github.com/tj-actions/verify-changed-files/pull/257) ([jackton1](https://github.com/jackton1))
+- chore\(deps\): update pascalgn/automerge-action action to v0.15.6 [\#256](https://github.com/tj-actions/verify-changed-files/pull/256) ([renovate[bot]](https://github.com/apps/renovate))
+- Updated README.md [\#255](https://github.com/tj-actions/verify-changed-files/pull/255) ([jackton1](https://github.com/jackton1))
+- Upgraded to v13 [\#254](https://github.com/tj-actions/verify-changed-files/pull/254) ([jackton1](https://github.com/jackton1))
+
+## [v13.1](https://github.com/tj-actions/verify-changed-files/tree/v13.1) (2023-01-27)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v12...v13.1)
 
 **Merged pull requests:**
 
@@ -48,13 +66,13 @@
 - chore\(deps\): update tj-actions/verify-changed-files action to v12 [\#221](https://github.com/tj-actions/verify-changed-files/pull/221) ([renovate[bot]](https://github.com/apps/renovate))
 - Upgraded to v12.0 [\#220](https://github.com/tj-actions/verify-changed-files/pull/220) ([jackton1](https://github.com/jackton1))
 
-## [v12.0](https://github.com/tj-actions/verify-changed-files/tree/v12.0) (2022-10-16)
-
-[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v12...v12.0)
-
 ## [v12](https://github.com/tj-actions/verify-changed-files/tree/v12) (2022-10-16)
 
-[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v11.1...v12)
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v12.0...v12)
+
+## [v12.0](https://github.com/tj-actions/verify-changed-files/tree/v12.0) (2022-10-16)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v11.1...v12.0)
 
 **Merged pull requests:**
 
