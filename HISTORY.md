@@ -1,16 +1,33 @@
 # Changelog
 
-## [v13](https://github.com/tj-actions/verify-changed-files/tree/v13) (2023-03-13)
+## [v14.0.0](https://github.com/tj-actions/verify-changed-files/tree/v14.0.0) (2023-03-17)
 
-[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v13.2.0...v13)
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v14...v14.0.0)
 
-## [v13.2.0](https://github.com/tj-actions/verify-changed-files/tree/v13.2.0) (2023-03-13)
+## [v14](https://github.com/tj-actions/verify-changed-files/tree/v14) (2023-03-17)
 
-[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v13.1...v13.2.0)
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v13.2.0...v14)
 
 **Closed issues:**
 
 - Dependency Dashboard [\#36](https://github.com/tj-actions/verify-changed-files/issues/36)
+
+**Merged pull requests:**
+
+- Updated README.md [\#271](https://github.com/tj-actions/verify-changed-files/pull/271) ([jackton1](https://github.com/jackton1))
+- feat: remove unused core.autocrlf setting [\#270](https://github.com/tj-actions/verify-changed-files/pull/270) ([jackton1](https://github.com/jackton1))
+- chore\(deps\): update tj-actions/glob action to v16.12 [\#269](https://github.com/tj-actions/verify-changed-files/pull/269) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update actions/checkout action to v3.4.0 [\#268](https://github.com/tj-actions/verify-changed-files/pull/268) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update peter-evans/create-pull-request action to v4.2.4 [\#267](https://github.com/tj-actions/verify-changed-files/pull/267) ([renovate[bot]](https://github.com/apps/renovate))
+- Upgraded to v13.2.0 [\#266](https://github.com/tj-actions/verify-changed-files/pull/266) ([jackton1](https://github.com/jackton1))
+
+## [v13.2.0](https://github.com/tj-actions/verify-changed-files/tree/v13.2.0) (2023-03-13)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v13...v13.2.0)
+
+## [v13](https://github.com/tj-actions/verify-changed-files/tree/v13) (2023-03-13)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v13.1...v13)
 
 **Merged pull requests:**
 
@@ -28,7 +45,7 @@
 
 ## [v13.1](https://github.com/tj-actions/verify-changed-files/tree/v13.1) (2023-01-27)
 
-[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v12...v13.1)
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v12.0...v13.1)
 
 **Merged pull requests:**
 
@@ -66,13 +83,13 @@
 - chore\(deps\): update tj-actions/verify-changed-files action to v12 [\#221](https://github.com/tj-actions/verify-changed-files/pull/221) ([renovate[bot]](https://github.com/apps/renovate))
 - Upgraded to v12.0 [\#220](https://github.com/tj-actions/verify-changed-files/pull/220) ([jackton1](https://github.com/jackton1))
 
-## [v12](https://github.com/tj-actions/verify-changed-files/tree/v12) (2022-10-16)
-
-[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v12.0...v12)
-
 ## [v12.0](https://github.com/tj-actions/verify-changed-files/tree/v12.0) (2022-10-16)
 
-[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v11.1...v12.0)
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v12...v12.0)
+
+## [v12](https://github.com/tj-actions/verify-changed-files/tree/v12) (2022-10-16)
+
+[Full Changelog](https://github.com/tj-actions/verify-changed-files/compare/v11.1...v12)
 
 **Merged pull requests:**
 
