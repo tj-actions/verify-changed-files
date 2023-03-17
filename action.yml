@@ -9,10 +9,6 @@ inputs:
     description: 'Separator used to split the `files` input'
     default: "\n"
     required: false
-  autocrlf:
-    description: 'Modify the git config [core.autocrlf](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_autocrlf).'
-    default: 'input'
-    required: false
   separator:
     description: 'Output string separator.'
     required: false
@@ -48,7 +44,6 @@ runs:
         # INPUT_<VARIABLE_NAME> is not available in Composite run steps
         # https://github.community/t/input-variable-name-is-not-available-in-composite-run-steps/127611
         INPUT_FILES_PATTERN_FILE: ${{ steps.glob.outputs.paths-output-file }}
-        INPUT_AUTO_CRLF: ${{ inputs.autocrlf }}
         INPUT_SEPARATOR: ${{ inputs.separator }}
 
 branding:

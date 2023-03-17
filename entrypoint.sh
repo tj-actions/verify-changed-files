@@ -4,8 +4,6 @@ set -e
 
 echo "::group::verify-changed-files"
 
-git config --local core.autocrlf "$INPUT_AUTO_CRLF"
-
 if [[ -n "$INPUT_FILES_PATTERN_FILE" ]]; then
   TRACKED_FILES=$(git diff --diff-filter=ACMUXTRD --name-only | grep -x -E -f "$INPUT_FILES_PATTERN_FILE" | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
 
