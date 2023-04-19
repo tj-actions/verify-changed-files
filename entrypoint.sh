@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
-set -e
+set -euo pipefail
+
+INPUT_SEPARATOR="${INPUT_SEPARATOR//'%'/'%25'}"
+INPUT_SEPARATOR="${INPUT_SEPARATOR//'.'/'%2E'}"
+INPUT_SEPARATOR="${INPUT_SEPARATOR//$'\n'/'%0A'}"
+INPUT_SEPARATOR="${INPUT_SEPARATOR//$'\r'/'%0D'}"
 
 echo "::group::verify-changed-files"
-
-INPUT_SEPARATOR="${INPUT_SEPARATOR//\%/%25}"
-INPUT_SEPARATOR="${INPUT_SEPARATOR//\./%2E}"
-INPUT_SEPARATOR="${INPUT_SEPARATOR//\\n/%0A}"
-INPUT_SEPARATOR="${INPUT_SEPARATOR//\\r/%0D}"
 
 echo "Separator: $INPUT_SEPARATOR"
 
