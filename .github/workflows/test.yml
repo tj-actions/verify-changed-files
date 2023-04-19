@@ -105,6 +105,8 @@ jobs:
         with:
           files: |
             !test/new.txt
+            !test/new1.txt
+            !test/new2.txt
             !unstaged.txt
       - name: Verify Changes to unstaged.txt are ignored
         if: steps.changed_unstaged_files_not_expected.outputs.files_changed != 'false'
@@ -117,6 +119,8 @@ jobs:
         with:
           files: |
             !test/new.txt
+            !test/new1.txt
+            !test/new2.txt
             unstaged.txt
       - name: Verify Changes to unstaged.txt are ignored
         if: steps.changed_unstaged2_files_expected.outputs.files_changed != 'true'
