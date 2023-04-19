@@ -33,7 +33,6 @@ jobs:
         uses: ./
         id: changed_files_not_expected_autocrlf
         with:
-          autocrlf: true
           files: |
             test/*.txt
             test/*.sql
@@ -65,6 +64,7 @@ jobs:
         uses: ./
         id: changed_files_expected
         with:
+          separator: '\n'
           files: |
             test/*.txt
             test/*.sql
