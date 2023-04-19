@@ -138,6 +138,13 @@ Support this project with a :star:
 
 *   Free software: [MIT license](LICENSE)
 
+
+## Known Limitation
+
+> **Warning**:
+>
+> *   Using characters like `\n`, `%`, `.` and `\r` as separators would be [URL encoded](https://www.w3schools.com/tags/ref_urlencode.asp)
+
 ## Report Bugs
 
 Report bugs at https://github.com/tj-actions/verify-changed-files/issues.
