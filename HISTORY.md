@@ -1,5 +1,52 @@
 # Changelog
 
+# [14.0.2](https://github.com/tj-actions/verify-changed-files/compare/v14.0.1...v14.0.2) - (2023-04-19)
+
+## <!-- 1 -->🐛 Bug Fixes
+
+- Handle error from pipes ([#289](https://github.com/tj-actions/verify-changed-files/issues/289)) ([7517b83](https://github.com/tj-actions/verify-changed-files/commit/7517b838f3a0d51de4b334a61ef1330672118927))  - (Tonye Jack)
+- Handle new line used as separator ([86faf92](https://github.com/tj-actions/verify-changed-files/commit/86faf92e73b8e35eeaaca7dc32395bbe30d8b51c))  - (Tonye Jack)
+
+## <!-- 26 -->🔄 Update
+
+- Updated README.md
+ ([5719db1](https://github.com/tj-actions/verify-changed-files/commit/5719db1d4df0be20780a9f132fa9ab3b48c52d03))  - (repo-ranger[bot])
+- Update entrypoint.sh ([9f9d3cf](https://github.com/tj-actions/verify-changed-files/commit/9f9d3cfdff0259e1f339ca5e1c46cd5948e6fa58))  - (Tonye Jack)
+- Update entrypoint.sh ([ce01bef](https://github.com/tj-actions/verify-changed-files/commit/ce01bef432947d5855982544f3507b9ffd920767))  - (Tonye Jack)
+- Update entrypoint.sh ([5c103de](https://github.com/tj-actions/verify-changed-files/commit/5c103de0a1b94528bbfc9ef5a16459e8d2123c91))  - (Tonye Jack)
+- Update entrypoint.sh ([0591269](https://github.com/tj-actions/verify-changed-files/commit/05912690e7b4905de8d61f898da7be0f78f1cd5b))  - (Tonye Jack)
+- Update entrypoint.sh ([d6be76f](https://github.com/tj-actions/verify-changed-files/commit/d6be76fddfd526372454a4d379726f372beb8611))  - (Tonye Jack)
+- Update entrypoint.sh ([2c230b9](https://github.com/tj-actions/verify-changed-files/commit/2c230b947b442bee0131b2784f89e6010e66cc90))  - (Tonye Jack)
+- Update entrypoint.sh ([aea97c9](https://github.com/tj-actions/verify-changed-files/commit/aea97c99b503f5ff80c356906d9aa38b893bf504))  - (Tonye Jack)
+- Update entrypoint.sh ([3e53743](https://github.com/tj-actions/verify-changed-files/commit/3e537435ba871b07d2f710aa251764f43f47d940))  - (Tonye Jack)
+- Update entrypoint.sh ([04f4c5f](https://github.com/tj-actions/verify-changed-files/commit/04f4c5f125280604fae6247b2d211bdf761cef79))  - (Tonye Jack)
+- Update test.yml ([ab27109](https://github.com/tj-actions/verify-changed-files/commit/ab271093300ac6094613bf2244302ff319076112))  - (Tonye Jack)
+- Update test.yml ([a621412](https://github.com/tj-actions/verify-changed-files/commit/a6214120d30d16222597f6a4f9ced8fb9bbef5fe))  - (Tonye Jack)
+- Update entrypoint.sh ([ca6cbe4](https://github.com/tj-actions/verify-changed-files/commit/ca6cbe4b424faf23de507e7a949b3939565f4242))  - (Tonye Jack)
+- Update entrypoint.sh ([a234cef](https://github.com/tj-actions/verify-changed-files/commit/a234cef7dcbe12b6951caed020f1f8e1c4eeb781))  - (Tonye Jack)
+- Update entrypoint.sh ([51e4371](https://github.com/tj-actions/verify-changed-files/commit/51e4371fb39bbbd2702ff4c8a5d2fefca7fd097d))  - (Tonye Jack)
+- Update entrypoint.sh ([75968c8](https://github.com/tj-actions/verify-changed-files/commit/75968c8784f3f9ec8480f7b1733c1e1269fe7a20))  - (Tonye Jack)
+- Update entrypoint.sh ([f583de0](https://github.com/tj-actions/verify-changed-files/commit/f583de068ba95b925ac6f38ed5ac131cc6b831fc))  - (Tonye Jack)
+- Update test.yml ([ffa65df](https://github.com/tj-actions/verify-changed-files/commit/ffa65df64b110e43c93a6f17f9664293721ab935))  - (Tonye Jack)
+- Update test.yml ([18de328](https://github.com/tj-actions/verify-changed-files/commit/18de328c38954ddf862b747f7bb2b5031f9776a0))  - (Tonye Jack)
+- Update entrypoint.sh ([5bd0f97](https://github.com/tj-actions/verify-changed-files/commit/5bd0f97acbf68191afbef0ec4f8e08ec440d6d62))  - (Tonye Jack)
+
+## <!-- 30 -->📝 Other
+
+- PR [#288](https://github.com/tj-actions/verify-changed-files/pull/288): README.md ([c87cb18](https://github.com/tj-actions/verify-changed-files/commit/c87cb18873acd3fb1be4e6849bc049b5d700b8cc))  - (repo-ranger[bot])
+- PR [#287](https://github.com/tj-actions/verify-changed-files/pull/287): handle new line used as separator ([183324b](https://github.com/tj-actions/verify-changed-files/commit/183324b61bf452c1a1f172d1f8732f5cdb2b9523))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- **deps:** Update actions/checkout action to v3.5.2 ([ce64891](https://github.com/tj-actions/verify-changed-files/commit/ce64891fa2360ae6e545fc6ee1508a73ce97a03f))  - (renovate[bot])
+- **deps:** Update actions/checkout action to v3.5.1 ([502cad3](https://github.com/tj-actions/verify-changed-files/commit/502cad32cd85eb387b0820d53c8c9535fd201dae))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v14.0.0 -> v14.0.1 ([#283](https://github.com/tj-actions/verify-changed-files/issues/283))
+
+Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([4b248f3](https://github.com/tj-actions/verify-changed-files/commit/4b248f3ac146181ad395ff58e91825dbb301c481))  - (Tonye Jack)
+
 # [14.0.1](https://github.com/tj-actions/verify-changed-files/compare/v14.0.0...v14.0.1) - (2023-04-09)
 
 ## <!-- 26 -->🔄 Update
