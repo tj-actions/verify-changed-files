@@ -2,6 +2,11 @@
 
 set -e
 
+INPUT_SEPARATOR="${INPUT_SEPARATOR//'%'/'%25'}"
+INPUT_SEPARATOR="${INPUT_SEPARATOR//'.'/'%2E'}"
+INPUT_SEPARATOR="${INPUT_SEPARATOR//$'\n'/'%0A'}"
+INPUT_SEPARATOR="${INPUT_SEPARATOR//$'\r'/'%0D'}"
+
 echo "::group::verify-changed-files"
 
 if [[ -n "$INPUT_FILES_PATTERN_FILE" ]]; then
