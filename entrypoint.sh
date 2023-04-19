@@ -4,6 +4,13 @@ set -e
 
 echo "::group::verify-changed-files"
 
+INPUT_SEPARATOR="${INPUT_SEPARATOR//\%/%25}"
+INPUT_SEPARATOR="${INPUT_SEPARATOR//\./%2E}"
+INPUT_SEPARATOR="${INPUT_SEPARATOR//\\n/%0A}"
+INPUT_SEPARATOR="${INPUT_SEPARATOR//\\r/%0D}"
+
+echo "Separator: $INPUT_SEPARATOR"
+
 if [[ -n "$INPUT_FILES_PATTERN_FILE" ]]; then
   TRACKED_FILES=$(git diff --diff-filter=ACMUXTRD --name-only | grep -x -E -f "$INPUT_FILES_PATTERN_FILE" | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
 
