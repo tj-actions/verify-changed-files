@@ -19,7 +19,7 @@ Verify that certain files or directories did or did not change during the workfl
 
 > NOTE: :warning:
 >
-> *   This action only detects files that have pending uncommited changes generated during the workflow execution, for running a specific step when a file changes in a pull request or based on a new commit
+> *   This action only detects files that have pending uncommited changes generated during the workflow execution, for running a specific step when a file changes in a pull request or based on a pushed commit
 >
 >     See: https://github.com/tj-actions/changed-files
 
