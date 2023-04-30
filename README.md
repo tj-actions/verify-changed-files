@@ -119,8 +119,8 @@ Support this project with a :star:
 
 |      INPUT      |  TYPE  | REQUIRED | DEFAULT |                       DESCRIPTION                        |
 |-----------------|--------|----------|---------|----------------------------------------------------------|
-|      files      | string |  false   |         | File/Directory names to check for uncommited<br>changes. |
-| files-separator | string |  false   | `"\n"`  |       Separator used to split the `files`<br>input       |
+|      files      | string |  false   |         | File/Directory names to check for<br>uncommited changes. |
+| files-separator | string |  false   | `"\n"`  |       Separator used to split the<br>`files` input       |
 |    separator    | string |  false   |  `" "`  |                 Output string separator.                 |
 
 <!-- AUTO-DOC-INPUT:END -->
@@ -129,10 +129,10 @@ Support this project with a :star:
 
 <!-- AUTO-DOC-OUTPUT:START - Do not remove or modify this section -->
 
-|    OUTPUT     |  TYPE  |                 DESCRIPTION                 |
-|---------------|--------|---------------------------------------------|
-| changed\_files | string |            List of changed files            |
-| files\_changed | string | Boolean indicating that files have changed. |
+|    OUTPUT     |  TYPE  |                  DESCRIPTION                   |
+|---------------|--------|------------------------------------------------|
+| changed\_files | string |             List of changed files              |
+| files\_changed | string | Boolean indicating that files have<br>changed. |
 
 <!-- AUTO-DOC-OUTPUT:END -->
 
