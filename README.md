@@ -142,7 +142,7 @@ Support this project with a :star:
 
 > **Warning**:
 >
-> *   Using characters like `\n`, `%`, `.` and `\r` as separators would be [URL encoded](https://www.w3schools.com/tags/ref_urlencode.asp)
+> *   Using characters like `\n`, `%`, `.` and `\r` as output string separators would be [URL encoded](https://www.w3schools.com/tags/ref_urlencode.asp)
 
 ## Report Bugs
 
