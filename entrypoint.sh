@@ -11,10 +11,10 @@ echo "::group::verify-changed-files"
 
 echo "Separator: $INPUT_SEPARATOR"
 
-LS_FIELS_EXTRA_ARGS="--others --exclude-standard"
+GIT_STATUS_EXTRA_ARGS="-u --porcelain"
 
 if [[ "$INPUT_MATCH_GITIGNORE_FILES" == "true" ]]; then
-  LS_FIELS_EXTRA_ARGS+=" --ignored"
+  GIT_STATUS_EXTRA_ARGS+=" --ignored"
 fi
 
 if [[ -n "$INPUT_FILES_PATTERN_FILE" ]]; then
@@ -22,13 +22,13 @@ if [[ -n "$INPUT_FILES_PATTERN_FILE" ]]; then
 
   # Find untracked changes
   # shellcheck disable=SC2086
-  UNTRACKED_FILES=$(git ls-files $LS_FIELS_EXTRA_ARGS | { grep -x -E -f "$INPUT_FILES_PATTERN_FILE" || true; } | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
+  UNTRACKED_FILES=$(git status $GIT_STATUS_EXTRA_ARGS | awk '{print $NF}' | { grep -x -E -f "$INPUT_FILES_PATTERN_FILE" || true; } | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
 else
   TRACKED_FILES=$(git diff --diff-filter=ACMUXTRD --name-only | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
 
   # Find untracked changes
   # shellcheck disable=SC2086
-  UNTRACKED_FILES=$(git ls-files $LS_FIELS_EXTRA_ARGS | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
+  UNTRACKED_FILES=$(git status $GIT_STATUS_EXTRA_ARGS | awk '{print $NF}' | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
 fi
 
 CHANGED_FILES=""
