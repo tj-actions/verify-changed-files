@@ -117,11 +117,12 @@ Support this project with a :star:
 
 <!-- AUTO-DOC-INPUT:START - Do not remove or modify this section -->
 
-|      INPUT      |  TYPE  | REQUIRED | DEFAULT |                        DESCRIPTION                         |
-|-----------------|--------|----------|---------|------------------------------------------------------------|
-|      files      | string |  false   |         | File/Directory names to check for <br>uncommited changes.  |
-| files-separator | string |  false   | `"\n"`  |       Separator used to split the <br>`files` input        |
-|    separator    | string |  false   |  `" "`  |                  Output string separator.                  |
+|         INPUT         |  TYPE  | REQUIRED | DEFAULT  |                        DESCRIPTION                         |
+|-----------------------|--------|----------|----------|------------------------------------------------------------|
+|         files         | string |  false   |          | File/Directory names to check for <br>uncommited changes.  |
+|    files-separator    | string |  false   |  `"\n"`  |       Separator used to split the <br>`files` input        |
+| match-gitignore-files | string |   true   | `"true"` |   Indicates whether to match files <br>in `.gitignore`     |
+|       separator       | string |  false   |  `" "`   |                  Output string separator.                  |
 
 <!-- AUTO-DOC-INPUT:END -->
 
