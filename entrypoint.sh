@@ -11,26 +11,34 @@ echo "::group::verify-changed-files"
 
 echo "Separator: $INPUT_SEPARATOR"
 
+GIT_STATUS_EXTRA_ARGS="-u --porcelain"
+
+if [[ "$INPUT_MATCH_GITIGNORE_FILES" == "true" ]]; then
+  GIT_STATUS_EXTRA_ARGS+=" --ignored"
+fi
+
 if [[ -n "$INPUT_FILES_PATTERN_FILE" ]]; then
   TRACKED_FILES=$(git diff --diff-filter=ACMUXTRD --name-only | { grep -x -E -f "$INPUT_FILES_PATTERN_FILE" || true; } | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
 
   # Find untracked changes
-  UNTRACKED_FILES=$(git ls-files --others --exclude-standard | { grep -x -E -f "$INPUT_FILES_PATTERN_FILE" || true; } | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
+  # shellcheck disable=SC2086
+  UNTRACKED_OR_IGNORED_FILES=$(git status $GIT_STATUS_EXTRA_ARGS | awk '{print $NF}' | { grep -x -E -f "$INPUT_FILES_PATTERN_FILE" || true; } | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
 else
   TRACKED_FILES=$(git diff --diff-filter=ACMUXTRD --name-only | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
 
   # Find untracked changes
-  UNTRACKED_FILES=$(git ls-files --others --exclude-standard | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
+  # shellcheck disable=SC2086
+  UNTRACKED_OR_IGNORED_FILES=$(git status $GIT_STATUS_EXTRA_ARGS | awk '{print $NF}' | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
 fi
 
 CHANGED_FILES=""
 
-if [[ -n "$TRACKED_FILES" && -n "$UNTRACKED_FILES" ]]; then
-  CHANGED_FILES="$TRACKED_FILES|$UNTRACKED_FILES"
-elif [[ -n "$TRACKED_FILES" && -z "$UNTRACKED_FILES" ]]; then
+if [[ -n "$TRACKED_FILES" && -n "$UNTRACKED_OR_IGNORED_FILES" ]]; then
+  CHANGED_FILES="$TRACKED_FILES|$UNTRACKED_OR_IGNORED_FILES"
+elif [[ -n "$TRACKED_FILES" && -z "$UNTRACKED_OR_IGNORED_FILES" ]]; then
   CHANGED_FILES="$TRACKED_FILES"
-elif [[ -n "$UNTRACKED_FILES" && -z "$TRACKED_FILES" ]]; then
-  CHANGED_FILES="$UNTRACKED_FILES"
+elif [[ -n "$UNTRACKED_OR_IGNORED_FILES" && -z "$TRACKED_FILES" ]]; then
+  CHANGED_FILES="$UNTRACKED_OR_IGNORED_FILES"
 fi
 
 CHANGED_FILES=$(echo "$CHANGED_FILES"  | awk '{gsub(/\|/,"\n"); print $0;}' | sort -u | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
