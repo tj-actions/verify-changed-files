@@ -1,5 +1,68 @@
 # Changelog
 
+# [15.0.0](https://github.com/tj-actions/verify-changed-files/compare/v14.0.2...v15.0.0) - (2023-06-11)
+
+## <!-- 0 -->🚀 Features
+
+- Add support for including git ignored files. ([7b1e68c](https://github.com/tj-actions/verify-changed-files/commit/7b1e68c66bc7855468399b4fdd62c3f39d643f9f))  - (Tonye Jack)
+
+## <!-- 13 -->📦 Bumps
+
+- Bump peter-evans/create-pull-request from 5.0.0 to 5.0.1
+
+Bumps [peter-evans/create-pull-request](https://github.com/peter-evans/create-pull-request) from 5.0.0 to 5.0.1.
+- [Release notes](https://github.com/peter-evans/create-pull-request/releases)
+- [Commits](https://github.com/peter-evans/create-pull-request/compare/v5.0.0...v5.0.1)
+
+---
+updated-dependencies:
+- dependency-name: peter-evans/create-pull-request
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com> ([6ed95ae](https://github.com/tj-actions/verify-changed-files/commit/6ed95ae71dda0d462b3753f107b5385e3abc52fe))  - (dependabot[bot])
+
+## <!-- 26 -->🔄 Update
+
+- Updated README.md
+ ([dd9c6e5](https://github.com/tj-actions/verify-changed-files/commit/dd9c6e5200cd0d5b5e594abddaf74c0e2154b74c))  - (repo-ranger[bot])
+- Update entrypoint.sh ([2d62d9f](https://github.com/tj-actions/verify-changed-files/commit/2d62d9f157cc854b0be88b3b6e8df32eaefda1d4))  - (Tonye Jack)
+- Update entrypoint.sh ([c9817eb](https://github.com/tj-actions/verify-changed-files/commit/c9817eba1c0a7d637296b9be296a4449d0b1382f))  - (Tonye Jack)
+- Update entrypoint.sh ([724895d](https://github.com/tj-actions/verify-changed-files/commit/724895d41d50d4d050329c1d73fe210b90638a28))  - (Tonye Jack)
+- Update entrypoint.sh ([6147e34](https://github.com/tj-actions/verify-changed-files/commit/6147e34a6d344134916f26c7480a7a4aaeda7304))  - (Tonye Jack)
+- Update entrypoint.sh ([8bcb04c](https://github.com/tj-actions/verify-changed-files/commit/8bcb04c212055bbc8f85eeb4d8b030b2f8e9284a))  - (Tonye Jack)
+- Updated README.md
+ ([b78b21b](https://github.com/tj-actions/verify-changed-files/commit/b78b21b05abb2e69aa51d188fb47234001bbf41b))  - (jackton1)
+- Update README.md ([cd63f6a](https://github.com/tj-actions/verify-changed-files/commit/cd63f6af3c2730f25d236c6482f78f1ddc9ccd7d))  - (Tonye Jack)
+- Updated README.md
+ ([87a456d](https://github.com/tj-actions/verify-changed-files/commit/87a456d2c82624a0c1e6dc4603a4c90034a512bd))  - (jackton1)
+- Update README.md ([2929140](https://github.com/tj-actions/verify-changed-files/commit/2929140e21e02344d47aa8c624d374dd9f3b8750))  - (Tonye Jack)
+- Update README.md ([6a6bb94](https://github.com/tj-actions/verify-changed-files/commit/6a6bb946a5001fcf3b60638d01f90c1bd7f0c90b))  - (Tonye Jack)
+
+## <!-- 30 -->📝 Other
+
+- PR [#304](https://github.com/tj-actions/verify-changed-files/pull/304): README.md ([7016858](https://github.com/tj-actions/verify-changed-files/commit/7016858e130743cc6c6b472849411d40aa8ae1ce))  - (repo-ranger[bot])
+- PR [#303](https://github.com/tj-actions/verify-changed-files/pull/303): add support for including git ignored files. ([2eda824](https://github.com/tj-actions/verify-changed-files/commit/2eda8243f05c82aab53d43796d0de20111b1150e))  - (repo-ranger[bot])
+- PR [#298](https://github.com/tj-actions/verify-changed-files/pull/298): README.md ([6685651](https://github.com/tj-actions/verify-changed-files/commit/668565149f8d01f74b52c84e102d42105fe9ee0e))  - (repo-ranger[bot])
+- PR [#293](https://github.com/tj-actions/verify-changed-files/pull/293): README.md ([62314bc](https://github.com/tj-actions/verify-changed-files/commit/62314bc869f966a0fbeb200530a664d23c1c0c62))  - (repo-ranger[bot])
+- PR [#290](https://github.com/tj-actions/verify-changed-files/pull/290): to v14.0.2 ([4fdca1a](https://github.com/tj-actions/verify-changed-files/commit/4fdca1a51e16087cf2f370d779a92f184bd2771e))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- **deps:** Update actions/checkout action to v3.5.3 ([f402bae](https://github.com/tj-actions/verify-changed-files/commit/f402bae0c975f3aeb352f6d98551e68b8579d941))  - (renovate[bot])
+- **deps:** Update tj-actions/auto-doc action to v2.7.0 ([fc4e41d](https://github.com/tj-actions/verify-changed-files/commit/fc4e41d034086abd8c00adbcf0689989dc8bd1d7))  - (renovate[bot])
+- **deps:** Update tj-actions/auto-doc action to v2.6.1 ([b9e565b](https://github.com/tj-actions/verify-changed-files/commit/b9e565be58783c264a91e3ac796b8dd44df0e8c6))  - (renovate[bot])
+- **deps:** Update tj-actions/auto-doc action to v2.5.4 ([e99fd82](https://github.com/tj-actions/verify-changed-files/commit/e99fd82dba746fc6ac40b6848d3829d57b705c79))  - (renovate[bot])
+- **deps:** Update tj-actions/auto-doc action to v2.5.2 ([4e26e9b](https://github.com/tj-actions/verify-changed-files/commit/4e26e9bffda5c7d2cb052bc477c8c51a655fefe1))  - (renovate[bot])
+- **deps:** Update tj-actions/auto-doc action to v2.5.0 ([994ffff](https://github.com/tj-actions/verify-changed-files/commit/994ffffe84f30f5f600ec89b0fc33ffde2aca051))  - (renovate[bot])
+- **deps:** Update tj-actions/auto-doc action to v2.4.0 ([44018bc](https://github.com/tj-actions/verify-changed-files/commit/44018bcc35d037df3cbd628f17366f2db3a17445))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v14.0.1 -> v14.0.2
+ ([35b5ede](https://github.com/tj-actions/verify-changed-files/commit/35b5ede7cd9d4be3ba54c559f924a65d68f6a618))  - (jackton1)
+
 # [14.0.2](https://github.com/tj-actions/verify-changed-files/compare/v14.0.1...v14.0.2) - (2023-04-19)
 
 ## <!-- 1 -->🐛 Bug Fixes
