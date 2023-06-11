@@ -13,6 +13,10 @@ inputs:
     description: 'Output string separator.'
     required: false
     default: " "
+  match-gitignore-files:
+    description: 'Indicates whether to match files in `.gitignore`'
+    default: "true"
+    required: true
 
 outputs:
   files_changed:
@@ -33,7 +37,7 @@ runs:
         files-separator: ${{ inputs.files-separator }}
         separator: "|"
         match-directories: false
-        match-gitignore-files: true
+        match-gitignore-files: ${{ inputs.match-gitignore-files }}
     - run: |
         bash $GITHUB_ACTION_PATH/entrypoint.sh
       id: verify-changed-files
@@ -45,6 +49,7 @@ runs:
         # https://github.community/t/input-variable-name-is-not-available-in-composite-run-steps/127611
         INPUT_FILES_PATTERN_FILE: ${{ steps.glob.outputs.paths-output-file }}
         INPUT_SEPARATOR: ${{ inputs.separator }}
+        INPUT_MATCH_GITIGNORE_FILES: ${{ inputs.match-gitignore-files }}
 
 branding:
   icon: file-text
