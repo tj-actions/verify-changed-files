@@ -1,5 +1,27 @@
 # Changelog
 
+# [15.0.1](https://github.com/tj-actions/verify-changed-files/compare/v15.0.0...v15.0.1) - (2023-06-12)
+
+## <!-- 26 -->🔄 Update
+
+- Updated README.md ([#307](https://github.com/tj-actions/verify-changed-files/issues/307))
+
+Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([7da22d0](https://github.com/tj-actions/verify-changed-files/commit/7da22d0521c254e711e5988bd2c7d48c2948d137))  - (tj-actions[bot])
+- Update action.yml ([430a753](https://github.com/tj-actions/verify-changed-files/commit/430a7536ae097066675e6cd976d72b505996c763))  - (Tonye Jack)
+
+## <!-- 30 -->📝 Other
+
+- PR [#305](https://github.com/tj-actions/verify-changed-files/pull/305): to v15 ([8a9ef5f](https://github.com/tj-actions/verify-changed-files/commit/8a9ef5f5698a89e2fb5c6bee4f8d8684326353f5))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- **deps:** Update tj-actions/verify-changed-files action to v15 ([f46a405](https://github.com/tj-actions/verify-changed-files/commit/f46a405a36d641c28e5aa372c68a3dfe735a5f5a))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v14.0.2 -> v15
+ ([0cc1c97](https://github.com/tj-actions/verify-changed-files/commit/0cc1c9785df66565b60411a8cb287c6ac0d0fdb2))  - (jackton1)
+
 # [15.0.0](https://github.com/tj-actions/verify-changed-files/compare/v14.0.2...v15.0.0) - (2023-06-11)
 
 ## <!-- 0 -->🚀 Features
