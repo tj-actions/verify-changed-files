@@ -1,5 +1,35 @@
 # Changelog
 
+# [15.0.2](https://github.com/tj-actions/verify-changed-files/compare/v15.0.1...v15.0.2) - (2023-06-22)
+
+## <!-- 13 -->📦 Bumps
+
+- Bump peter-evans/create-pull-request from 5.0.1 to 5.0.2
+
+Bumps [peter-evans/create-pull-request](https://github.com/peter-evans/create-pull-request) from 5.0.1 to 5.0.2.
+- [Release notes](https://github.com/peter-evans/create-pull-request/releases)
+- [Commits](https://github.com/peter-evans/create-pull-request/compare/v5.0.1...v5.0.2)
+
+---
+updated-dependencies:
+- dependency-name: peter-evans/create-pull-request
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com> ([c7e0237](https://github.com/tj-actions/verify-changed-files/commit/c7e0237eb8971e47695a100008e7c17aff672408))  - (dependabot[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- Update action.yml ([0409e18](https://github.com/tj-actions/verify-changed-files/commit/0409e189c445fab593a10a28e19663f0b012b5a5))  - (Tonye Jack)
+- **deps:** Update reviewdog/action-shellcheck action to v1.18 ([f732762](https://github.com/tj-actions/verify-changed-files/commit/f732762c8165cb90980bd6638bfc7defef237bee))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v15.0.0 -> v15.0.1 ([#308](https://github.com/tj-actions/verify-changed-files/issues/308))
+
+Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([0dffb60](https://github.com/tj-actions/verify-changed-files/commit/0dffb608eee1b5e5d361afe959c51613a97e764f))  - (tj-actions[bot])
+
 # [15.0.1](https://github.com/tj-actions/verify-changed-files/compare/v15.0.0...v15.0.1) - (2023-06-12)
 
 ## <!-- 26 -->🔄 Update
