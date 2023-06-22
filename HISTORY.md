@@ -1,5 +1,18 @@
 # Changelog
 
+# [16.0.0](https://github.com/tj-actions/verify-changed-files/compare/v15.0.2...v16.0.0) - (2023-06-22)
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- **deps:** Update tj-actions/glob action to v17 ([238896a](https://github.com/tj-actions/verify-changed-files/commit/238896a72e93f10b7fc934cd3a1870b7dce5d625))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v15.0.1 -> v15.0.2 ([#313](https://github.com/tj-actions/verify-changed-files/issues/313))
+
+Co-authored-by: jackton1 <jackton1@users.noreply.github.com>
+Co-authored-by: repo-ranger[bot] <39074581+repo-ranger[bot]@users.noreply.github.com> ([7f1b21c](https://github.com/tj-actions/verify-changed-files/commit/7f1b21ceb7ef533b97b46e89e2f882ee5cb17ae0))  - (tj-actions[bot])
+
 # [15.0.2](https://github.com/tj-actions/verify-changed-files/compare/v15.0.1...v15.0.2) - (2023-06-22)
 
 ## <!-- 13 -->📦 Bumps
