@@ -1,5 +1,29 @@
 # Changelog
 
+# [16.0.1](https://github.com/tj-actions/verify-changed-files/compare/v16.0.0...v16.0.1) - (2023-07-05)
+
+## <!-- 17 -->➖ Remove
+
+- Deleted .github/workflows/auto-merge.yml ([7948456](https://github.com/tj-actions/verify-changed-files/commit/79484560c104ff698ef8a1b2c1ec3310dfcfbaf4))  - (Tonye Jack)
+
+## <!-- 26 -->🔄 Update
+
+- Updated renovate.json ([30aa174](https://github.com/tj-actions/verify-changed-files/commit/30aa174f53f67ecd5dc8e190dfbe46392202e5a5))  - (Tonye Jack)
+
+## <!-- 30 -->📝 Other
+
+- PR [#314](https://github.com/tj-actions/verify-changed-files/pull/314): to v16 ([cfcc766](https://github.com/tj-actions/verify-changed-files/commit/cfcc7669a3b02e3d40c673a32d8f1d4c994c0bfc))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- **deps:** Update tj-actions/auto-doc action to v2.7.1 ([7004c8e](https://github.com/tj-actions/verify-changed-files/commit/7004c8eda4655f5157294a24e1304b82a48d05c7))  - (renovate[bot])
+- **deps:** Update tj-actions/verify-changed-files action to v16 ([b9e91b7](https://github.com/tj-actions/verify-changed-files/commit/b9e91b76b9f95449b5abd03b2598af454f42a7b7))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v15.0.2 -> v16
+ ([da65453](https://github.com/tj-actions/verify-changed-files/commit/da65453ae7671fa4f350e90f7e8c941a02c73cfd))  - (jackton1)
+
 # [16.0.0](https://github.com/tj-actions/verify-changed-files/compare/v15.0.2...v16.0.0) - (2023-06-22)
 
 ## <!-- 7 -->⚙️ Miscellaneous Tasks
