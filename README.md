@@ -17,7 +17,7 @@
 
 Verify that certain files or directories did or did not change during the workflow execution.
 
-> **Warning**:
+> **Warning**
 >
 > *   This action only detects files that have pending uncommited changes generated during the workflow execution, for running a specific step when a file changes in a pull request or based on a pushed commit
 >
@@ -141,7 +141,7 @@ Support this project with a :star:
 
 ## Known Limitation
 
-> **Warning**:
+> **Warning**
 >
 > *   Using characters like `\n`, `%`, `.` and `\r` as output string separators would be [URL encoded](https://www.w3schools.com/tags/ref_urlencode.asp)
 
