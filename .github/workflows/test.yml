@@ -43,6 +43,16 @@ jobs:
         run: |
           echo "Changed files (Not expected): ${{ steps.changed_files_not_expected.outputs.changed_files }}"
           exit 1
+      - name: Test dont fail if not changed
+        uses: ./
+        id: changed_files_not_expected_fail
+        with:
+          fail-if-changed: true
+          files: |
+            test/*.txt
+            test/*.sql
+            test/**/*.txt
+            test/**/*.sql
       - name: Make changes
         run: |
           printf '%s\n' "323442" "424" >> test/new.txt
