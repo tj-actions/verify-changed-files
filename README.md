@@ -117,12 +117,12 @@ Support this project with a :star:
 
 <!-- AUTO-DOC-INPUT:START - Do not remove or modify this section -->
 
-|         INPUT         |  TYPE  | REQUIRED |  DEFAULT  |                        DESCRIPTION                         |
-|-----------------------|--------|----------|-----------|------------------------------------------------------------|
-|         files         | string |  false   |           | File/Directory names to check for <br>uncommited changes.  |
-|    files-separator    | string |  false   |  `"\n"`   |       Separator used to split the <br>`files` input        |
-| match-gitignore-files | string |   true   | `"false"` |   Indicates whether to match files <br>in `.gitignore`     |
-|       separator       | string |  false   |   `" "`   |                  Output string separator.                  |
+|                                              INPUT                                              |  TYPE  | REQUIRED |  DEFAULT  |                        DESCRIPTION                         |
+|-------------------------------------------------------------------------------------------------|--------|----------|-----------|------------------------------------------------------------|
+|                         <a name="input_files"></a>[files](#input_files)                         | string |  false   |           | File/Directory names to check for <br>uncommited changes.  |
+|          <a name="input_files-separator"></a>[files-separator](#input_files-separator)          | string |  false   |  `"\n"`   |       Separator used to split the <br>`files` input        |
+| <a name="input_match-gitignore-files"></a>[match-gitignore-files](#input_match-gitignore-files) | string |   true   | `"false"` |   Indicates whether to match files <br>in `.gitignore`     |
+|                   <a name="input_separator"></a>[separator](#input_separator)                   | string |  false   |   `" "`   |                  Output string separator.                  |
 
 <!-- AUTO-DOC-INPUT:END -->
 
@@ -130,10 +130,10 @@ Support this project with a :star:
 
 <!-- AUTO-DOC-OUTPUT:START - Do not remove or modify this section -->
 
-|    OUTPUT     |  TYPE  |                   DESCRIPTION                    |
-|---------------|--------|--------------------------------------------------|
-| changed\_files | string |              List of changed files               |
-| files\_changed | string | Boolean indicating that files have <br>changed.  |
+|                                  OUTPUT                                   |  TYPE  |                   DESCRIPTION                    |
+|---------------------------------------------------------------------------|--------|--------------------------------------------------|
+| <a name="output_changed_files"></a>[changed\_files](#output_changed_files) | string |              List of changed files               |
+| <a name="output_files_changed"></a>[files\_changed](#output_files_changed) | string | Boolean indicating that files have <br>changed.  |
 
 <!-- AUTO-DOC-OUTPUT:END -->
 
