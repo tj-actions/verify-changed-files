@@ -17,6 +17,14 @@ inputs:
     description: 'Indicates whether to match files in `.gitignore`'
     default: "false"
     required: true
+  fail-if-changed:
+    description: 'Indicates whether to fail if files have changed.'
+    default: "false"
+    required: false
+  fail-message:
+    description: 'Message to display when files have changed and the `fail-if-changed` input is set to `true`.'
+    default: "Files have changed."
+    required: false
 
 outputs:
   files_changed:
@@ -50,6 +58,8 @@ runs:
         INPUT_FILES_PATTERN_FILE: ${{ steps.glob.outputs.paths-output-file }}
         INPUT_SEPARATOR: ${{ inputs.separator }}
         INPUT_MATCH_GITIGNORE_FILES: ${{ inputs.match-gitignore-files }}
+        INPUT_FAIL_IF_CHANGED: ${{ inputs.fail-if-changed }}
+        INPUT_FAIL_MSG: ${{ inputs.fail-message }}
 
 branding:
   icon: file-text
