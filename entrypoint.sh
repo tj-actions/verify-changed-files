@@ -56,6 +56,13 @@ if [[ -n "$CHANGED_FILES" ]]; then
     echo "changed_files=$CHANGED_FILES" >> "$GITHUB_OUTPUT"
   fi
 
+  if [[ "$INPUT_FAIL_IF_CHANGED" == "true" ]]; then
+    if [[ -n "$INPUT_FAIL_MSG" ]]; then
+      echo "$INPUT_FAIL_MSG"
+    fi
+    exit 1
+  fi
+
 else
   echo "No changes found."
 
@@ -67,10 +74,3 @@ else
 fi
 
 echo "::endgroup::"
-
-if [[ "$INPUT_FAIL_IF_CHANGED" == "true" ]] && [[ -n "$CHANGED_FILES" ]]; then
-  if [[ -n "$INPUT_FAIL_MSG" ]]; then
-    echo "$INPUT_FAIL_MSG"
-  fi
-  exit 1
-fi
