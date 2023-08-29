@@ -47,23 +47,15 @@ if [[ -n "$CHANGED_FILES" ]]; then
   echo "Found uncommited changes"
 
   CHANGED_FILES=$(echo "$CHANGED_FILES" | awk '{gsub(/\|/,"\n"); print $0;}' | awk -v d="$INPUT_SEPARATOR" '{s=(NR==1?s:s d)$0}END{print s}')
-  
-  if [[ -z "$GITHUB_OUTPUT" ]]; then
-    echo "::set-output name=files_changed::true"
-    echo "::set-output name=changed_files::$CHANGED_FILES"
-  else
-    echo "files_changed=true" >> "$GITHUB_OUTPUT"
-    echo "changed_files=$CHANGED_FILES" >> "$GITHUB_OUTPUT"
-  fi
+
+  echo "files_changed=true" >> "$GITHUB_OUTPUT"
+  echo "changed_files=$CHANGED_FILES" >> "$GITHUB_OUTPUT"
   
 else
   echo "No changes found."
   
-  if [[ -z "$GITHUB_OUTPUT" ]]; then
-    echo "::set-output name=files_changed::false"
-  else
-    echo "files_changed=false" >> "$GITHUB_OUTPUT"
-  fi
+  echo "files_changed=false" >> "$GITHUB_OUTPUT"
+  
 fi
 
 echo "::endgroup::"
