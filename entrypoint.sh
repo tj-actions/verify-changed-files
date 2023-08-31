@@ -50,12 +50,17 @@ if [[ -n "$CHANGED_FILES" ]]; then
 
   echo "files_changed=true" >> "$GITHUB_OUTPUT"
   echo "changed_files=$CHANGED_FILES" >> "$GITHUB_OUTPUT"
-  
+
+  if [[ "$INPUT_FAIL_IF_CHANGED" == "true" ]]; then
+    if [[ -n "$INPUT_FAIL_MSG" ]]; then
+      echo "::error::$INPUT_FAIL_MSG"
+    fi
+    exit 1
+  fi
+
 else
   echo "No changes found."
-  
-  echo "files_changed=false" >> "$GITHUB_OUTPUT"
-  
+  echo "::set-output name=files_changed::false"
 fi
 
 echo "::endgroup::"

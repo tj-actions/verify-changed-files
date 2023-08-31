@@ -9,7 +9,7 @@
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
@@ -117,12 +117,14 @@ Support this project with a :star:
 
 <!-- AUTO-DOC-INPUT:START - Do not remove or modify this section -->
 
-|                                              INPUT                                              |  TYPE  | REQUIRED |  DEFAULT  |                        DESCRIPTION                         |
-|-------------------------------------------------------------------------------------------------|--------|----------|-----------|------------------------------------------------------------|
-|                         <a name="input_files"></a>[files](#input_files)                         | string |  false   |           | File/Directory names to check for <br>uncommited changes.  |
-|          <a name="input_files-separator"></a>[files-separator](#input_files-separator)          | string |  false   |  `"\n"`   |       Separator used to split the <br>`files` input        |
-| <a name="input_match-gitignore-files"></a>[match-gitignore-files](#input_match-gitignore-files) | string |   true   | `"false"` |   Indicates whether to match files <br>in `.gitignore`     |
-|                   <a name="input_separator"></a>[separator](#input_separator)                   | string |  false   |   `" "`   |                  Output string separator.                  |
+|                                              INPUT                                              |  TYPE  | REQUIRED |         DEFAULT         |                                              DESCRIPTION                                              |
+|-------------------------------------------------------------------------------------------------|--------|----------|-------------------------|-------------------------------------------------------------------------------------------------------|
+|          <a name="input_fail-if-changed"></a>[fail-if-changed](#input_fail-if-changed)          | string |  false   |        `"false"`        |                         Indicates whether to fail if <br>files have changed.                          |
+|              <a name="input_fail-message"></a>[fail-message](#input_fail-message)               | string |  false   | `"Files have changed."` | Message to display when files <br>have changed and the `fail-if-changed` <br>input is set to `true`.  |
+|                         <a name="input_files"></a>[files](#input_files)                         | string |  false   |                         |                      File/Directory names to check for <br>uncommited changes.                        |
+|          <a name="input_files-separator"></a>[files-separator](#input_files-separator)          | string |  false   |         `"\n"`          |                            Separator used to split the <br>`files` input                              |
+| <a name="input_match-gitignore-files"></a>[match-gitignore-files](#input_match-gitignore-files) | string |   true   |        `"false"`        |                         Indicates whether to match files <br>in `.gitignore`                          |
+|                   <a name="input_separator"></a>[separator](#input_separator)                   | string |  false   |          `" "`          |                                       Output string separator.                                        |
 
 <!-- AUTO-DOC-INPUT:END -->
 
@@ -166,10 +168,13 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 
 <table>
-  <tr>
-    <td align="center"><a href="https://github.com/max-kahnt-keylight"><img src="https://avatars.githubusercontent.com/u/79849575?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Max Kahnt</b></sub></a><br /><a href="https://github.com/tj-actions/verify-changed-files/commits?author=max-kahnt-keylight" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://wllm.no"><img src="https://avatars.githubusercontent.com/u/1223410?v=4?s=100" width="100px;" alt=""/><br /><sub><b>William Killerud</b></sub></a><br /><a href="https://github.com/tj-actions/verify-changed-files/commits?author=wkillerud" title="Code">💻</a></td>
-  </tr>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/max-kahnt-keylight"><img src="https://avatars.githubusercontent.com/u/79849575?v=4?s=100" width="100px;" alt="Max Kahnt"/><br /><sub><b>Max Kahnt</b></sub></a><br /><a href="https://github.com/tj-actions/verify-changed-files/commits?author=max-kahnt-keylight" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://wllm.no"><img src="https://avatars.githubusercontent.com/u/1223410?v=4?s=100" width="100px;" alt="William Killerud"/><br /><sub><b>William Killerud</b></sub></a><br /><a href="https://github.com/tj-actions/verify-changed-files/commits?author=wkillerud" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Minecraftschurli"><img src="https://avatars.githubusercontent.com/u/23388022?v=4?s=100" width="100px;" alt="Minecraftschurli"/><br /><sub><b>Minecraftschurli</b></sub></a><br /><a href="https://github.com/tj-actions/verify-changed-files/commits?author=Minecraftschurli" title="Code">💻</a> <a href="https://github.com/tj-actions/verify-changed-files/commits?author=Minecraftschurli" title="Documentation">📖</a> <a href="https://github.com/tj-actions/verify-changed-files/commits?author=Minecraftschurli" title="Tests">⚠️</a></td>
+    </tr>
+  </tbody>
 </table>
 
 <!-- markdownlint-restore -->
