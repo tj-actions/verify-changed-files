@@ -1,5 +1,77 @@
 # Changelog
 
+# [16.1.0](https://github.com/tj-actions/verify-changed-files/compare/v16.0.1...v16.1.0) - (2023-09-14)
+
+## <!-- 1 -->🐛 Bug Fixes
+
+- **github-actions:** Remove old output syntax ([#326](https://github.com/tj-actions/verify-changed-files/issues/326)) ([b414bdd](https://github.com/tj-actions/verify-changed-files/commit/b414bdd6f2a2c9763f6653938148f51248dae2f1))  - (Stefan Hoth)
+
+## <!-- 16 -->➕ Add
+
+- Add `fail-if-changed` option ([#321](https://github.com/tj-actions/verify-changed-files/issues/321))
+
+* Add `fail-if-changed` option
+
+* Update entrypoint.sh
+
+* Update test.yml
+
+---------
+
+Co-authored-by: Tonye Jack <jtonye@ymail.com> ([167811b](https://github.com/tj-actions/verify-changed-files/commit/167811b87ee57ab9dcc50dbdbcdae21c42ab5eb0))  - (Minecraftschurli)
+
+## <!-- 17 -->➖ Remove
+
+- Deleted .github/ISSUE_TEMPLATE/feature_request.yaml ([de69a3b](https://github.com/tj-actions/verify-changed-files/commit/de69a3b39685713d235add112fc87fb23953b528))  - (Tonye Jack)
+- Deleted .github/ISSUE_TEMPLATE/bug_report.yaml ([ef39314](https://github.com/tj-actions/verify-changed-files/commit/ef39314e82d6592d79a92cc8b5e40e94e457ab7b))  - (Tonye Jack)
+- Deleted .github/FUNDING.yml ([1f41d5d](https://github.com/tj-actions/verify-changed-files/commit/1f41d5d00a6c51e60d911f31411457b6a2cea2b6))  - (Tonye Jack)
+
+## <!-- 26 -->🔄 Update
+
+- Updated README.md
+ ([e74de09](https://github.com/tj-actions/verify-changed-files/commit/e74de092ee059757a1bbd3985bf6b0e07d27f83d))  - (jackton1)
+- Updated README.md
+ ([c5f7ef3](https://github.com/tj-actions/verify-changed-files/commit/c5f7ef3f54d13408eb0133764b416de5fdaeec7b))  - (jackton1)
+- Updated README.md ([#328](https://github.com/tj-actions/verify-changed-files/issues/328))
+
+Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([1b0a45f](https://github.com/tj-actions/verify-changed-files/commit/1b0a45f5abe665f22f4ce686837c288fa8411b29))  - (tj-actions[bot])
+- Updated .github/FUNDING.yml ([6d81f71](https://github.com/tj-actions/verify-changed-files/commit/6d81f71d95fe5e597f03605f5cbaaa09b2786bc5))  - (Tonye Jack)
+- Updated .github/FUNDING.yml ([112c640](https://github.com/tj-actions/verify-changed-files/commit/112c640534080867170cf1e6a01b3c8f89c072c6))  - (Tonye Jack)
+- Updated README.md
+ ([796d6c7](https://github.com/tj-actions/verify-changed-files/commit/796d6c7adc0b70795fb53997e933a4f82d552cc8))  - (repo-ranger[bot])
+- Update README.md ([427c15b](https://github.com/tj-actions/verify-changed-files/commit/427c15b4c59912ea816061ebda563a96b4d244be))  - (Tonye Jack)
+
+## <!-- 3 -->📚 Documentation
+
+- Add stefanhoth as a contributor for code ([#330](https://github.com/tj-actions/verify-changed-files/issues/330)) ([c93a8c1](https://github.com/tj-actions/verify-changed-files/commit/c93a8c1f2359a1d9127c97d7bf838b4ef7911506))  - (allcontributors[bot])
+- Add Minecraftschurli as a contributor for code, doc, and test ([#327](https://github.com/tj-actions/verify-changed-files/issues/327)) ([c508450](https://github.com/tj-actions/verify-changed-files/commit/c508450b0d1898564b1545a418d538b0113a45a7))  - (allcontributors[bot])
+
+## <!-- 30 -->📝 Other
+
+- PR [#332](https://github.com/tj-actions/verify-changed-files/pull/332): update actions/checkout action to v4 ([fa3832e](https://github.com/tj-actions/verify-changed-files/commit/fa3832e1e00cb4a46b060c6ab5fba0e4c6b91db5))  - (repo-ranger[bot])
+- PR [#331](https://github.com/tj-actions/verify-changed-files/pull/331): README.md ([d4b2f94](https://github.com/tj-actions/verify-changed-files/commit/d4b2f9457badcd3cbdcc534511915030e6cb041a))  - (repo-ranger[bot])
+- PR [#329](https://github.com/tj-actions/verify-changed-files/pull/329): README.md ([0e5e947](https://github.com/tj-actions/verify-changed-files/commit/0e5e947380cb02ea2178c738a0a03d451bf5b1f7))  - (repo-ranger[bot])
+- PR [#325](https://github.com/tj-actions/verify-changed-files/pull/325): update tj-actions/release-tagger action to v4 ([6693935](https://github.com/tj-actions/verify-changed-files/commit/66939357222523a6f50d3fe1f75c5b84d360ae69))  - (repo-ranger[bot])
+- PR [#323](https://github.com/tj-actions/verify-changed-files/pull/323): README.md ([1a83a50](https://github.com/tj-actions/verify-changed-files/commit/1a83a5000d3f27716fadb579447e307f20387c17))  - (repo-ranger[bot])
+- PR [#322](https://github.com/tj-actions/verify-changed-files/pull/322): update tj-actions/auto-doc action to v3 ([8054485](https://github.com/tj-actions/verify-changed-files/commit/8054485c8ab38c38af5e672a79897db523fd67fe))  - (repo-ranger[bot])
+- PR [#317](https://github.com/tj-actions/verify-changed-files/pull/317): to v16.0.1 ([1947832](https://github.com/tj-actions/verify-changed-files/commit/19478322f15c532e4fe61606686907e8839b9f68))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- **deps:** Update tj-actions/auto-doc action to v3.0.1 ([a9b6fd3](https://github.com/tj-actions/verify-changed-files/commit/a9b6fd340565065ad293625200630be7fd2b0f13))  - (renovate[bot])
+- **deps:** Update reviewdog/action-shellcheck action to v1.19 ([0ca1c5c](https://github.com/tj-actions/verify-changed-files/commit/0ca1c5cfa298f4dbedc9b901048f8ee61f153f19))  - (renovate[bot])
+- **deps:** Update actions/checkout action to v4 ([f5cda3c](https://github.com/tj-actions/verify-changed-files/commit/f5cda3ced372402a997a4a5b666ed05156133773))  - (renovate[bot])
+- **deps:** Update tj-actions/release-tagger action to v4 ([8d52a63](https://github.com/tj-actions/verify-changed-files/commit/8d52a63b6198463c39e9df9ac19d83b787bf1047))  - (renovate[bot])
+- **deps:** Update actions/checkout action to v3.6.0 ([05e179b](https://github.com/tj-actions/verify-changed-files/commit/05e179b06645e3e6adcdb1291bd998c9a713f4a6))  - (renovate[bot])
+- **deps:** Update tj-actions/auto-doc action to v3 ([ef0fde4](https://github.com/tj-actions/verify-changed-files/commit/ef0fde419aaf641b7067b9b94bfe8680784ab1fa))  - (renovate[bot])
+- **deps:** Update tj-actions/auto-doc action to v2.9.0 ([3f2b60f](https://github.com/tj-actions/verify-changed-files/commit/3f2b60ffcdfba6155ff2585cab50b8d8a7c737e6))  - (renovate[bot])
+- **deps:** Update tj-actions/auto-doc action to v2.8.0 ([54fe0b7](https://github.com/tj-actions/verify-changed-files/commit/54fe0b71ee3dcf98a88eb23a360ec8d80ba9ed40))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v16.0.0 -> v16.0.1
+ ([c103512](https://github.com/tj-actions/verify-changed-files/commit/c103512e0a7fdd96a299bf42dd4e49a9f9ce6a82))  - (jackton1)
+
 # [16.0.1](https://github.com/tj-actions/verify-changed-files/compare/v16.0.0...v16.0.1) - (2023-07-05)
 
 ## <!-- 17 -->➖ Remove
