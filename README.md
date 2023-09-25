@@ -19,7 +19,7 @@ Verify that certain files or directories did or did not change during the workfl
 
 > **Warning**
 >
-> *   This action only detects files that have pending uncommited changes generated during the workflow execution, for running a specific step when a file changes in a pull request or based on a pushed commit
+> *   This action only detects files that have pending uncommitted changes generated during the workflow execution, for running a specific step when a file changes in a pull request or based on a pushed commit
 >
 >     See: https://github.com/tj-actions/changed-files
 
@@ -32,7 +32,7 @@ Verify that certain files or directories did or did not change during the workfl
 *   [GitHub-hosted runners](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners) support
 *   [GitHub Enterprise Server](https://docs.github.com/en/enterprise-server@3.3/admin/github-actions/getting-started-with-github-actions-for-your-enterprise/getting-started-with-github-actions-for-github-enterprise-server) support.
 *   [self-hosted runners](https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners) support.
-*   Boolean output for detecting uncommited changes.
+*   Boolean output for detecting uncommitted changes.
 *   List all files that changed during the workflow execution.
 *   Detect changes to track and untracked files.
 *   Restrict change detection to a subset of files:
