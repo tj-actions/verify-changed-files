@@ -60,7 +60,7 @@ if [[ -n "$CHANGED_FILES" ]]; then
 
 else
   echo "No changes found."
-  echo "::set-output name=files_changed::false"
+  echo "files_changed=false" >> "$GITHUB_OUTPUT"
 fi
 
 echo "::endgroup::"
