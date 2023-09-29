@@ -134,3 +134,25 @@ jobs:
         run: |
           echo "No Changes found: (Not expected)"
           exit 1
+
+      - name: Delete test/new.txt without staging
+        run: |
+          rm test/new.txt
+
+      - name: Test deletion of test/new.txt
+        uses: ./
+        id: deleted_file_test
+        with:
+          files: |
+            test/new.txt
+
+      - name: Display deleted file test result
+        if: steps.deleted_file_test.outputs.files_changed == 'true'
+        run: |
+          echo "Deletion detected: ${{ steps.deleted_file_test.outputs.changed_files }}"
+
+      - name: Verify Deletion of test/new.txt
+        if: steps.deleted_file_test.outputs.files_changed != 'true'
+        run: |
+          echo "No Deletion detected: (Not expected)"
+          exit 1
