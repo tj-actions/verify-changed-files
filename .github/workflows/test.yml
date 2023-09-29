@@ -142,9 +142,6 @@ jobs:
       - name: Test deletion of test/new.txt
         uses: ./
         id: deleted_file_test
-        with:
-          files: |
-            test/new.txt
 
       - name: Display deleted file test result
         if: steps.deleted_file_test.outputs.files_changed == 'true'
