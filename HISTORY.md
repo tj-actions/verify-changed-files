@@ -1,5 +1,33 @@
 # Changelog
 
+# [16.1.1](https://github.com/tj-actions/verify-changed-files/compare/v16.1.0...v16.1.1) - (2023-10-01)
+
+## <!-- 1 -->🐛 Bug Fixes
+
+- Bug with detecting deleted files ([312b11e](https://github.com/tj-actions/verify-changed-files/commit/312b11e8b4790e459ec5ea5a2f5cf5f776b5f6df))  - (Tonye Jack)
+- Use of deprecated set output ([#341](https://github.com/tj-actions/verify-changed-files/issues/341)) ([1d6a375](https://github.com/tj-actions/verify-changed-files/commit/1d6a3754b98bff6b77f12e7cc071ba368e9eeaa2))  - (Tonye Jack)
+
+## <!-- 26 -->🔄 Update
+
+- Update README.md ([5dc77cf](https://github.com/tj-actions/verify-changed-files/commit/5dc77cfe76dcb899d4faded61ae7d7eede2a2996))  - (Tonye Jack)
+
+## <!-- 30 -->📝 Other
+
+- PR [#342](https://github.com/tj-actions/verify-changed-files/pull/342): bug with detecting deleted files ([fe1db7a](https://github.com/tj-actions/verify-changed-files/commit/fe1db7a3ef87f5bbad87629deb904b60bf8350c1))  - (repo-ranger[bot])
+- PR [#335](https://github.com/tj-actions/verify-changed-files/pull/335): to v16.1.0 ([98cb02b](https://github.com/tj-actions/verify-changed-files/commit/98cb02b818e350b63e9ba438cff38c8927af5365))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- Test detecting deleted unstaged files ([#340](https://github.com/tj-actions/verify-changed-files/issues/340)) ([54e20d3](https://github.com/tj-actions/verify-changed-files/commit/54e20d3c522fbeed99ebaf2e38a1eb33214c58ba))  - (Tonye Jack)
+- **deps:** Update tj-actions/auto-doc action to v3.1.0 ([b7425dc](https://github.com/tj-actions/verify-changed-files/commit/b7425dc4a49717a67584e41daffd6406900c6a96))  - (renovate[bot])
+- **deps:** Update actions/checkout action to v4.1.0 ([3a64002](https://github.com/tj-actions/verify-changed-files/commit/3a640023477c5b2bba404de3ad005ab01923ff70))  - (renovate[bot])
+- **deps:** Update actions/checkout digest to 8ade135 ([5b70b3d](https://github.com/tj-actions/verify-changed-files/commit/5b70b3d2867499d9d6afeb415759979bb0b009ed))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v16.0.1 -> v16.1.0
+ ([bbade59](https://github.com/tj-actions/verify-changed-files/commit/bbade59f6a9d53f590015272840939a79cc20a44))  - (jackton1)
+
 # [16.1.0](https://github.com/tj-actions/verify-changed-files/compare/v16.0.1...v16.1.0) - (2023-09-14)
 
 ## <!-- 1 -->🐛 Bug Fixes
