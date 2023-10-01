@@ -39,6 +39,7 @@ runs:
   steps:
     - name: Glob match
       uses: tj-actions/glob@v17
+      if: inputs.files
       id: glob
       with:
         files: ${{ inputs.files }}
