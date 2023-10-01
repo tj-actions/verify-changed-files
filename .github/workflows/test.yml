@@ -144,12 +144,12 @@ jobs:
         id: deleted_file_test
 
       - name: Display deleted file test result
-        if: steps.deleted_file_test.outputs.files_changed == 'true'
+        if: "contains(steps.deleted_file_test.outputs.changed_files, 'test/new.txt')"
         run: |
           echo "Deletion detected: ${{ steps.deleted_file_test.outputs.changed_files }}"
 
       - name: Verify Deletion of test/new.txt
-        if: steps.deleted_file_test.outputs.files_changed != 'true'
+        if: "!contains(steps.deleted_file_test.outputs.changed_files, 'test/new.txt')"
         run: |
           echo "No Deletion detected: (Not expected)"
           exit 1
