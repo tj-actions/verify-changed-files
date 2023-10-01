@@ -143,6 +143,10 @@ jobs:
         uses: ./
         id: deleted_file_test
 
+      - name: Show output
+        run: |
+          echo "Changed files: ${{ steps.deleted_file_test.outputs.changed_files }}"
+
       - name: Display deleted file test result
         if: "contains(steps.deleted_file_test.outputs.changed_files, 'test/new.txt')"
         run: |
