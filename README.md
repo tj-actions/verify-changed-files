@@ -143,7 +143,7 @@ Support this project with a :star:
 
 ## Known Limitation
 
-> **Warning**
+> [!WARNING]
 >
 > *   Using characters like `\n`, `%`, `.` and `\r` as output string separators would be [URL encoded](https://www.w3schools.com/tags/ref_urlencode.asp)
 
