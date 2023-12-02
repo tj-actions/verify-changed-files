@@ -117,14 +117,41 @@ Support this project with a :star:
 
 <!-- AUTO-DOC-INPUT:START - Do not remove or modify this section -->
 
-|                                              INPUT                                              |  TYPE  | REQUIRED |         DEFAULT         |                                              DESCRIPTION                                              |
-|-------------------------------------------------------------------------------------------------|--------|----------|-------------------------|-------------------------------------------------------------------------------------------------------|
-|          <a name="input_fail-if-changed"></a>[fail-if-changed](#input_fail-if-changed)          | string |  false   |        `"false"`        |                         Indicates whether to fail if <br>files have changed.                          |
-|              <a name="input_fail-message"></a>[fail-message](#input_fail-message)               | string |  false   | `"Files have changed."` | Message to display when files <br>have changed and the `fail-if-changed` <br>input is set to `true`.  |
-|                         <a name="input_files"></a>[files](#input_files)                         | string |  false   |                         |                      File/Directory names to check for <br>uncommited changes.                        |
-|          <a name="input_files-separator"></a>[files-separator](#input_files-separator)          | string |  false   |         `"\n"`          |                            Separator used to split the <br>`files` input                              |
-| <a name="input_match-gitignore-files"></a>[match-gitignore-files](#input_match-gitignore-files) | string |   true   |        `"false"`        |                         Indicates whether to match files <br>in `.gitignore`                          |
-|                   <a name="input_separator"></a>[separator](#input_separator)                   | string |  false   |          `" "`          |                                       Output string separator.                                        |
+```yaml
+- uses: tj-actions/verify-changed-files@v16
+  id: verify-changed-files
+  with:
+    # Indicates whether to fail if files have changed.
+    # Type: boolean
+    # Default: "false"
+    fail-if-changed: ''
+
+    # Message to display when files have changed and the 
+    # `fail-if-changed` input is set to `true`. 
+    # Type: string
+    # Default: "Files have changed."
+    fail-message: ''
+
+    # File/Directory names to check for uncommited changes.
+    # Type: string
+    files: ''
+
+    # Separator used to split the `files` input
+    # Type: string
+    # Default: "\n"
+    files-separator: ''
+
+    # Indicates whether to match files in `.gitignore`
+    # Type: boolean
+    # Default: "false"
+    match-gitignore-files: ''
+
+    # Output string separator.
+    # Type: string
+    # Default: " "
+    separator: ''
+
+```
 
 <!-- AUTO-DOC-INPUT:END -->
 
