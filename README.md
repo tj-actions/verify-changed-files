@@ -39,7 +39,7 @@ Verify that certain files or directories did or did not change during the workfl
     *   Using [Glob pattern](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet) matching.
         *   Supports Globstar.
         *   Supports brace expansion.
-        *   Supports negation. 
+        *   Supports negation.
 
 ## Usage
 
