@@ -37,6 +37,9 @@ Verify that certain files or directories did or did not change during the workfl
 *   Detect changes to track and untracked files.
 *   Restrict change detection to a subset of files:
     *   Using [Glob pattern](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet) matching.
+        *   Supports Globstar.
+        *   Supports brace expansion.
+        *   Supports negation. 
 
 ## Usage
 
@@ -61,8 +64,7 @@ Verify that certain files or directories did or did not change during the workfl
              *.txt
              test_directory
              action.yml
-             **/*.py
-             **/*.jpeg
+             **/*.{jpeg,py}
              !*.sql
 
       - name: Run step only when any of the above files change.
