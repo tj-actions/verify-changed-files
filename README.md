@@ -158,6 +158,12 @@ Support this project with a :star:
     # Default: "false"
     match-gitignore-files: ''
 
+    # Apply sanitization to output filenames before being set as 
+    # output. 
+    # Type: boolean
+    # Default: "true"
+    safe_output: ''
+
     # Output string separator.
     # Type: string
     # Default: " "
