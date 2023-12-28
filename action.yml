@@ -25,6 +25,10 @@ inputs:
     description: 'Message to display when files have changed and the `fail-if-changed` input is set to `true`.'
     default: "Files have changed."
     required: false
+  safe_output:
+    description: "Apply sanitization to output filenames before being set as output."
+    required: false
+    default: "true"
 
 outputs:
   files_changed:
@@ -61,6 +65,7 @@ runs:
         INPUT_MATCH_GITIGNORE_FILES: ${{ inputs.match-gitignore-files }}
         INPUT_FAIL_IF_CHANGED: ${{ inputs.fail-if-changed }}
         INPUT_FAIL_MSG: ${{ inputs.fail-message }}
+        INPUT_SAFE_OUTPUT: ${{ inputs.safe_output }}
 
 branding:
   icon: file-text

@@ -66,6 +66,16 @@ if [[ -n "$CHANGED_FILES" ]]; then
 
   CHANGED_FILES=$(echo "$CHANGED_FILES" | awk '{gsub(/\|/,"\n"); print $0;}' | awk -v d="$INPUT_SEPARATOR" '{s=(NR==1?s:s d)$0}END{print s}')
 
+  if [[ "$INPUT_SAFE_OUTPUT" == "true" ]]; then
+    CHANGED_FILES=${CHANGED_FILES//$/\\$} # Replace $ with \$
+    CHANGED_FILES=${CHANGED_FILES//\(/\\\(}} # Replace ( with \(
+    CHANGED_FILES=${CHANGED_FILES//\)/\\\)}} # Replace ) with \)
+    CHANGED_FILES=${CHANGED_FILES//\`/\\\`} # Replace ` with \`
+    CHANGED_FILES=${CHANGED_FILES//|/\\|} # Replace | with \|
+    CHANGED_FILES=${CHANGED_FILES//&/\\&} # Replace & with \&
+    CHANGED_FILES=${CHANGED_FILES//;/\\;} # Replace ; with \;
+  fi
+
   echo "files_changed=true" >> "$GITHUB_OUTPUT"
   echo "changed_files=$CHANGED_FILES" >> "$GITHUB_OUTPUT"
 

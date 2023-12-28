@@ -60,6 +60,7 @@ Verify that certain files or directories did or did not change during the workfl
         uses: tj-actions/verify-changed-files@v16
         id: verify-changed-files
         with:
+          safe_output: false # true by default, set to false because we are using an environment variable to store the output and avoid command injection.
           files: |
              *.txt
              test_directory
@@ -69,8 +70,11 @@ Verify that certain files or directories did or did not change during the workfl
 
       - name: Run step only when any of the above files change.
         if: steps.verify-changed-files.outputs.files_changed == 'true'
+        env:
+          FILES_CHANGED: |-
+            ${{ steps.verify-changed-files.outputs.changed_files }}
         run: |
-          echo "Changed files: ${{ steps.verify-changed-files.outputs.changed_files }}"
+          echo "Changed files: $FILES_CHANGED"
         # Outputs: "Changed files: new.txt test_directory/new.txt"
 ```
 
@@ -82,6 +86,7 @@ Verify that certain files or directories did or did not change during the workfl
         uses: tj-actions/verify-changed-files@v16
         id: verify-changed-files
         with:
+          safe_output: false
           files: |
              new.txt
              test_directory
@@ -99,10 +104,15 @@ Verify that certain files or directories did or did not change during the workfl
       - name: Verify Changed files
         uses: tj-actions/verify-changed-files@v16
         id: verify-changed-files
+        with:
+          safe_output: false
       
       - name: List all changed files tracked and untracked files
+        env:
+          FILES_CHANGED: |-
+            ${{ steps.verify-changed-files.outputs.changed_files }}
         run: |
-          echo "Changed files: ${{ steps.verify-changed-files.outputs.changed_files }}"
+          echo "Changed files: $FILES_CHANGED"
 ```
 
 If you feel generous and want to show some extra appreciation:
