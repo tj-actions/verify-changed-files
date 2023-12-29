@@ -60,7 +60,6 @@ Verify that certain files or directories did or did not change during the workfl
         uses: tj-actions/verify-changed-files@v16
         id: verify-changed-files
         with:
-          safe_output: false # true by default, set to false because we are using an environment variable to store the output and avoid command injection.
           files: |
              *.txt
              test_directory
@@ -86,7 +85,6 @@ Verify that certain files or directories did or did not change during the workfl
         uses: tj-actions/verify-changed-files@v16
         id: verify-changed-files
         with:
-          safe_output: false
           files: |
              new.txt
              test_directory
@@ -104,13 +102,10 @@ Verify that certain files or directories did or did not change during the workfl
       - name: Verify Changed files
         uses: tj-actions/verify-changed-files@v16
         id: verify-changed-files
-        with:
-          safe_output: false
       
       - name: List all changed files tracked and untracked files
         env:
-          FILES_CHANGED: |-
-            ${{ steps.verify-changed-files.outputs.changed_files }}
+          FILES_CHANGED: ${{ steps.verify-changed-files.outputs.changed_files }}
         run: |
           echo "Changed files: $FILES_CHANGED"
 ```
