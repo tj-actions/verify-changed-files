@@ -72,7 +72,7 @@ Verify that certain files or directories did or did not change during the workfl
         env:
           CHANGED_FILES: ${{ steps.verify-changed-files.outputs.changed_files }}
         run: |
-          echo "Changed files: $FILES_CHANGED"
+          echo "Changed files: $CHANGED_FILES"
         # Outputs: "Changed files: new.txt test_directory/new.txt"
 ```
 
@@ -106,7 +106,7 @@ Verify that certain files or directories did or did not change during the workfl
         env:
           CHANGED_FILES: ${{ steps.verify-changed-files.outputs.changed_files }}
         run: |
-          echo "Changed files: $FILES_CHANGED"
+          echo "Changed files: $CHANGED_FILES"
 ```
 
 If you feel generous and want to show some extra appreciation:
