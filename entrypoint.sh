@@ -39,17 +39,26 @@ fi
 
 CHANGED_FILES=""
 
-# Function to concatenate non-empty strings with a separator
+# Function to concatenate non-empty file names with a separator
 concatenate() {
   local separator=$1
   shift
   local result=""
-  for str in "$@"; do
-    if [[ -n $str ]]; then
+  for filename in "$@"; do
+    if [[ "$INPUT_SAFE_OUTPUT" == "true" ]]; then
+      filename=${filename//$/\\$} # Replace $ with \$
+      filename=${filename//\(/\\\(} # Replace ( with \(
+      filename=${filename//\)/\\\)} # Replace ) with \)
+      filename=${filename//\`/\\\`} # Replace ` with \`
+      filename=${filename//|/\\|} # Replace | with \|
+      filename=${filename//&/\\&} # Replace & with \&
+      filename=${filename//;/\\;} # Replace ; with \;
+    fi
+    if [[ -n $filename ]]; then
       if [[ -n $result ]]; then
-        result+="$separator$str"
+        result+="$separator$filename"
       else
-        result="$str"
+        result="$filename"
       fi
     fi
   done
@@ -62,19 +71,9 @@ CHANGED_FILES=$(concatenate "|" "$TRACKED_FILES" "$UNTRACKED_OR_IGNORED_FILES" "
 CHANGED_FILES=$(echo "$CHANGED_FILES"  | awk '{gsub(/\|/,"\n"); print $0;}' | sort -u | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
 
 if [[ -n "$CHANGED_FILES" ]]; then
-  echo "Found uncommited changes"
+  echo "Found uncommitted changes"
 
   CHANGED_FILES=$(echo "$CHANGED_FILES" | awk '{gsub(/\|/,"\n"); print $0;}' | awk -v d="$INPUT_SEPARATOR" '{s=(NR==1?s:s d)$0}END{print s}')
-
-  if [[ "$INPUT_SAFE_OUTPUT" == "true" ]]; then
-    CHANGED_FILES=${CHANGED_FILES//$/\\$} # Replace $ with \$
-    CHANGED_FILES=${CHANGED_FILES//\(/\\\(}} # Replace ( with \(
-    CHANGED_FILES=${CHANGED_FILES//\)/\\\)}} # Replace ) with \)
-    CHANGED_FILES=${CHANGED_FILES//\`/\\\`} # Replace ` with \`
-    CHANGED_FILES=${CHANGED_FILES//|/\\|} # Replace | with \|
-    CHANGED_FILES=${CHANGED_FILES//&/\\&} # Replace & with \&
-    CHANGED_FILES=${CHANGED_FILES//;/\\;} # Replace ; with \;
-  fi
 
   echo "files_changed=true" >> "$GITHUB_OUTPUT"
   echo "changed_files=$CHANGED_FILES" >> "$GITHUB_OUTPUT"
@@ -85,7 +84,6 @@ if [[ -n "$CHANGED_FILES" ]]; then
     fi
     exit 1
   fi
-
 else
   echo "No changes found."
   echo "files_changed=false" >> "$GITHUB_OUTPUT"
