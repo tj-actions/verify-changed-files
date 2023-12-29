@@ -103,7 +103,7 @@ Verify that certain files or directories did or did not change during the workfl
         uses: tj-actions/verify-changed-files@v16
         id: verify-changed-files
       
-      - name: List all changed files tracked and untracked files
+      - name: List all changed tracked and untracked files
         env:
           FILES_CHANGED: ${{ steps.verify-changed-files.outputs.changed_files }}
         run: |
