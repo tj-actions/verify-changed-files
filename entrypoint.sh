@@ -47,8 +47,8 @@ concatenate() {
   for filename in "$@"; do
     if [[ "$INPUT_SAFE_OUTPUT" == "true" ]]; then
       filename=${filename//$/\\$} # Replace $ with \$
-      filename=${filename//\(/\\\(}} # Replace ( with \(
-      filename=${filename//\)/\\\)}} # Replace ) with \)
+      filename=${filename//\(/\\\(} # Replace ( with \(
+      filename=${filename//\)/\\\)} # Replace ) with \)
       filename=${filename//\`/\\\`} # Replace ` with \`
       filename=${filename//|/\\|} # Replace | with \|
       filename=${filename//&/\\&} # Replace & with \&
