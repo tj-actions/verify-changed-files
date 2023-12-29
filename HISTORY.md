@@ -1,5 +1,83 @@
 # Changelog
 
+# [17.0.0](https://github.com/tj-actions/verify-changed-files/compare/v16.1.1...v17.0.0) - (2023-12-29)
+
+## <!-- 13 -->📦 Bumps
+
+- Bump actions/checkout from 4.1.0 to 4.1.1 ([#345](https://github.com/tj-actions/verify-changed-files/issues/345))
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+ ([6d68896](https://github.com/tj-actions/verify-changed-files/commit/6d688963a73d28584e163b6f62cf927a282c4d11))  - (dependabot[bot])
+
+## <!-- 16 -->➕ Add
+
+- Create SECURITY.md ([08975f0](https://github.com/tj-actions/verify-changed-files/commit/08975f08f935b937e16554ebd18f713b5263248a))  - (Tonye Jack)
+
+## <!-- 17 -->➖ Remove
+
+- Deleted .github/workflows/auto-approve.yml ([7b7a3b8](https://github.com/tj-actions/verify-changed-files/commit/7b7a3b8db9077729f56bd82fced85f4b0ee67bcd))  - (Tonye Jack)
+- Deleted .github/workflows/greetings.yml ([9f02ec6](https://github.com/tj-actions/verify-changed-files/commit/9f02ec6cabf4112d323ea1e26344b1b49b5fe747))  - (Tonye Jack)
+
+## <!-- 26 -->🔄 Update
+
+- Update README.md ([bc950d8](https://github.com/tj-actions/verify-changed-files/commit/bc950d8b56b01c2c024b82bf5b8f93b685713725))  - (Tonye Jack)
+- Update README.md ([e302902](https://github.com/tj-actions/verify-changed-files/commit/e302902a89020191c0b8b9dc740b1e2aaf400f0e))  - (Tonye Jack)
+- Update README.md ([2f947c4](https://github.com/tj-actions/verify-changed-files/commit/2f947c4551213de3ecf1b4f8133b05d60d4560c4))  - (Tonye Jack)
+- Update README.md ([a6a8167](https://github.com/tj-actions/verify-changed-files/commit/a6a8167ce9382357392defb0b089e53059a87b42))  - (Tonye Jack)
+- Updated README.md
+ ([f151bce](https://github.com/tj-actions/verify-changed-files/commit/f151bce85b9c12a569baeb4ed18ee80d57f88886))  - (jackton1)
+- Updated README.md
+ ([3571d65](https://github.com/tj-actions/verify-changed-files/commit/3571d6515d6d45427d7587639c44a62b4381e72a))  - (jackton1)
+- Update README.md ([126b949](https://github.com/tj-actions/verify-changed-files/commit/126b949fca1d5df0993c1867089e92d5802255bc))  - (Tonye Jack)
+- Updated README.md
+ ([47f2c87](https://github.com/tj-actions/verify-changed-files/commit/47f2c87555570cd59e44aa8eb735b0ccb27cc86f))  - (jackton1)
+- Update update-readme.yml ([14b9592](https://github.com/tj-actions/verify-changed-files/commit/14b9592dda4ebf62a8604c95e141f4b1ed778f70))  - (Tonye Jack)
+- Updated README.md
+ ([301fce7](https://github.com/tj-actions/verify-changed-files/commit/301fce7ea87024b88b326fd027f35490c8ed5522))  - (jackton1)
+- Update README.md ([1e75cac](https://github.com/tj-actions/verify-changed-files/commit/1e75cac4ffa7ea5879addde1869f8fca09fce4c1))  - (Tonye Jack)
+- Update README.md ([7149bbe](https://github.com/tj-actions/verify-changed-files/commit/7149bbe25886b3b940719b20a046be0db0328d0d))  - (Tonye Jack)
+- Update README.md ([78dc414](https://github.com/tj-actions/verify-changed-files/commit/78dc414e915e0664bcf0d2b42465a86cd47bcc3c))  - (Tonye Jack)
+
+## <!-- 30 -->📝 Other
+
+- PR [#355](https://github.com/tj-actions/verify-changed-files/pull/355): README.md ([6f91e27](https://github.com/tj-actions/verify-changed-files/commit/6f91e272e566a78ea380873c83076051636ca23e))  - (repo-ranger[bot])
+- Merge pull request from GHSA-ghm2-rq8q-wrhc
+
+* feat: add `safe_output` input enabled by default
+
+* fix: migrate README to safe uses of interpolation
+
+* fix: also sanitize `)`
+
+* fix: remove sanitization of `'`
+
+* fix: also sanitize `|`
+
+* fix: also sanitize `&`
+
+* fix: also sanitize `;` ([498d3f3](https://github.com/tj-actions/verify-changed-files/commit/498d3f316f501aa72485060e8c96fde7b2014f12))  - (Jorge)
+- PR [#354](https://github.com/tj-actions/verify-changed-files/pull/354): update github/codeql-action action to v3 ([97c5ec9](https://github.com/tj-actions/verify-changed-files/commit/97c5ec9971e9cf752cdeaa0acd9cb56c48b194b7))  - (repo-ranger[bot])
+- PR [#353](https://github.com/tj-actions/verify-changed-files/pull/353): README.md ([5eff60f](https://github.com/tj-actions/verify-changed-files/commit/5eff60fda839b96c3e34d8239dffb116c900582c))  - (repo-ranger[bot])
+- PR [#352](https://github.com/tj-actions/verify-changed-files/pull/352): README.md ([4053b68](https://github.com/tj-actions/verify-changed-files/commit/4053b68916b3244fda4014c5d3c82d59f1a104b8))  - (repo-ranger[bot])
+- PR [#351](https://github.com/tj-actions/verify-changed-files/pull/351): README.md ([5d3816d](https://github.com/tj-actions/verify-changed-files/commit/5d3816d5ecbf38752e064cb2aa9414f5b217c6ce))  - (repo-ranger[bot])
+- PR [#343](https://github.com/tj-actions/verify-changed-files/pull/343): to v16.1.1 ([141fe36](https://github.com/tj-actions/verify-changed-files/commit/141fe36b0951f65646a8cf11786bef0ceab275bb))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- Update entrypoint.sh ([#357](https://github.com/tj-actions/verify-changed-files/issues/357)) ([592e305](https://github.com/tj-actions/verify-changed-files/commit/592e305da041c09a009afa4a43c97d889bed65c3))  - (Tonye Jack)
+- **deps:** Update github/codeql-action action to v3 ([2a4291a](https://github.com/tj-actions/verify-changed-files/commit/2a4291ae9eb25933724c8d92cfc46492b012393e))  - (renovate[bot])
+- **deps:** Update tj-actions/auto-doc action to v3.4.0 ([2e93a84](https://github.com/tj-actions/verify-changed-files/commit/2e93a84b325e5c4d3544924aee8afb7e1ffe189f))  - (renovate[bot])
+- **deps:** Update tj-actions/auto-doc action to v3.3.0 ([0b8fb0e](https://github.com/tj-actions/verify-changed-files/commit/0b8fb0e09684c844019f0e9d11b20e5bcbfeb57f))  - (renovate[bot])
+- **deps:** Update tj-actions/auto-doc action to v3.2.1 ([31a31b1](https://github.com/tj-actions/verify-changed-files/commit/31a31b1a8ce4a437d83ab18dbe4dc7a983411981))  - (renovate[bot])
+- **deps:** Update tj-actions/auto-doc action to v3.2.0 ([50a568f](https://github.com/tj-actions/verify-changed-files/commit/50a568f2a7952bc48503ef88f8683fbf21a4fc03))  - (renovate[bot])
+- **deps:** Update tj-actions/auto-doc action to v3.1.1 ([82a523f](https://github.com/tj-actions/verify-changed-files/commit/82a523f60ad6816c35b418520f84629024d70e1e))  - (renovate[bot])
+- **deps:** Update actions/checkout action to v4.1.1 ([7adf061](https://github.com/tj-actions/verify-changed-files/commit/7adf0619f0e5d986e7daf5b978a398d47d2d882e))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v16.1.0 -> v16.1.1
+ ([e9aaab7](https://github.com/tj-actions/verify-changed-files/commit/e9aaab7912b8460dce845906a698b88c7acf6ea3))  - (jackton1)
+
 # [16.1.1](https://github.com/tj-actions/verify-changed-files/compare/v16.1.0...v16.1.1) - (2023-10-01)
 
 ## <!-- 1 -->🐛 Bug Fixes
