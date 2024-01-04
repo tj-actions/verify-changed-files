@@ -58,7 +58,7 @@ function concatenate_unique_filenames() {
   done
 
   filenames=$(echo "$filenames" | tr "$separator" '\n' | sort -u | tr '\n' "$separator")
-  filenames=${filenames%$separator}  # Remove trailing separator
+  filenames=${filenames%"$separator"}  # Remove trailing separator
 
   echo "$filenames"
 }
