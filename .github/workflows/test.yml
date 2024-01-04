@@ -59,6 +59,7 @@ jobs:
           printf '%s\n' "323442" "424" >> test/new1.txt
           printf '%s\n' "323442" "424" >> test/new2.txt
           printf '%s\n' "323442" "424" >> "test/\$(whoami).txt"
+        shell: bash
       - name: Test test/new*.txt file has changes
         uses: ./
         id: changed_files_expected
@@ -115,6 +116,7 @@ jobs:
             !test/new.txt
             !test/new1.txt
             !test/new2.txt
+            !test/$(whoami).txt
             !unstaged.txt
       - name: Verify Changes to unstaged.txt are ignored
         if: steps.changed_unstaged_files_not_expected.outputs.files_changed != 'false'
@@ -129,6 +131,7 @@ jobs:
             !test/new.txt
             !test/new1.txt
             !test/new2.txt
+            !test/$(whoami).txt
             unstaged.txt
       - name: Verify Changes to unstaged.txt are ignored
         if: steps.changed_unstaged2_files_expected.outputs.files_changed != 'true'
