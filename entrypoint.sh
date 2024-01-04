@@ -45,24 +45,22 @@ echo "::debug::Unstaged changed files: $UNSTAGED_DELETED_FILES"
 function concatenate_unique_filenames() {
   local separator=$1
   shift
-  local result=""
-  declare -A seen
-
+  local filenames=""
+  
   for files in "$@"; do
-    IFS="$separator" read -ra filenames <<< "$files"
-    for filename in "${filenames[@]}"; do
-      if [[ -n $filename ]] && [[ -z ${seen[$filename]-} ]]; then
-        seen[$filename]=1
-        if [[ -n $result ]]; then
-          result+="$separator$filename"
-        else
-          result="$filename"
-        fi
+    if [[ -n $files ]]; then
+      if [[ -n $filenames ]]; then
+        filenames+="$separator$files"
+      else
+        filenames="$files"
       fi
-    done
+    fi
   done
 
-  echo "$result"
+  filenames=$(echo "$filenames" | tr "$separator" '\n' | sort -u | tr '\n' "$separator")
+  filenames=${filenames%$separator}  # Remove trailing separator
+
+  echo "$filenames"
 }
 
 # Concatenate non-empty strings with a '|' separator and Remove duplicate entries
