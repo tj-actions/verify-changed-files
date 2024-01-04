@@ -1,5 +1,22 @@
 # Changelog
 
+# [17.0.2](https://github.com/tj-actions/verify-changed-files/compare/v17.0.1...v17.0.2) - (2024-01-04)
+
+## <!-- 30 -->📝 Other
+
+- PR [#363](https://github.com/tj-actions/verify-changed-files/pull/363): update tj-actions/glob action to v18 ([0a07b6e](https://github.com/tj-actions/verify-changed-files/commit/0a07b6ee139080ca8dc84e267917b7a95b0b7d57))  - (repo-ranger[bot])
+- PR [#361](https://github.com/tj-actions/verify-changed-files/pull/361): to v17.0.1 ([56d4ba3](https://github.com/tj-actions/verify-changed-files/commit/56d4ba374793ce23fde00afd8cf0f82159e1d018))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- Update test ([#362](https://github.com/tj-actions/verify-changed-files/issues/362)) ([b742fc9](https://github.com/tj-actions/verify-changed-files/commit/b742fc9c8c613945ae7ee756f8d2bb3bd2d1f7dd))  - (Tonye Jack)
+- **deps:** Update tj-actions/glob action to v18 ([071c65e](https://github.com/tj-actions/verify-changed-files/commit/071c65e72a0d5ab1c0984c99ebdf4cfd5a2e22c2))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v17.0.0 -> v17.0.1
+ ([43232db](https://github.com/tj-actions/verify-changed-files/commit/43232db62e73d3d0dd074560940169b33fb0a62f))  - (jackton1)
+
 # [17.0.1](https://github.com/tj-actions/verify-changed-files/compare/v17.0.0...v17.0.1) - (2024-01-04)
 
 ## <!-- 1 -->🐛 Bug Fixes
