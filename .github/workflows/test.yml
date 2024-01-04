@@ -55,6 +55,7 @@ jobs:
             test/**/*.sql
       - name: Make changes
         run: |
+          ls -al test
           printf '%s\n' "323442" "424" >> test/new.txt
           printf '%s\n' "323442" "424" >> test/new1.txt
           printf '%s\n' "323442" "424" >> test/new2.txt
