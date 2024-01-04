@@ -22,7 +22,7 @@ if [[ -n "$INPUT_FILES_PATTERN_FILE" ]]; then
 
   # Find untracked changes
   # shellcheck disable=SC2086
-  UNTRACKED_OR_IGNORED_FILES=$(git status $GIT_STATUS_EXTRA_ARGS | awk '{print $NF}' | { grep -x -E -f "$INPUT_FILES_PATTERN_FILE" || true; } | perl -pe 's/([$\(\)`|&;])/\\$1/g' | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
+  UNTRACKED_OR_IGNORED_FILES=$(git status $GIT_STATUS_EXTRA_ARGS | grep '??\|!!' | awk '{print $2}' | { grep -x -E -f "$INPUT_FILES_PATTERN_FILE" || true; } | perl -pe 's/([$\(\)`|&;])/\\$1/g' | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
 
   # Find unstaged deleted files
   UNSTAGED_DELETED_FILES=$(git ls-files --deleted | { grep -x -E -f "$INPUT_FILES_PATTERN_FILE" || true; } | perl -pe 's/([$\(\)`|&;])/\\$1/g' | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
@@ -31,7 +31,7 @@ else
 
   # Find untracked changes
   # shellcheck disable=SC2086
-  UNTRACKED_OR_IGNORED_FILES=$(git status $GIT_STATUS_EXTRA_ARGS | awk '{print $NF}' | perl -pe 's/([$\(\)`|&;])/\\$1/g' | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
+  UNTRACKED_OR_IGNORED_FILES=$(git status $GIT_STATUS_EXTRA_ARGS | grep '??\|!!' | awk '{print $2}' | perl -pe 's/([$\(\)`|&;])/\\$1/g' | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
 
   # Find unstaged deleted files
   UNSTAGED_DELETED_FILES=$(git ls-files --deleted | perl -pe 's/([$\(\)`|&;])/\\$1/g' | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
