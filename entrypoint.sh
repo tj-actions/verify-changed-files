@@ -51,7 +51,7 @@ function concatenate_unique_filenames() {
   for files in "$@"; do
     IFS="$separator" read -ra filenames <<< "$files"
     for filename in "${filenames[@]}"; do
-      if [[ -n $filename ]] && [[ -z ${seen[$filename]} ]]; then
+      if [[ -n $filename ]] && [[ -z ${seen[$filename]-} ]]; then
         seen[$filename]=1
         if [[ -n $result ]]; then
           result+="$separator$filename"
