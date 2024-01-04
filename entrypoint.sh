@@ -17,38 +17,24 @@ if [[ "$INPUT_MATCH_GITIGNORE_FILES" == "true" ]]; then
   GIT_STATUS_EXTRA_ARGS+=" --ignored"
 fi
 
-function sanitize() {
-  local filename=$1
-  if [[ "$INPUT_SAFE_OUTPUT" == "true" ]]; then
-    filename=${filename//$/\\$} # Replace $ with \$
-    filename=${filename//\(/\\\(} # Replace ( with \(
-    filename=${filename//\)/\\\)} # Replace ) with \)
-    filename=${filename//\`/\\\`} # Replace ` with \`
-    filename=${filename//|/\\|} # Replace | with \|
-    filename=${filename//&/\\&} # Replace & with \&
-    filename=${filename//;/\\;} # Replace ; with \;
-  fi
-  echo "$filename"
-}
-
 if [[ -n "$INPUT_FILES_PATTERN_FILE" ]]; then
-  TRACKED_FILES=$(git diff --diff-filter=ACMUXTR --name-only | { grep -x -E -f "$INPUT_FILES_PATTERN_FILE" || true; } | awk -v d="|" '{s=(NR==1?s:s d)sanitize($0)}END{print s}')
+  TRACKED_FILES=$(git diff --diff-filter=ACMUXTR --name-only | { grep -x -E -f "$INPUT_FILES_PATTERN_FILE" || true; } | perl -pe 's/([$\(\)`|&;])/\\$1/g' | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
 
   # Find untracked changes
   # shellcheck disable=SC2086
-  UNTRACKED_OR_IGNORED_FILES=$(git status $GIT_STATUS_EXTRA_ARGS | awk '{print $NF}' | { grep -x -E -f "$INPUT_FILES_PATTERN_FILE" || true; } | awk -v d="|" '{s=(NR==1?s:s d)sanitize($0)}END{print s}')
+  UNTRACKED_OR_IGNORED_FILES=$(git status $GIT_STATUS_EXTRA_ARGS | awk '{print $NF}' | { grep -x -E -f "$INPUT_FILES_PATTERN_FILE" || true; } | perl -pe 's/([$\(\)`|&;])/\\$1/g' | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
 
   # Find unstaged deleted files
-  UNSTAGED_DELETED_FILES=$(git ls-files --deleted | { grep -x -E -f "$INPUT_FILES_PATTERN_FILE" || true; } | awk -v d="|" '{s=(NR==1?s:s d)sanitize($0)}END{print s}')
+  UNSTAGED_DELETED_FILES=$(git ls-files --deleted | { grep -x -E -f "$INPUT_FILES_PATTERN_FILE" || true; } | perl -pe 's/([$\(\)`|&;])/\\$1/g' | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
 else
-  TRACKED_FILES=$(git diff --diff-filter=ACMUXTR --name-only | awk -v d="|" '{s=(NR==1?s:s d)sanitize($0)}END{print s}')
+  TRACKED_FILES=$(git diff --diff-filter=ACMUXTR --name-only | perl -pe 's/([$\(\)`|&;])/\\$1/g' | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
 
   # Find untracked changes
   # shellcheck disable=SC2086
-  UNTRACKED_OR_IGNORED_FILES=$(git status $GIT_STATUS_EXTRA_ARGS | awk '{print $NF}' | awk -v d="|" '{s=(NR==1?s:s d)sanitize($0)}END{print s}')
+  UNTRACKED_OR_IGNORED_FILES=$(git status $GIT_STATUS_EXTRA_ARGS | awk '{print $NF}' | perl -pe 's/([$\(\)`|&;])/\\$1/g' | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
 
   # Find unstaged deleted files
-  UNSTAGED_DELETED_FILES=$(git ls-files --deleted | awk -v d="|" '{s=(NR==1?s:s d)sanitize($0)}END{print s}')
+  UNSTAGED_DELETED_FILES=$(git ls-files --deleted | perl -pe 's/([$\(\)`|&;])/\\$1/g' | awk -v d="|" '{s=(NR==1?s:s d)$0}END{print s}')
 fi
 
 echo "::debug::Tracked changed files: $TRACKED_FILES"
