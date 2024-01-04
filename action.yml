@@ -51,6 +51,7 @@ runs:
         separator: "|"
         match-directories: false
         match-gitignore-files: ${{ inputs.match-gitignore-files }}
+        escape-paths: ${{ inputs.safe_output }}
     - run: |
         bash $GITHUB_ACTION_PATH/entrypoint.sh
       id: verify-changed-files
