@@ -58,7 +58,8 @@ jobs:
           printf '%s\n' "323442" "424" >> test/new.txt
           printf '%s\n' "323442" "424" >> test/new1.txt
           printf '%s\n' "323442" "424" >> test/new2.txt
-      - name: Test test/new.txt file has changes
+          printf '%s\n' "323442" "424" >> "test/\$\(whoami\).txt"
+      - name: Test test/new*.txt file has changes
         uses: ./
         id: changed_files_expected
         with:
