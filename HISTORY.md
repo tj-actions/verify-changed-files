@@ -1,5 +1,25 @@
 # Changelog
 
+# [17.0.1](https://github.com/tj-actions/verify-changed-files/compare/v17.0.0...v17.0.1) - (2024-01-04)
+
+## <!-- 1 -->🐛 Bug Fixes
+
+- Bug with adding separator to output ([#360](https://github.com/tj-actions/verify-changed-files/issues/360)) ([4321d85](https://github.com/tj-actions/verify-changed-files/commit/4321d85970bad6dcad288944d200e8b4b6f3fded))  - (Tonye Jack)
+
+## <!-- 30 -->📝 Other
+
+- PR [#359](https://github.com/tj-actions/verify-changed-files/pull/359): update tj-actions/verify-changed-files action to v17 ([2a93ea6](https://github.com/tj-actions/verify-changed-files/commit/2a93ea6f3eef7ba31bb9b4fe83dab787a45356fb))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- **deps:** Update tj-actions/verify-changed-files action to v17 ([5cb319c](https://github.com/tj-actions/verify-changed-files/commit/5cb319c3f99ad1844621d710b413b1727941e62b))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded to v17 ([#358](https://github.com/tj-actions/verify-changed-files/issues/358))
+
+Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([0d4817f](https://github.com/tj-actions/verify-changed-files/commit/0d4817f9d237c6a38b0829f30930c5d5fc421366))  - (tj-actions[bot])
+
 # [17.0.0](https://github.com/tj-actions/verify-changed-files/compare/v16.1.1...v17.0.0) - (2023-12-29)
 
 ## <!-- 13 -->📦 Bumps
