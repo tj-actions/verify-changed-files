@@ -42,7 +42,7 @@ runs:
   using: 'composite'
   steps:
     - name: Glob match
-      uses: tj-actions/glob@v17
+      uses: tj-actions/glob@v18
       if: inputs.files != ''
       id: glob
       with:
@@ -51,6 +51,7 @@ runs:
         separator: "|"
         match-directories: false
         match-gitignore-files: ${{ inputs.match-gitignore-files }}
+        escape-paths: ${{ inputs.safe_output }}
     - run: |
         bash $GITHUB_ACTION_PATH/entrypoint.sh
       id: verify-changed-files
