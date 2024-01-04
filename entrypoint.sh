@@ -9,7 +9,7 @@ INPUT_SEPARATOR="${INPUT_SEPARATOR//\\r/%0D}"
 
 echo "::group::verify-changed-files"
 
-echo "Separator: $INPUT_SEPARATOR"
+echo "::debug::Separator: $INPUT_SEPARATOR"
 
 GIT_STATUS_EXTRA_ARGS="-u --porcelain"
 
