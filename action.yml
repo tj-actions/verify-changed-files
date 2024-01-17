@@ -29,6 +29,10 @@ inputs:
     description: "Apply sanitization to output filenames before being set as output."
     required: false
     default: "true"
+  path:
+   description: "Relative path under GITHUB_WORKSPACE to the repository"
+   required: false
+   default: '.'
 
 outputs:
   files_changed:
@@ -67,6 +71,7 @@ runs:
         INPUT_FAIL_IF_CHANGED: ${{ inputs.fail-if-changed }}
         INPUT_FAIL_MSG: ${{ inputs.fail-message }}
         INPUT_SAFE_OUTPUT: ${{ inputs.safe_output }}
+        INPUT_PATH: ${{ inputs.path }}
 
 branding:
   icon: file-text
