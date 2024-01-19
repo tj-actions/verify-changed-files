@@ -26,17 +26,13 @@ jobs:
       fail-fast: false
       matrix:
         platform: [ubuntu-latest, windows-latest, macos-latest, macos-11, windows-2022]
-        path: ['.', 'dir1']
     steps:
       - name: Checkout
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
-        with:
-          path: ${{ matrix.path }}
       - name: Test files has no changes
-        uses: ${{ matrix.path }}
+        uses: ./
         id: changed_files_not_expected
         with:
-          path: ${{ matrix.path }}
           files: |
             test/*.txt
             test/*.sql
@@ -48,10 +44,9 @@ jobs:
           echo "Changed files (Not expected): ${{ steps.changed_files_not_expected.outputs.changed_files }}"
           exit 1
       - name: Test dont fail if not changed
-        uses: ${{ matrix.path }}
+        uses: ./
         id: changed_files_not_expected_fail
         with:
-          path: ${{ matrix.path }}
           fail-if-changed: true
           files: |
             test/*.txt
@@ -66,10 +61,9 @@ jobs:
           printf '%s\n' "323442" "424" >> "test/\$(whoami).txt"
         shell: bash
       - name: Test test/new*.txt file has changes
-        uses: ${{ matrix.path }}
+        uses: ./
         id: changed_files_expected
         with:
-          path: ${{ matrix.path }}
           separator: '\n'
           files: |
             test/*.txt
@@ -86,11 +80,10 @@ jobs:
           echo "No Changes found: (Not expected)"
           exit 1
       - name: Test fail if changed
-        uses: ${{ matrix.path }}
+        uses: ./
         id: changed_files_expected_fail
         continue-on-error: true
         with:
-          path: ${{ matrix.path }}
           fail-if-changed: true
           files: |
             test/*.txt
@@ -101,10 +94,9 @@ jobs:
         run: |
           echo "New changes" > unstaged.txt
       - name: Test unstaged file has changes
-        uses: ${{ matrix.path }}
+        uses: ./
         id: changed_unstaged_files_expected
         with:
-          path: ${{ matrix.path }}
           files: |
             unstaged.txt
       - name: Display unstaged changed files
@@ -117,10 +109,9 @@ jobs:
           echo "No Changes found: (Not expected)"
           exit 1
       - name: Test unstaged file changes are ignored
-        uses: ${{ matrix.path }}
+        uses: ./
         id: changed_unstaged_files_not_expected
         with:
-          path: ${{ matrix.path }}
           files: |
             !test/new.txt
             !test/new1.txt
@@ -133,10 +124,9 @@ jobs:
           echo "Changes found: (Not expected)"
           exit 1
       - name: Test unstaged file has changes
-        uses: ${{ matrix.path }}
+        uses: ./
         id: changed_unstaged2_files_expected
         with:
-          path: ${{ matrix.path }}
           files: |
             !test/new.txt
             !test/new1.txt
@@ -154,10 +144,8 @@ jobs:
           rm test/new.txt
 
       - name: Test deletion of test/new.txt
-        uses: ${{ matrix.path }}
+        uses: ./
         id: deleted_file_test
-        with:
-          path: ${{ matrix.path }}
 
       - name: Show output
         run: |
