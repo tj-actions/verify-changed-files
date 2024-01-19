@@ -8,8 +8,19 @@ INPUT_SEPARATOR="${INPUT_SEPARATOR//\\n/%0A}"
 INPUT_SEPARATOR="${INPUT_SEPARATOR//\\r/%0D}"
 
 echo "::group::verify-changed-files"
-
 echo "::debug::Separator: $INPUT_SEPARATOR"
+
+if [[ -n $INPUT_PATH ]]; then
+  REPO_DIR="$GITHUB_WORKSPACE/$INPUT_PATH"
+
+  echo "Resolving repository path: $REPO_DIR"
+  if [[ ! -d "$REPO_DIR" ]]; then
+    echo "::error::Invalid repository path: $REPO_DIR"
+    echo "::endgroup::"
+    exit 1
+  fi
+  cd "$REPO_DIR"
+fi
 
 GIT_STATUS_EXTRA_ARGS="-u --porcelain"
 

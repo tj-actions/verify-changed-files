@@ -65,11 +65,10 @@ jobs:
         id: changed_files_expected
         with:
           separator: '\n'
+          path: test
           files: |
-            test/*.txt
-            test/*.sql
-            test/**/*.txt
-            test/**/*.sql
+            *.{txt,sql}
+            **/*.{txt,sql}
       - name: Display changed files
         if: steps.changed_files_expected.outputs.files_changed == 'true'
         run: |
