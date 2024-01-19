@@ -152,6 +152,11 @@ Support this project with a :star:
     # Default: "false"
     match-gitignore-files: ''
 
+    # Relative path under GITHUB_WORKSPACE to the repository
+    # Type: string
+    # Default: "."
+    path: ''
+
     # Apply sanitization to output filenames before being set as 
     # output. 
     # Type: boolean
