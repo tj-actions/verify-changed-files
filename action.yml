@@ -30,9 +30,13 @@ inputs:
     required: false
     default: "true"
   path:
-   description: "Relative path under GITHUB_WORKSPACE to the repository"
-   required: false
-   default: '.'
+    description: "Relative path under GITHUB_WORKSPACE to the repository"
+    required: false
+    default: '.'
+  quotepath:
+    description: "Use non-ASCII characters to match files and output the filenames completely verbatim by setting this to `false`"
+    default: "true"
+    required: false
 
 outputs:
   files_changed:
