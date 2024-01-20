@@ -1,5 +1,39 @@
 # Changelog
 
+# [17.1.0](https://github.com/tj-actions/verify-changed-files/compare/v17.0.2...v17.1.0) - (2024-01-20)
+
+## <!-- 0 -->🚀 Features
+
+- Add support for matching non ascii characters ([#371](https://github.com/tj-actions/verify-changed-files/issues/371)) ([9076915](https://github.com/tj-actions/verify-changed-files/commit/9076915e2bce0c2b4c9313d9de7d6dc3be816c70))  - (Tonye Jack)
+- Add support for running action within a subdirectory ([#366](https://github.com/tj-actions/verify-changed-files/issues/366)) ([8182bdd](https://github.com/tj-actions/verify-changed-files/commit/8182bdd095e357f5ec2c410f09f05adeffee47fd))  - (Tonye Jack)
+
+## <!-- 26 -->🔄 Update
+
+- Updated README.md ([#373](https://github.com/tj-actions/verify-changed-files/issues/373))
+
+Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([2acec78](https://github.com/tj-actions/verify-changed-files/commit/2acec78834cc690f70b3445712363fc314224127))  - (tj-actions[bot])
+- Updated README.md ([#369](https://github.com/tj-actions/verify-changed-files/issues/369))
+
+Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([b5c4e3e](https://github.com/tj-actions/verify-changed-files/commit/b5c4e3e51362f0dc349f550fdc86f338d60016bd))  - (tj-actions[bot])
+- Update README.md ([f2ed8f0](https://github.com/tj-actions/verify-changed-files/commit/f2ed8f015604543ffb3209b1f94c1513aad37d18))  - (Tonye Jack)
+- Updated README.md
+ ([d3e7995](https://github.com/tj-actions/verify-changed-files/commit/d3e7995e4d32022b13d9ab971c28f1b462f0ff98))  - (jackton1)
+
+## <!-- 30 -->📝 Other
+
+- PR [#368](https://github.com/tj-actions/verify-changed-files/pull/368): README.md ([cffdb8c](https://github.com/tj-actions/verify-changed-files/commit/cffdb8c983e1900bd01c4b017f76887de56ae1da))  - (repo-ranger[bot])
+- PR [#367](https://github.com/tj-actions/verify-changed-files/pull/367): update tj-actions/glob action to v19 ([0e5b383](https://github.com/tj-actions/verify-changed-files/commit/0e5b383032fb690d796976b991495d11a28a703d))  - (repo-ranger[bot])
+- PR [#364](https://github.com/tj-actions/verify-changed-files/pull/364): to v17.0.2 ([d9a97a5](https://github.com/tj-actions/verify-changed-files/commit/d9a97a5b5231f455f0390017ccd706727b45e287))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- **deps:** Update tj-actions/glob action to v19 ([d523882](https://github.com/tj-actions/verify-changed-files/commit/d523882581545669093f90ae93bb8f43bfdc2fdd))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v17.0.1 -> v17.0.2
+ ([196526a](https://github.com/tj-actions/verify-changed-files/commit/196526a65af9801fd2d0bf536aecc5b16a6e4ffc))  - (jackton1)
+
 # [17.0.2](https://github.com/tj-actions/verify-changed-files/compare/v17.0.1...v17.0.2) - (2024-01-04)
 
 ## <!-- 30 -->📝 Other
