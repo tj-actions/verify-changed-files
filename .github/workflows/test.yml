@@ -82,7 +82,7 @@ jobs:
             !contains(steps.changed_files_expected.outputs.changed_files, 'test/new.txt') ||
             !contains(steps.changed_files_expected.outputs.changed_files, 'test/new1.txt') ||
             !contains(steps.changed_files_expected.outputs.changed_files, 'test/new2.txt') ||
-            !contains(steps.changed_files_expected.outputs.changed_files, 'test/\$(whoami).txt') ||
+            !contains(steps.changed_files_expected.outputs.changed_files, 'test/\$\(whoami\).txt') ||
             !contains(steps.changed_files_expected.outputs.changed_files, 'test/啊啊啊.txt')
           )
         run: |
