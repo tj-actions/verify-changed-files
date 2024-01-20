@@ -157,6 +157,12 @@ Support this project with a :star:
     # Default: "."
     path: ''
 
+    # Use non-ASCII characters to match files and output the 
+    # filenames completely verbatim by setting this to `false` 
+    # Type: boolean
+    # Default: "true"
+    quotepath: ''
+
     # Apply sanitization to output filenames before being set as 
     # output. 
     # Type: boolean
