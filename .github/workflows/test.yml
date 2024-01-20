@@ -59,6 +59,7 @@ jobs:
           printf '%s\n' "323442" "424" >> test/new1.txt
           printf '%s\n' "323442" "424" >> test/new2.txt
           printf '%s\n' "323442" "424" >> "test/\$(whoami).txt"
+          printf '%s\n' "323442" "424" >> test/啊啊啊.txt
         shell: bash
       - name: Test test/new*.txt file has changes
         uses: ./
@@ -66,6 +67,7 @@ jobs:
         with:
           separator: '\n'
           path: test
+          quotepath: false
           files: |
             *.{txt,sql}
             **/*.{txt,sql}
@@ -73,10 +75,18 @@ jobs:
         if: steps.changed_files_expected.outputs.files_changed == 'true'
         run: |
           echo "Changed files: ${{ steps.changed_files_expected.outputs.changed_files }}"
-      - name: Verify Changes to test/new.txt
-        if: steps.changed_files_expected.outputs.files_changed != 'true'
+      - name: Verify Changes to test/**.txt
+        if: |
+          (
+            steps.changed_files_expected.outputs.files_changed != 'true' ||
+            !contains(steps.changed_files_expected.outputs.changed_files, 'test/new.txt') ||
+            !contains(steps.changed_files_expected.outputs.changed_files, 'test/new1.txt') ||
+            !contains(steps.changed_files_expected.outputs.changed_files, 'test/new2.txt') ||
+            !contains(steps.changed_files_expected.outputs.changed_files, 'test/$\(whoami\).txt') ||
+            !contains(steps.changed_files_expected.outputs.changed_files, 'test/啊啊啊.txt')
+          )
         run: |
-          echo "No Changes found: (Not expected)"
+          echo "No Changes found or missing changed files: (Not expected)"
           exit 1
       - name: Test fail if changed
         uses: ./

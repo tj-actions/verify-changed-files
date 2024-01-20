@@ -10,6 +10,8 @@ INPUT_SEPARATOR="${INPUT_SEPARATOR//\\r/%0D}"
 echo "::group::verify-changed-files"
 echo "::debug::Separator: $INPUT_SEPARATOR"
 
+git config --global core.quotepath "$INPUT_QUOTEPATH"
+
 if [[ -n $INPUT_PATH ]]; then
   REPO_DIR="$GITHUB_WORKSPACE/$INPUT_PATH"
 
