@@ -76,7 +76,8 @@ runs:
         INPUT_FAIL_MSG: ${{ inputs.fail-message }}
         INPUT_SAFE_OUTPUT: ${{ inputs.safe_output }}
         INPUT_PATH: ${{ inputs.path }}
-
+        INPUT_QUOTEPATH: ${{ inputs.quotepath }}
+        
 branding:
   icon: file-text
   color: white
