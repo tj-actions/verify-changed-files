@@ -59,6 +59,7 @@ jobs:
           printf '%s\n' "323442" "424" >> test/new1.txt
           printf '%s\n' "323442" "424" >> test/new2.txt
           printf '%s\n' "323442" "424" >> "test/\$(whoami).txt"
+          printf '%s\n' "323442" "424" >> test/啊啊啊.cpp.txt
         shell: bash
       - name: Test test/new*.txt file has changes
         uses: ./
@@ -66,6 +67,7 @@ jobs:
         with:
           separator: '\n'
           path: test
+          qoutepath: false
           files: |
             *.{txt,sql}
             **/*.{txt,sql}
