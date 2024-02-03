@@ -57,7 +57,7 @@ Verify that certain files or directories did or did not change during the workfl
           echo "Changed" > test_directory/new.txt
 
       - name: Verify Changed files
-        uses: tj-actions/verify-changed-files@v17
+        uses: tj-actions/verify-changed-files@v18
         id: verify-changed-files
         with:
           files: |
@@ -81,7 +81,7 @@ Verify that certain files or directories did or did not change during the workfl
 ```yaml
 ...
       - name: Verify Changed files
-        uses: tj-actions/verify-changed-files@v17
+        uses: tj-actions/verify-changed-files@v18
         id: verify-changed-files
         with:
           files: |
@@ -99,7 +99,7 @@ Verify that certain files or directories did or did not change during the workfl
 ```yaml
 ...
       - name: Verify Changed files
-        uses: tj-actions/verify-changed-files@v17
+        uses: tj-actions/verify-changed-files@v18
         id: verify-changed-files
       
       - name: List all changed tracked and untracked files
@@ -124,7 +124,7 @@ Support this project with a :star:
 <!-- AUTO-DOC-INPUT:START - Do not remove or modify this section -->
 
 ```yaml
-- uses: tj-actions/verify-changed-files@v17
+- uses: tj-actions/verify-changed-files@v18
   id: verify-changed-files
   with:
     # Indicates whether to fail if files have changed.

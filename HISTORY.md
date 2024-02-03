@@ -1,5 +1,27 @@
 # Changelog
 
+# [18.0.0](https://github.com/tj-actions/verify-changed-files/compare/v17.1.0...v18.0.0) - (2024-02-01)
+
+## <!-- 26 -->🔄 Update
+
+- Update README.md ([eb6d385](https://github.com/tj-actions/verify-changed-files/commit/eb6d385c0e52fb28e2f6b70e15c835cb3cbfff17))  - (Tonye Jack)
+
+## <!-- 30 -->📝 Other
+
+- PR [#376](https://github.com/tj-actions/verify-changed-files/pull/376): update peter-evans/create-pull-request action to v6 ([9c9cfe3](https://github.com/tj-actions/verify-changed-files/commit/9c9cfe3186f1dd857997da7f291e6086fbefb3b1))  - (repo-ranger[bot])
+- PR [#375](https://github.com/tj-actions/verify-changed-files/pull/375): update tj-actions/glob action to v20 ([5ef175f](https://github.com/tj-actions/verify-changed-files/commit/5ef175f2fd84957530d0fdd1384a541069e403f2))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- **deps:** Update peter-evans/create-pull-request action to v6 ([809c01f](https://github.com/tj-actions/verify-changed-files/commit/809c01fc80c7aff6bea863d0e2b4e8c4de0fd5d1))  - (renovate[bot])
+- **deps:** Update tj-actions/glob action to v20 ([338873f](https://github.com/tj-actions/verify-changed-files/commit/338873f5ae24dc5af58fb334801ee8d12ad292d4))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v17.0.2 -> v17.1.0 ([#374](https://github.com/tj-actions/verify-changed-files/issues/374))
+
+Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([58f5ac7](https://github.com/tj-actions/verify-changed-files/commit/58f5ac78e19e6cc3fb9d4048ae1a13bf364fa983))  - (tj-actions[bot])
+
 # [17.1.0](https://github.com/tj-actions/verify-changed-files/compare/v17.0.2...v17.1.0) - (2024-01-20)
 
 ## <!-- 0 -->🚀 Features
