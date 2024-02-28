@@ -1,5 +1,24 @@
 # Changelog
 
+# [19.0.0](https://github.com/tj-actions/verify-changed-files/compare/v18.0.0...v19.0.0) - (2024-02-28)
+
+## <!-- 30 -->📝 Other
+
+- PR [#379](https://github.com/tj-actions/verify-changed-files/pull/379): update tj-actions/verify-changed-files action to v18 ([8b28bea](https://github.com/tj-actions/verify-changed-files/commit/8b28bea118e7723e4672bc7ac323bcd26f271ec4))  - (repo-ranger[bot])
+- PR [#378](https://github.com/tj-actions/verify-changed-files/pull/378): to v18 ([af712b8](https://github.com/tj-actions/verify-changed-files/commit/af712b8f542eeebb40dba284565a3e7e02844a85))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- **deps:** Update tj-actions/glob action to v21 ([#382](https://github.com/tj-actions/verify-changed-files/issues/382)) ([d774a4c](https://github.com/tj-actions/verify-changed-files/commit/d774a4c7ebe335445d79c7b44138f56a76058ba0))  - (renovate[bot])
+- **deps:** Update peter-evans/create-pull-request action to v6.0.1 ([b31c3d7](https://github.com/tj-actions/verify-changed-files/commit/b31c3d7152683e7f2dbd93ce53c1808b846f5312))  - (renovate[bot])
+- **deps:** Update codacy/codacy-analysis-cli-action action to v4.4.0 ([cb704d8](https://github.com/tj-actions/verify-changed-files/commit/cb704d8c717959cf92ec9db9131372bc20356aa2))  - (renovate[bot])
+- **deps:** Update tj-actions/verify-changed-files action to v18 ([0f9c16f](https://github.com/tj-actions/verify-changed-files/commit/0f9c16f085bc362f37b7accc5de4f167b00df0da))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v17.1.0 -> v18
+ ([a3189f7](https://github.com/tj-actions/verify-changed-files/commit/a3189f77681a2e9e3cd81458de28ce72d76805e2))  - (jackton1)
+
 # [18.0.0](https://github.com/tj-actions/verify-changed-files/compare/v17.1.0...v18.0.0) - (2024-02-01)
 
 ## <!-- 26 -->🔄 Update
