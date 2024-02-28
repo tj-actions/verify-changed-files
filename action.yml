@@ -50,7 +50,7 @@ runs:
   using: 'composite'
   steps:
     - name: Glob match
-      uses: tj-actions/glob@v20
+      uses: tj-actions/glob@v21
       if: inputs.files != ''
       id: glob
       with:
