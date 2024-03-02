@@ -46,7 +46,7 @@ Verify that certain files or directories did or did not change during the workfl
 ```yaml
 ...
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - name: Change text file
         run: |
