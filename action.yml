@@ -21,8 +21,12 @@ inputs:
     description: 'Indicates whether to fail if files have changed.'
     default: "false"
     required: false
+  fail-if-unchanged:
+    description: 'Indicates whether to fail if no files have changed.'
+    default: "false"
+    required: false
   fail-message:
-    description: 'Message to display when files have changed and the `fail-if-changed` input is set to `true`.'
+    description: 'Message to display when `fail-if-changed` or `fail-if-unchanged` is set to `true` and triggered.'
     default: "Files have changed."
     required: false
   safe_output:
@@ -73,6 +77,7 @@ runs:
         INPUT_SEPARATOR: ${{ inputs.separator }}
         INPUT_MATCH_GITIGNORE_FILES: ${{ inputs.match-gitignore-files }}
         INPUT_FAIL_IF_CHANGED: ${{ inputs.fail-if-changed }}
+        INPUT_FAIL_IF_UNCHANGED: ${{ inputs.fail-if-unchanged }}
         INPUT_FAIL_MSG: ${{ inputs.fail-message }}
         INPUT_SAFE_OUTPUT: ${{ inputs.safe_output }}
         INPUT_PATH: ${{ inputs.path }}
