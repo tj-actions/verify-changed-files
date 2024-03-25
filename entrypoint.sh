@@ -97,6 +97,13 @@ if [[ -n "$CHANGED_FILES" ]]; then
 else
   echo "No changes found."
   echo "files_changed=false" >> "$GITHUB_OUTPUT"
+  
+  if [[ "$INPUT_FAIL_IF_UNCHANGED" == "true" ]]; then
+      if [[ -n "$INPUT_FAIL_MSG" ]]; then
+        echo "$INPUT_FAIL_MSG"
+      fi
+      exit 1
+  fi
 fi
 
 echo "::endgroup::"

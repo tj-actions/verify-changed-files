@@ -43,11 +43,22 @@ jobs:
         run: |
           echo "Changed files (Not expected): ${{ steps.changed_files_not_expected.outputs.changed_files }}"
           exit 1
-      - name: Test dont fail if not changed
+      - name: Test dont fail if not changed and fail-if-changed is true
         uses: ./
-        id: changed_files_not_expected_fail
+        id: unchanged_files_not_expected_fail
         with:
           fail-if-changed: true
+          files: |
+            test/*.txt
+            test/*.sql
+            test/**/*.txt
+            test/**/*.sql
+      - name: Test fail if changed and fail-if-unchanged is true
+        uses: ./
+        id: unchanged_files_expected_fail
+        continue-on-error: true
+        with:
+          fail-if-unchanged: true
           files: |
             test/*.txt
             test/*.sql
@@ -88,12 +99,22 @@ jobs:
         run: |
           echo "No Changes found or missing changed files: (Not expected)"
           exit 1
-      - name: Test fail if changed
+      - name: Test fail if changed and fail-if-changed is true
         uses: ./
         id: changed_files_expected_fail
         continue-on-error: true
         with:
           fail-if-changed: true
+          files: |
+            test/*.txt
+            test/*.sql
+            test/**/*.txt
+            test/**/*.sql
+      - name: Test dont fail if changed and fail-if-unchanged is true
+        uses: ./
+        id: changed_files_not_expected_fail
+        with:
+          fail-if-unchanged: true
           files: |
             test/*.txt
             test/*.sql
