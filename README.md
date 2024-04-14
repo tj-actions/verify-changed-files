@@ -132,8 +132,8 @@ Support this project with a :star:
     # Default: "false"
     fail-if-changed: ''
 
-    # Message to display when files have changed and the
-    # `fail-if-changed` input is set to `true`.
+    # Message to display when files have changed and the 
+    # `fail-if-changed` input is set to `true`. 
     # Type: string
     # Default: "Files have changed."
     fail-message: ''
