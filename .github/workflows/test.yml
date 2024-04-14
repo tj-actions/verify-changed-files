@@ -43,9 +43,9 @@ jobs:
         run: |
           echo "Changed files (Not expected): ${{ steps.changed_files_not_expected.outputs.changed_files }}"
           exit 1
-      - name: Test dont fail if not changed and fail-if-changed is true
+      - name: Test dont fail if not changed
         uses: ./
-        id: unchanged_files_not_expected_fail
+        id: changed_files_not_expected_fail
         with:
           fail-if-changed: true
           files: |
@@ -53,7 +53,7 @@ jobs:
             test/*.sql
             test/**/*.txt
             test/**/*.sql
-      - name: Test fail if changed and fail-if-unchanged is true
+      - name: Test fail if changed
         uses: ./
         id: unchanged_files_expected_fail
         continue-on-error: true

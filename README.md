@@ -132,13 +132,8 @@ Support this project with a :star:
     # Default: "false"
     fail-if-changed: ''
 
-    # Indicates whether to fail if no files have changed.
-    # Type: boolean
-    # Default: "false"
-    fail-if-unchanged: ''
-
-    # Message to display when `fail-if-changed` or
-    # `fail-if-unchanged` is set to `true` and triggered.
+    # Message to display when files have changed and the
+    # `fail-if-changed` input is set to `true`.
     # Type: string
     # Default: "Files have changed."
     fail-message: ''
