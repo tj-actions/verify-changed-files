@@ -127,44 +127,52 @@ Support this project with a :star:
 - uses: tj-actions/verify-changed-files@v19
   id: verify-changed-files
   with:
-    # Indicates whether to fail if files have changed.
+    # Indicates whether to fail if 
+    # files have changed. 
     # Type: boolean
     # Default: "false"
     fail-if-changed: ''
 
-    # Message to display when files have changed and the 
-    # `fail-if-changed` input is set to `true`. 
+    # Message to display when files 
+    # have changed and the `fail-if-changed` 
+    # input is set to `true`. 
     # Type: string
     # Default: "Files have changed."
     fail-message: ''
 
-    # File/Directory names to check for uncommited changes.
+    # File/Directory names to check for 
+    # uncommited changes. 
     # Type: string
     files: ''
 
-    # Separator used to split the `files` input
+    # Separator used to split the 
+    # `files` input 
     # Type: string
     # Default: "\n"
     files-separator: ''
 
-    # Indicates whether to match files in `.gitignore`
+    # Indicates whether to match files 
+    # in `.gitignore` 
     # Type: boolean
     # Default: "false"
     match-gitignore-files: ''
 
-    # Relative path under GITHUB_WORKSPACE to the repository
+    # Relative path under GITHUB_WORKSPACE to 
+    # the repository 
     # Type: string
     # Default: "."
     path: ''
 
-    # Use non-ASCII characters to match files and output the 
-    # filenames completely verbatim by setting this to `false` 
+    # Use non-ASCII characters to match 
+    # files and output the filenames 
+    # completely verbatim by setting this 
+    # to `false` 
     # Type: boolean
     # Default: "true"
     quotepath: ''
 
-    # Apply sanitization to output filenames before being set as 
-    # output. 
+    # Apply sanitization to output filenames 
+    # before being set as output. 
     # Type: boolean
     # Default: "true"
     safe_output: ''

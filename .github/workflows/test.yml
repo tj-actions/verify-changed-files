@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@1d96c772d19495a3b5c517cd2bc0cb401ea0529f # v4
+        uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4
       - name: shellcheck
         uses: reviewdog/action-shellcheck@v1.20
   test:
@@ -28,7 +28,7 @@ jobs:
         platform: [ubuntu-latest, windows-latest, macos-latest, macos-11, windows-2022]
     steps:
       - name: Checkout
-        uses: actions/checkout@1d96c772d19495a3b5c517cd2bc0cb401ea0529f # v4
+        uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4
       - name: Test files has no changes
         uses: ./
         id: changed_files_not_expected
