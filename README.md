@@ -8,9 +8,7 @@
 [![Update release version.](https://github.com/tj-actions/verify-changed-files/workflows/Update%20release%20version./badge.svg)](https://github.com/tj-actions/verify-changed-files/actions?query=workflow%3A%22Update+release+version.%22)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
-
+[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 # verify-changed-files
@@ -228,11 +226,8 @@ If you are reporting a bug, please include:
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-
 <!-- prettier-ignore-start -->
-
 <!-- markdownlint-disable -->
-
 <table>
   <tbody>
     <tr>
@@ -241,12 +236,12 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Minecraftschurli"><img src="https://avatars.githubusercontent.com/u/23388022?v=4?s=100" width="100px;" alt="Minecraftschurli"/><br /><sub><b>Minecraftschurli</b></sub></a><br /><a href="https://github.com/tj-actions/verify-changed-files/commits?author=Minecraftschurli" title="Code">💻</a> <a href="https://github.com/tj-actions/verify-changed-files/commits?author=Minecraftschurli" title="Documentation">📖</a> <a href="https://github.com/tj-actions/verify-changed-files/commits?author=Minecraftschurli" title="Tests">⚠️</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://stefanhoth.com"><img src="https://avatars.githubusercontent.com/u/45467?v=4?s=100" width="100px;" alt="Stefan Hoth"/><br /><sub><b>Stefan Hoth</b></sub></a><br /><a href="https://github.com/tj-actions/verify-changed-files/commits?author=stefanhoth" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://home.boidol.dev/"><img src="https://avatars.githubusercontent.com/u/652404?v=4?s=100" width="100px;" alt="Raphael Boidol"/><br /><sub><b>Raphael Boidol</b></sub></a><br /><a href="https://github.com/tj-actions/verify-changed-files/commits?author=boidolr" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Larspolo"><img src="https://avatars.githubusercontent.com/u/11822478?v=4?s=100" width="100px;" alt="Lars"/><br /><sub><b>Lars</b></sub></a><br /><a href="https://github.com/tj-actions/verify-changed-files/commits?author=Larspolo" title="Code">💻</a> <a href="https://github.com/tj-actions/verify-changed-files/commits?author=Larspolo" title="Tests">⚠️</a> <a href="https://github.com/tj-actions/verify-changed-files/commits?author=Larspolo" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
 
 <!-- markdownlint-restore -->
-
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
