@@ -8,7 +8,9 @@
 [![Update release version.](https://github.com/tj-actions/verify-changed-files/workflows/Update%20release%20version./badge.svg)](https://github.com/tj-actions/verify-changed-files/actions?query=workflow%3A%22Update+release+version.%22)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 # verify-changed-files
@@ -131,11 +133,16 @@ Support this project with a :star:
     # Default: "false"
     fail-if-changed: ''
 
-    # Message to display when files 
-    # have changed and the `fail-if-changed` 
-    # input is set to `true`. 
+    # Indicates whether to fail if 
+    # no files have changed. 
+    # Type: boolean
+    # Default: "false"
+    fail-if-unchanged: ''
+
+    # Message to display when `fail-if-changed` 
+    # or `fail-if-unchanged` is set to 
+    # `true`. 
     # Type: string
-    # Default: "Files have changed."
     fail-message: ''
 
     # File/Directory names to check for 
@@ -226,8 +233,11 @@ If you are reporting a bug, please include:
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+
 <!-- prettier-ignore-start -->
+
 <!-- markdownlint-disable -->
+
 <table>
   <tbody>
     <tr>
@@ -242,6 +252,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 </table>
 
 <!-- markdownlint-restore -->
+
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
