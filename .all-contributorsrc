@@ -51,6 +51,17 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "Larspolo",
+      "name": "Lars",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11822478?v=4",
+      "profile": "https://github.com/Larspolo",
+      "contributions": [
+        "code",
+        "test",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
