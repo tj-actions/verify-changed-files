@@ -171,6 +171,14 @@ Support this project with a :star:
     # Default: "true"
     quotepath: ''
 
+    # Indicates whether to read `.gitignore`. 
+    # The `.gitignore` file will be 
+    # ignored if set to `false`. 
+    # Overrides `match-gitignore-files` 
+    # Type: boolean
+    # Default: "false"
+    read-gitignore: ''
+
     # Apply sanitization to output filenames 
     # before being set as output. 
     # Type: boolean
