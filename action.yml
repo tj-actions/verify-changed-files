@@ -25,9 +25,13 @@ inputs:
     description: 'Indicates whether to fail if files have changed.'
     default: "false"
     required: false
+  fail-if-unchanged:
+    description: 'Indicates whether to fail if no files have changed.'
+    default: "false"
+    required: false
   fail-message:
-    description: 'Message to display when files have changed and the `fail-if-changed` input is set to `true`.'
-    default: "Files have changed."
+    description: 'Message to display when `fail-if-changed` or `fail-if-unchanged` is set to `true`.'
+    default: ""
     required: false
   safe_output:
     description: "Apply sanitization to output filenames before being set as output."
@@ -65,6 +69,7 @@ runs:
         read-gitignore: ${{ inputs.read-gitignore }}
         match-gitignore-files: ${{ inputs.match-gitignore-files }}
         safe-output: ${{ inputs.safe_output }}
+      
     - run: |
         bash $GITHUB_ACTION_PATH/entrypoint.sh
       id: verify-changed-files
@@ -78,7 +83,8 @@ runs:
         INPUT_SEPARATOR: ${{ inputs.separator }}
         INPUT_MATCH_GITIGNORE_FILES: ${{ inputs.match-gitignore-files }}
         INPUT_FAIL_IF_CHANGED: ${{ inputs.fail-if-changed }}
-        INPUT_FAIL_MSG: ${{ inputs.fail-message }}
+        INPUT_FAIL_IF_UNCHANGED: ${{ inputs.fail-if-unchanged }}
+        INPUT_FAIL_MSG: ${{ inputs.fail-message || (inputs.fail-if-changed == 'true' && 'Files have changed.' || 'Files have not changed.') }}
         INPUT_SAFE_OUTPUT: ${{ inputs.safe_output }}
         INPUT_PATH: ${{ inputs.path }}
         INPUT_QUOTEPATH: ${{ inputs.quotepath }}

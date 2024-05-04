@@ -53,6 +53,17 @@ jobs:
             test/*.sql
             test/**/*.txt
             test/**/*.sql
+      - name: Test fail if changed
+        uses: ./
+        id: unchanged_files_expected_fail
+        continue-on-error: true
+        with:
+          fail-if-unchanged: true
+          files: |
+            test/*.txt
+            test/*.sql
+            test/**/*.txt
+            test/**/*.sql
       - name: Make changes
         run: |
           printf '%s\n' "323442" "424" >> test/new.txt
@@ -94,6 +105,16 @@ jobs:
         continue-on-error: true
         with:
           fail-if-changed: true
+          files: |
+            test/*.txt
+            test/*.sql
+            test/**/*.txt
+            test/**/*.sql
+      - name: Test dont fail if changed and fail-if-unchanged is true
+        uses: ./
+        id: unchanged_files_not_expected_fail
+        with:
+          fail-if-unchanged: true
           files: |
             test/*.txt
             test/*.sql
