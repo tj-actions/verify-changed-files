@@ -17,6 +17,10 @@ inputs:
     description: 'Indicates whether to match files in `.gitignore`'
     default: "false"
     required: true
+  read-gitignore:
+    description: 'Indicates whether to read `.gitignore`. The `.gitignore` file will be ignored if set to `false`. Overrides `match-gitignore-files`'
+    default: "true"
+    required: true
   fail-if-changed:
     description: 'Indicates whether to fail if files have changed.'
     default: "false"
@@ -58,6 +62,7 @@ runs:
         files-separator: ${{ inputs.files-separator }}
         separator: "|"
         match-directories: false
+        read-gitignore: ${{ inputs.read-gitignore }}
         match-gitignore-files: ${{ inputs.match-gitignore-files }}
         escape-paths: ${{ inputs.safe_output }}
     - run: |
