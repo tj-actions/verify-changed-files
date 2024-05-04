@@ -1,5 +1,142 @@
 # Changelog
 
+# [20.0.0](https://github.com/tj-actions/verify-changed-files/compare/v19.0.0...v20.0.0) - (2024-05-04)
+
+## <!-- 0 -->🚀 Features
+
+- Add support for optionally reading the .gitignore file ([#412](https://github.com/tj-actions/verify-changed-files/issues/412)) ([3b18de8](https://github.com/tj-actions/verify-changed-files/commit/3b18de8f234b8246d33350613a5941a289b546eb))  - (Tonye Jack)
+
+## <!-- 13 -->📦 Bumps
+
+- Bump actions/checkout from 4.1.1 to 4.1.2 ([#399](https://github.com/tj-actions/verify-changed-files/issues/399))
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 4.1.1 to 4.1.2.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v4.1.1...9bb56186c3b09b4f86b1c65136769dd318469633)
+
+---
+updated-dependencies:
+- dependency-name: actions/checkout
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> ([22cfc44](https://github.com/tj-actions/verify-changed-files/commit/22cfc443d04fde968cc01b2d8589403d6914b1a8))  - (dependabot[bot])
+- Bump actions/checkout from 4.1.1 to 4.1.2 ([#397](https://github.com/tj-actions/verify-changed-files/issues/397))
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 4.1.1 to 4.1.2.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v4.1.1...9bb56186c3b09b4f86b1c65136769dd318469633)
+
+---
+updated-dependencies:
+- dependency-name: actions/checkout
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> ([ad99e81](https://github.com/tj-actions/verify-changed-files/commit/ad99e81fd7b54519fb1bd8482980b0b4552bc3f2))  - (dependabot[bot])
+- Bump actions/checkout from 4.1.1 to 4.1.2 ([#393](https://github.com/tj-actions/verify-changed-files/issues/393))
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 4.1.1 to 4.1.2.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v4.1.1...9bb56186c3b09b4f86b1c65136769dd318469633)
+
+---
+updated-dependencies:
+- dependency-name: actions/checkout
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> ([5188108](https://github.com/tj-actions/verify-changed-files/commit/518810867af6e815c131a8d98ddc93ab7bd76de2))  - (dependabot[bot])
+- Bump actions/checkout from 4.1.1 to 4.1.2 ([#391](https://github.com/tj-actions/verify-changed-files/issues/391))
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 4.1.1 to 4.1.2.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v4.1.1...9bb56186c3b09b4f86b1c65136769dd318469633)
+
+---
+updated-dependencies:
+- dependency-name: actions/checkout
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> ([603ef24](https://github.com/tj-actions/verify-changed-files/commit/603ef2451f91cb65b1db3fde2ccc719d8ecc263c))  - (dependabot[bot])
+
+## <!-- 16 -->➕ Add
+
+- Added support for `fail-if-unchanged` ([#395](https://github.com/tj-actions/verify-changed-files/issues/395))
+
+Co-authored-by: Tonye Jack <jtonye@ymail.com>
+ ([6a0d0b6](https://github.com/tj-actions/verify-changed-files/commit/6a0d0b6f91efc3fa77e7870aa77c23643b137895))  - (Lars)
+
+## <!-- 26 -->🔄 Update
+
+- Updated README.md ([#417](https://github.com/tj-actions/verify-changed-files/issues/417))
+
+Co-authored-by: jackton1 <17484350+jackton1@users.noreply.github.com> ([ab87580](https://github.com/tj-actions/verify-changed-files/commit/ab875806658e59162bc5f42e4df5c2d4682c459e))  - (tj-actions[bot])
+- Updated README.md
+ ([cf5696c](https://github.com/tj-actions/verify-changed-files/commit/cf5696c567a43546467e7d37a39a5e43f5858507))  - (jackton1)
+- Updated README.md ([#414](https://github.com/tj-actions/verify-changed-files/issues/414))
+
+Co-authored-by: repo-ranger[bot] <39074581+repo-ranger[bot]@users.noreply.github.com> ([531dd1d](https://github.com/tj-actions/verify-changed-files/commit/531dd1d161da57666ecff12ddf34061cfef8b7fe))  - (tj-actions[bot])
+- Updated README.md
+ ([d1e4577](https://github.com/tj-actions/verify-changed-files/commit/d1e457771663c41205ac80f24279be8ef8cba695))  - (jackton1)
+
+## <!-- 3 -->📚 Documentation
+
+- Add Larspolo as a contributor for code, test, and doc ([#416](https://github.com/tj-actions/verify-changed-files/issues/416)) ([22100c2](https://github.com/tj-actions/verify-changed-files/commit/22100c2113a4a9157750f0f6137899caa779ed8a))  - (allcontributors[bot])
+- Add boidolr as a contributor for doc ([#386](https://github.com/tj-actions/verify-changed-files/issues/386)) ([74be169](https://github.com/tj-actions/verify-changed-files/commit/74be16975faa622ad68ee6beb64cfa2a3b95cdc3))  - (allcontributors[bot])
+- Update checkout action ([c0a05b8](https://github.com/tj-actions/verify-changed-files/commit/c0a05b8cb6de5f58b20d6d67323b02165fdc5659))  - (Raphael Boidol)
+
+## <!-- 30 -->📝 Other
+
+- PR [#415](https://github.com/tj-actions/verify-changed-files/pull/415): README.md ([64d825d](https://github.com/tj-actions/verify-changed-files/commit/64d825da9307b22482b0ad181f36b42fff7a0e75))  - (repo-ranger[bot])
+- PR [#413](https://github.com/tj-actions/verify-changed-files/pull/413): update tj-actions/glob action to v22 ([51ebb35](https://github.com/tj-actions/verify-changed-files/commit/51ebb3506c6d660c2c4599d780eb5fabb94ead8a))  - (repo-ranger[bot])
+- PR [#401](https://github.com/tj-actions/verify-changed-files/pull/401): update actions/checkout digest to b4ffde6 ([5c70053](https://github.com/tj-actions/verify-changed-files/commit/5c70053821ef986fa44bfb3e3efd1b8c040046f0))  - (repo-ranger[bot])
+- PR [#398](https://github.com/tj-actions/verify-changed-files/pull/398): update actions/checkout digest to b4ffde6 ([3da26b2](https://github.com/tj-actions/verify-changed-files/commit/3da26b2ca2b2791d4783124ead45684e860c7ee9))  - (repo-ranger[bot])
+- PR [#396](https://github.com/tj-actions/verify-changed-files/pull/396): update actions/checkout digest to b4ffde6 ([4e5543c](https://github.com/tj-actions/verify-changed-files/commit/4e5543c6baf40a680fb74056d168a4772116c28d))  - (repo-ranger[bot])
+- PR [#385](https://github.com/tj-actions/verify-changed-files/pull/385): update checkout action ([79a8cef](https://github.com/tj-actions/verify-changed-files/commit/79a8cef5d9ef3ab541ee07ef179bd6c3c2d42ecc))  - (repo-ranger[bot])
+- Merge branch 'main' into main ([3cbb813](https://github.com/tj-actions/verify-changed-files/commit/3cbb813251f0d00674c927636979bb1df44e26a5))  - (repo-ranger[bot])
+- PR [#387](https://github.com/tj-actions/verify-changed-files/pull/387): README.md ([5a77704](https://github.com/tj-actions/verify-changed-files/commit/5a777041c7c22e6e36b3786f4935a05b2505a8ba))  - (repo-ranger[bot])
+- Merge branch 'main' into main ([d762898](https://github.com/tj-actions/verify-changed-files/commit/d76289839ca5f61eb854e2dbff255463f2c56a45))  - (repo-ranger[bot])
+- PR [#384](https://github.com/tj-actions/verify-changed-files/pull/384): update tj-actions/verify-changed-files action to v19 ([efd71c2](https://github.com/tj-actions/verify-changed-files/commit/efd71c265f4cde5b8034ff975235697e24384057))  - (repo-ranger[bot])
+- PR [#383](https://github.com/tj-actions/verify-changed-files/pull/383): to v19 ([c0c02ca](https://github.com/tj-actions/verify-changed-files/commit/c0c02ca0e9d7e397b7305659906aa99a47c90a8f))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- **deps:** Update tj-actions/glob action to v22 ([5beffcb](https://github.com/tj-actions/verify-changed-files/commit/5beffcba2cd124625f5d058015c3f0dd2bb46ef0))  - (renovate[bot])
+- **deps:** Update actions/checkout digest to 0ad4b8f ([fd85a60](https://github.com/tj-actions/verify-changed-files/commit/fd85a6022db9aa8345ca15c3adb91d486780bfd9))  - (renovate[bot])
+- **deps:** Update actions/checkout action to v4.1.4 ([c5fcea9](https://github.com/tj-actions/verify-changed-files/commit/c5fcea9a88cab93aa26d2e12a6c8e006b2515457))  - (renovate[bot])
+- **deps:** Update peter-evans/create-pull-request action to v6.0.5 ([b4dd7f8](https://github.com/tj-actions/verify-changed-files/commit/b4dd7f8d6a8dd24c543996c02423752954eb279f))  - (renovate[bot])
+- **deps:** Update actions/checkout digest to 1d96c77 ([de152e1](https://github.com/tj-actions/verify-changed-files/commit/de152e1bce12b93e6be184571c98cdf077262056))  - (renovate[bot])
+- **deps:** Update actions/checkout action to v4.1.3 ([f7d9039](https://github.com/tj-actions/verify-changed-files/commit/f7d90391662e2dcb825f01e41b2429b12a11a600))  - (renovate[bot])
+- **deps:** Update peter-evans/create-pull-request action to v6.0.4 ([de61745](https://github.com/tj-actions/verify-changed-files/commit/de6174591eea8de183f85cebf7be275c5a1d09e0))  - (renovate[bot])
+- **deps:** Update actions/checkout digest to b4ffde6 ([072efa2](https://github.com/tj-actions/verify-changed-files/commit/072efa2159001ac5db74b89ae9f0e01318f6d520))  - (renovate[bot])
+- **deps:** Update peter-evans/create-pull-request action to v6.0.3 ([4d8571b](https://github.com/tj-actions/verify-changed-files/commit/4d8571bb74b7ef465332e4102694ce82db22947a))  - (renovate[bot])
+- **deps:** Update actions/checkout digest to b4ffde6 ([2ee22b1](https://github.com/tj-actions/verify-changed-files/commit/2ee22b17bc1c536a304d0beb7fba63f1c4485c3d))  - (renovate[bot])
+- **deps:** Update actions/checkout digest to b4ffde6 ([5296289](https://github.com/tj-actions/verify-changed-files/commit/5296289ec21f7c5b2fe80241f9db3ebc0a018e81))  - (renovate[bot])
+- **deps:** Update actions/checkout digest to b4ffde6 ([1e517a7](https://github.com/tj-actions/verify-changed-files/commit/1e517a7f5663673148ceb7c09c1900e5af48e7a1))  - (renovate[bot])
+- **deps:** Update peter-evans/create-pull-request action to v6.0.2 ([843c0b9](https://github.com/tj-actions/verify-changed-files/commit/843c0b95f87cd81a2efe729380c6d1f11fb3ea12))  - (renovate[bot])
+- **deps:** Update actions/checkout action to v4.1.2 ([53e0425](https://github.com/tj-actions/verify-changed-files/commit/53e042512841b5e9ea02c94db90de9408b812beb))  - (renovate[bot])
+- **deps:** Update reviewdog/action-shellcheck action to v1.20 ([fd45885](https://github.com/tj-actions/verify-changed-files/commit/fd4588511fae9a14d1a37fe2574790662e31d109))  - (renovate[bot])
+- **deps:** Update tj-actions/verify-changed-files action to v19 ([a23902f](https://github.com/tj-actions/verify-changed-files/commit/a23902fe2e47244af5889fadd15768eafe62ae36))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v18.0.0 -> v19
+ ([c7415d1](https://github.com/tj-actions/verify-changed-files/commit/c7415d1fff48e430a579c8edbac91b9af35454e9))  - (jackton1)
+
 # [19.0.0](https://github.com/tj-actions/verify-changed-files/compare/v18.0.0...v19.0.0) - (2024-02-28)
 
 ## <!-- 30 -->📝 Other
@@ -619,9 +756,12 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([d4e0461](https://
 - Update README.md ([ccf52ee](https://github.com/tj-actions/verify-changed-files/commit/ccf52ee5892035169dd6bd50e2c40f860bcace84))  - (Tonye Jack)
 - Updated .github/ISSUE_TEMPLATE/bug_report.yaml ([deb407e](https://github.com/tj-actions/verify-changed-files/commit/deb407eae228ce825be2aa91d4b1fc3cab51dead))  - (Tonye Jack)
 
-## <!-- 30 -->📝 Other
+## <!-- 29 -->👷 CI/CD
 
 - PR [#252](https://github.com/tj-actions/verify-changed-files/pull/252): add support for specifying the files-separator ([d2ea8cd](https://github.com/tj-actions/verify-changed-files/commit/d2ea8cda9fe92ef050bcfb152abea37a8bcb3e89))  - (repo-ranger[bot])
+
+## <!-- 30 -->📝 Other
+
 - PR [#250](https://github.com/tj-actions/verify-changed-files/pull/250): README.md ([2679702](https://github.com/tj-actions/verify-changed-files/commit/26797029fa87cadd79c692c067a4e91db6ddcb1b))  - (repo-ranger[bot])
 - PR [#244](https://github.com/tj-actions/verify-changed-files/pull/244): README.md ([336d2bd](https://github.com/tj-actions/verify-changed-files/commit/336d2bd9613107c422350d1e3e11d2678ed10e7d))  - (repo-ranger[bot])
 - PR [#240](https://github.com/tj-actions/verify-changed-files/pull/240): to v13 ([88ceabc](https://github.com/tj-actions/verify-changed-files/commit/88ceabc8f10ee8bb03c30891299e545b7257484f))  - (repo-ranger[bot])
