@@ -19,7 +19,7 @@ inputs:
     required: true
   read-gitignore:
     description: 'Indicates whether to read `.gitignore`. The `.gitignore` file will be ignored if set to `false`. Overrides `match-gitignore-files`'
-    default: "true"
+    default: "false"
     required: true
   fail-if-changed:
     description: 'Indicates whether to fail if files have changed.'
@@ -64,7 +64,7 @@ runs:
         match-directories: false
         read-gitignore: ${{ inputs.read-gitignore }}
         match-gitignore-files: ${{ inputs.match-gitignore-files }}
-        escape-paths: ${{ inputs.safe_output }}
+        safe-output: ${{ inputs.safe_output }}
     - run: |
         bash $GITHUB_ACTION_PATH/entrypoint.sh
       id: verify-changed-files
