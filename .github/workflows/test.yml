@@ -175,6 +175,8 @@ jobs:
 
       - name: Test deletion of test/new.txt
         uses: ./
+        with:
+          path: test
         id: deleted_file_test
 
       - name: Show output
@@ -182,12 +184,12 @@ jobs:
           echo "Changed files: ${{ steps.deleted_file_test.outputs.changed_files }}"
 
       - name: Display deleted file test result
-        if: "contains(steps.deleted_file_test.outputs.changed_files, 'test/new.txt')"
+        if: "contains(steps.deleted_file_test.outputs.changed_files, 'new.txt')"
         run: |
           echo "Deletion detected: ${{ steps.deleted_file_test.outputs.changed_files }}"
 
       - name: Verify Deletion of test/new.txt
-        if: "!contains(steps.deleted_file_test.outputs.changed_files, 'test/new.txt')"
+        if: "!contains(steps.deleted_file_test.outputs.changed_files, 'new.txt')"
         run: |
           echo "No Deletion detected: (Not expected)"
           exit 1
