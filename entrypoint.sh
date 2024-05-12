@@ -12,8 +12,14 @@ echo "::debug::Separator: $INPUT_SEPARATOR"
 
 git config --global core.quotepath "$INPUT_QUOTEPATH"
 
+OS=$(uname -s)
+
 if [[ -n $INPUT_PATH ]]; then
-  REPO_DIR="$GITHUB_WORKSPACE/$INPUT_PATH"
+  if [[ "$OS" == "NT"* ]] || [[ "$OS" == "MINGW"* ]] || [[ "$OS" == *"MSYS"* ]]; then
+    REPO_DIR="$GITHUB_WORKSPACE\\$INPUT_PATH"
+  else
+    REPO_DIR="$GITHUB_WORKSPACE/$INPUT_PATH"
+  fi
 
   echo "Resolving repository path: $REPO_DIR"
   if [[ ! -d "$REPO_DIR" ]]; then
