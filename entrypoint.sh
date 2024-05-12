@@ -11,6 +11,7 @@ echo "::group::verify-changed-files"
 echo "::debug::Separator: $INPUT_SEPARATOR"
 
 git config --global core.quotepath "$INPUT_QUOTEPATH"
+git config --global diff.relative "$INPUT_DIFF_RELATIVE"
 
 OS=$(uname -s)
 
