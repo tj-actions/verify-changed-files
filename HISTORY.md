@@ -1,5 +1,30 @@
 # Changelog
 
+# [20.0.1](https://github.com/tj-actions/verify-changed-files/compare/v20.0.0...v20.0.1) - (2024-05-12)
+
+## <!-- 1 -->🐛 Bug Fixes
+
+- Bug resolving windows paths ([#426](https://github.com/tj-actions/verify-changed-files/issues/426)) ([6ed7632](https://github.com/tj-actions/verify-changed-files/commit/6ed7632824d235029086612d4330d659005af687))  - (Tonye Jack)
+
+## <!-- 30 -->📝 Other
+
+- PR [#425](https://github.com/tj-actions/verify-changed-files/pull/425): update actions/checkout digest to 0ad4b8f ([145beec](https://github.com/tj-actions/verify-changed-files/commit/145beecaa72a24124c8b91c6878afaa5dbf93493))  - (repo-ranger[bot])
+- PR [#419](https://github.com/tj-actions/verify-changed-files/pull/419): update tj-actions/verify-changed-files action to v20 ([1be855c](https://github.com/tj-actions/verify-changed-files/commit/1be855c092cb21dcd52b7f3763be67eaeb850c51))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- **deps:** Update actions/checkout digest to 0ad4b8f ([5628468](https://github.com/tj-actions/verify-changed-files/commit/5628468b559524a067691e6160d61fb3da48392f))  - (renovate[bot])
+- **deps:** Update actions/checkout digest to 44c2b7a ([33133ed](https://github.com/tj-actions/verify-changed-files/commit/33133edfe6114a054b9979609135779bd3bc4cb0))  - (renovate[bot])
+- **deps:** Update actions/checkout action to v4.1.5 ([fd8a2d1](https://github.com/tj-actions/verify-changed-files/commit/fd8a2d157904f4dad13be5eb7dfdf0d184534fb3))  - (renovate[bot])
+- **deps:** Update codacy/codacy-analysis-cli-action action to v4.4.1 ([25c37eb](https://github.com/tj-actions/verify-changed-files/commit/25c37eb3a8ba042a1fff81fba248a97e0adb1dd7))  - (renovate[bot])
+- **deps:** Update tj-actions/verify-changed-files action to v20 ([868d3fd](https://github.com/tj-actions/verify-changed-files/commit/868d3fda7284a6e468c4149c6c182de01b60208f))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded to v20 ([#418](https://github.com/tj-actions/verify-changed-files/issues/418))
+
+Co-authored-by: jackton1 <17484350+jackton1@users.noreply.github.com> ([07a43bb](https://github.com/tj-actions/verify-changed-files/commit/07a43bbe801dd2b709e41a4e7c95e06b09e74cdc))  - (tj-actions[bot])
+
 # [20.0.0](https://github.com/tj-actions/verify-changed-files/compare/v19.0.0...v20.0.0) - (2024-05-04)
 
 ## <!-- 0 -->🚀 Features
