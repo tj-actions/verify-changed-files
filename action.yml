@@ -92,6 +92,7 @@ runs:
         INPUT_SAFE_OUTPUT: ${{ inputs.safe_output }}
         INPUT_PATH: ${{ inputs.path }}
         INPUT_QUOTEPATH: ${{ inputs.quotepath }}
+        INPUT_DIFF_RELATIVE: ${{ inputs.diff_relative }}
         
 branding:
   icon: file-text
