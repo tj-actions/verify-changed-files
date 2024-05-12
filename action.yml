@@ -45,6 +45,10 @@ inputs:
     description: "Use non-ASCII characters to match files and output the filenames completely verbatim by setting this to `false`"
     default: "true"
     required: false
+  diff_relative:
+    description: "Exclude changes outside the current directory and show path names relative to it. NOTE: This requires you to specify the top-level directory via the `path` input."
+    required: false
+    default: "true"
 
 outputs:
   files_changed:
