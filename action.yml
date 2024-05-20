@@ -48,7 +48,7 @@ inputs:
   diff_relative:
     description: "Exclude changes outside the current directory and show path names relative to it. NOTE: This requires you to specify the top-level directory via the `path` input."
     required: false
-    default: "true"
+    default: "false"
 
 outputs:
   files_changed:
