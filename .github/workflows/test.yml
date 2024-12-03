@@ -18,7 +18,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
       - name: shellcheck
-        uses: reviewdog/action-shellcheck@v1.27
+        uses: reviewdog/action-shellcheck@v1.28
   test:
     name: Test verify-changed-files
     runs-on: ${{ matrix.platform }}
