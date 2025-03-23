@@ -3,7 +3,6 @@ on:
   release:
     types: [published]
 
-
 jobs:
   update-version:
     runs-on: ubuntu-latest
@@ -19,6 +18,7 @@ jobs:
         with:
           pattern: '${{ github.repository }}@'
           only_major: true
+          use_tag_commit_hash: true
           paths: |
             README.md
       - name: Run git-cliff

@@ -1,5 +1,17 @@
 # Changelog
 
+# [20.0.3](https://github.com/tj-actions/verify-changed-files/compare/v20.0.2...v20.0.3) - (2025-03-23)
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- Pin github actions ([#469](https://github.com/tj-actions/verify-changed-files/issues/469)) ([418a055](https://github.com/tj-actions/verify-changed-files/commit/418a0558284db53c46d373bf0c313310882ce3ab))  - (Tonye Jack)
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v20.0.1 -> v20.0.2 ([#468](https://github.com/tj-actions/verify-changed-files/issues/468))
+
+ ([a661f7f](https://github.com/tj-actions/verify-changed-files/commit/a661f7f975bca16ecd986eaa165acce4d4e045b0))  - (Tonye Jack)
+
 # [20.0.2](https://github.com/tj-actions/verify-changed-files/compare/v20.0.1...v20.0.2) - (2025-03-15)
 
 ## <!-- 13 -->📦 Bumps
