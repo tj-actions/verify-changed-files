@@ -3,7 +3,6 @@ on:
   release:
     types: [published]
 
-
 jobs:
   update-version:
     runs-on: ubuntu-latest
