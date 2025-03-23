@@ -1,5 +1,74 @@
 # Changelog
 
+# [20.0.2](https://github.com/tj-actions/verify-changed-files/compare/v20.0.1...v20.0.2) - (2025-03-15)
+
+## <!-- 13 -->📦 Bumps
+
+- Bump actions/checkout from 4.1.4 to 4.1.6 ([#430](https://github.com/tj-actions/verify-changed-files/issues/430))
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 4.1.4 to 4.1.6.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v4.1.4...a5ac7e51b41094c92402da3b24376905380afc29)
+
+---
+updated-dependencies:
+- dependency-name: actions/checkout
+  dependency-type: direct:production
+  update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> ([a6ccf5c](https://github.com/tj-actions/verify-changed-files/commit/a6ccf5c487d326a339726f77b576ef0b3907d6d8))  - (dependabot[bot])
+
+## <!-- 17 -->➖ Remove
+
+- Deleted renovate.json ([9437562](https://github.com/tj-actions/verify-changed-files/commit/9437562cb29a5a1120dd9f02cc760ec9e5d4651a))  - (Tonye Jack)
+
+## <!-- 30 -->📝 Other
+
+- PR [#431](https://github.com/tj-actions/verify-changed-files/pull/431): update actions/checkout digest to 0ad4b8f ([1bb5a5e](https://github.com/tj-actions/verify-changed-files/commit/1bb5a5e41586de7a710f5d45fb7e6f0f0f2de9c6))  - (repo-ranger[bot])
+- PR [#428](https://github.com/tj-actions/verify-changed-files/pull/428): to v20.0.1 ([5372791](https://github.com/tj-actions/verify-changed-files/commit/53727911ff9f255b5ee41d7b338c489397a64cd2))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- **deps:** Update peter-evans/create-pull-request action to v7.0.8 ([#466](https://github.com/tj-actions/verify-changed-files/issues/466)) ([f7c3c73](https://github.com/tj-actions/verify-changed-files/commit/f7c3c7390ed5c5435233c9bb76d8c0ad5f99ba26))  - (renovate[bot])
+- **deps:** Update peter-evans/create-pull-request action to v7.0.7 ([#465](https://github.com/tj-actions/verify-changed-files/issues/465)) ([4a35708](https://github.com/tj-actions/verify-changed-files/commit/4a3570896cbdc5dca56a7a259fba88667845e18a))  - (renovate[bot])
+- **deps:** Update reviewdog/action-shellcheck action to v1.29 ([#464](https://github.com/tj-actions/verify-changed-files/issues/464)) ([6b59fb7](https://github.com/tj-actions/verify-changed-files/commit/6b59fb7cbb8d9a6ecc10ee556496d0078a9ed957))  - (renovate[bot])
+- **deps:** Update peter-evans/create-pull-request action to v7.0.6 ([#463](https://github.com/tj-actions/verify-changed-files/issues/463)) ([21026c9](https://github.com/tj-actions/verify-changed-files/commit/21026c9e0e5b8c2ada1459acc4442be712292eb5))  - (renovate[bot])
+- **deps:** Update reviewdog/action-shellcheck action to v1.28 ([#462](https://github.com/tj-actions/verify-changed-files/issues/462)) ([dc57d45](https://github.com/tj-actions/verify-changed-files/commit/dc57d4518c9e75995e0fff59265333d19a684163))  - (renovate[bot])
+- **deps:** Update actions/checkout action to v4.2.2 ([530d86d](https://github.com/tj-actions/verify-changed-files/commit/530d86d0a237225c87beaa000750988f8965ee31))  - (renovate[bot])
+- **deps:** Update actions/checkout digest to 11bd719 ([22727d8](https://github.com/tj-actions/verify-changed-files/commit/22727d8e564eeedae2f754e23110528e828a7eab))  - (renovate[bot])
+- **deps:** Update actions/checkout action to v4.2.1 ([54483a2](https://github.com/tj-actions/verify-changed-files/commit/54483a2138ca67989bc40785aa22faee8b085894))  - (renovate[bot])
+- **deps:** Update actions/checkout digest to eef6144 ([a8b2060](https://github.com/tj-actions/verify-changed-files/commit/a8b2060139e12bd3f8b056005ea793d3a9d575f9))  - (renovate[bot])
+- **deps:** Update actions/checkout action to v4.2.0 ([bbd436f](https://github.com/tj-actions/verify-changed-files/commit/bbd436f8e34e14fee2a0f7bc5b14bcc6b40927cf))  - (renovate[bot])
+- **deps:** Update peter-evans/create-pull-request action to v7.0.5 ([c55299a](https://github.com/tj-actions/verify-changed-files/commit/c55299aaf3f1f7bf2a782f00ba79897f92432d8b))  - (renovate[bot])
+- **deps:** Update peter-evans/create-pull-request action to v7.0.4 ([ba82bde](https://github.com/tj-actions/verify-changed-files/commit/ba82bde4bdaee692a6897547216ee7db4f0e5eb7))  - (renovate[bot])
+- **deps:** Update peter-evans/create-pull-request action to v7.0.3 ([ba611bc](https://github.com/tj-actions/verify-changed-files/commit/ba611bcdf2d25b81a336cbf9609488213ac16395))  - (renovate[bot])
+- **deps:** Update reviewdog/action-shellcheck action to v1.27 ([60aa300](https://github.com/tj-actions/verify-changed-files/commit/60aa300b006cdaf8f5945a1c60e9a5e922e4b33d))  - (renovate[bot])
+- **deps:** Update peter-evans/create-pull-request action to v7.0.2 ([f34efa6](https://github.com/tj-actions/verify-changed-files/commit/f34efa6de5e357118eac13f5bb4b59027295d132))  - (renovate[bot])
+- **deps:** Update peter-evans/create-pull-request action to v7.0.1 ([93ebf68](https://github.com/tj-actions/verify-changed-files/commit/93ebf6810c83499e08849f66917573f05129589c))  - (renovate[bot])
+- **deps:** Update peter-evans/create-pull-request action to v7 ([#449](https://github.com/tj-actions/verify-changed-files/issues/449)) ([f2ebf48](https://github.com/tj-actions/verify-changed-files/commit/f2ebf48ad3e3bea0040102d9717d22a9e42467c3))  - (renovate[bot])
+- **deps:** Update reviewdog/action-shellcheck action to v1.26 ([79f398a](https://github.com/tj-actions/verify-changed-files/commit/79f398ac63ab46f7f820470c821d830e5c340ef9))  - (renovate[bot])
+- **deps:** Update reviewdog/action-shellcheck action to v1.25 ([45e3c52](https://github.com/tj-actions/verify-changed-files/commit/45e3c52984330dd37ca8a886820ef283f2386470))  - (renovate[bot])
+- **deps:** Update reviewdog/action-shellcheck action to v1.24 ([546ae05](https://github.com/tj-actions/verify-changed-files/commit/546ae0528a8b5f99ca6a4dd76e54524b4d70af59))  - (renovate[bot])
+- Update test.yml ([#444](https://github.com/tj-actions/verify-changed-files/issues/444)) ([56dd116](https://github.com/tj-actions/verify-changed-files/commit/56dd1161e9ab6f1a59f032586c5d2c440e04465f))  - (Tonye Jack)
+- **deps:** Update codacy/codacy-analysis-cli-action action to v4.4.5 ([e487aec](https://github.com/tj-actions/verify-changed-files/commit/e487aeca2a2603b4c8c6cd4fea6f77885b2b18fc))  - (renovate[bot])
+- **deps:** Update reviewdog/action-shellcheck action to v1.23 ([11ea2b3](https://github.com/tj-actions/verify-changed-files/commit/11ea2b36f98609331b8dc9c5ad9071ee317c6d28))  - (renovate[bot])
+- **deps:** Update reviewdog/action-shellcheck action to v1.22 ([3db0da1](https://github.com/tj-actions/verify-changed-files/commit/3db0da1f9e3afd57302597a8a2777b1e673de1fa))  - (renovate[bot])
+- **deps:** Update peter-evans/create-pull-request action to v6.1.0 ([9baf991](https://github.com/tj-actions/verify-changed-files/commit/9baf991405da157c71451478836a011b25a16e1e))  - (renovate[bot])
+- **deps:** Update actions/checkout digest to 692973e ([4104a8e](https://github.com/tj-actions/verify-changed-files/commit/4104a8e97405be4f35455ab66636ae378429199f))  - (renovate[bot])
+- **deps:** Update actions/checkout action to v4.1.7 ([7a21276](https://github.com/tj-actions/verify-changed-files/commit/7a212764eba9335f97ebfddccb8d587e02c8f669))  - (renovate[bot])
+- **deps:** Update reviewdog/action-shellcheck action to v1.21 ([9241ea0](https://github.com/tj-actions/verify-changed-files/commit/9241ea0b294e597ff49928779b5cfbc8a97f5e99))  - (renovate[bot])
+- **deps:** Update actions/checkout digest to a5ac7e5 ([4e3fbc4](https://github.com/tj-actions/verify-changed-files/commit/4e3fbc4714b4709261bf264cc419a4a75011399b))  - (renovate[bot])
+- **deps:** Update actions/checkout digest to 0ad4b8f ([188d301](https://github.com/tj-actions/verify-changed-files/commit/188d3010a369f8f478f93921b6aa8ea7f6ba6a1a))  - (renovate[bot])
+- **deps:** Update actions/checkout action to v4.1.6 ([5c8a838](https://github.com/tj-actions/verify-changed-files/commit/5c8a838c0ddad8b3102955495fc9178b546ab487))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v20.0.0 -> v20.0.1
+ ([c835769](https://github.com/tj-actions/verify-changed-files/commit/c83576988d8efa3ad89330ee06ae11bff4fbeea5))  - (jackton1)
+
 # [20.0.1](https://github.com/tj-actions/verify-changed-files/compare/v20.0.0...v20.0.1) - (2024-05-12)
 
 ## <!-- 1 -->🐛 Bug Fixes
