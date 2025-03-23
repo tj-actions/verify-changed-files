@@ -14,16 +14,16 @@ jobs:
           fetch-depth: 0
 
       - name: Run auto-doc
-        uses: tj-actions/auto-doc@v3
+        uses: tj-actions/auto-doc@b10ceedffd794ec29a8fa8700529f40c1b64a951 # v3.6.0
         with:
           use_code_blocks: true
           use_major_version: true
 
       - name: Run test
-        uses: tj-actions/remark@v3
+        uses: tj-actions/remark@10fc40701928cbafcc4a2d241679579d218144ff # v3
 
       - name: Verify Changed files
-        uses: tj-actions/verify-changed-files@v20
+        uses: tj-actions/verify-changed-files@9437562cb29a5a1120dd9f02cc760ec9e5d4651a # v20.0.2
         id: verify_changed_files
         with:
           files: |
@@ -37,7 +37,7 @@ jobs:
 
       - name: Create Pull Request
         if: failure()
-        uses: peter-evans/create-pull-request@v7.0.8
+        uses: peter-evans/create-pull-request@271a8d0340265f705b14b6d32b9829c1cb33d45e # v7.0.8
         with:
           base: "main"
           labels: "merge when passing"

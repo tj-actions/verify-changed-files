@@ -16,9 +16,9 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       - name: shellcheck
-        uses: reviewdog/action-shellcheck@v1.29
+        uses: reviewdog/action-shellcheck@57079a832290a049f49cee90984b072c870fb7d4 # v1.29.3
   test:
     name: Test verify-changed-files
     runs-on: ${{ matrix.platform }}
@@ -28,7 +28,7 @@ jobs:
         platform: [ubuntu-latest, windows-latest, macos-latest]
     steps:
       - name: Checkout
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       - name: Test files has no changes
         uses: ./
         id: changed_files_not_expected
