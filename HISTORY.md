@@ -1,5 +1,21 @@
 # Changelog
 
+# [20.0.4](https://github.com/tj-actions/verify-changed-files/compare/v20.0.3...v20.0.4) - (2025-03-23)
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded to v20.0.3 ([#470](https://github.com/tj-actions/verify-changed-files/issues/470))
+
+* Upgraded from v20.0.2 -> v20.0.3
+
+* Update sync-release-version.yml
+
+* Update README.md
+
+* Update update-readme.yml
+
+* Update sync-release-version.yml ([a1c6ace](https://github.com/tj-actions/verify-changed-files/commit/a1c6acee9df209257a246f2cc6ae8cb6581c1edf))  - (Tonye Jack)
+
 # [20.0.3](https://github.com/tj-actions/verify-changed-files/compare/v20.0.2...v20.0.3) - (2025-03-23)
 
 ## <!-- 7 -->⚙️ Miscellaneous Tasks
